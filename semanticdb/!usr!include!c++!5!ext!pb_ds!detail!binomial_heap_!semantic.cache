@@ -1,0 +1,148 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("debug/debug.h" include (:system-flag t) nil [1786 1810])
+            ("ext/pb_ds/detail/cond_dealtor.hpp" include (:system-flag t) nil [1811 1855])
+            ("ext/pb_ds/detail/type_utils.hpp" include (:system-flag t) nil [1856 1898])
+            ("ext/pb_ds/detail/binomial_heap_base_/binomial_heap_base_.hpp" include (:system-flag t) nil [1899 1970])
+            ("__gnu_pbds" type
+               (:members 
+                  ( ("detail" type
+                       (:members 
+                          ( ("PB_DS_CLASS_T_DEC" variable (:constant-flag t) (reparse-symbol namespacesubparts) [2026 2043])
+                            ("PB_DS_CLASS_C_DEC" variable (:constant-flag t) (reparse-symbol namespacesubparts) [2123 2140])
+                            ("binomial_heap" type
+                               (:template 
+                                  ( ("Value_Type" type (:type "class") nil nil)
+                                    ("Cmp_Fn" type (:type "class") nil nil)
+                                    ("_Alloc" type (:type "class") nil nil))                                  
+                                :type "class"
+                                :members 
+                                  ( ("private" label nil (reparse-symbol classsubparts) [2427 2435])
+                                    ("base_type" type
+                                       (:typedef ("binomial_heap_base" type
+                                             (:template-specifier 
+                                                ( ("Value_Type" type nil nil nil)
+                                                  ("Cmp_Fn" type nil nil nil)
+                                                  ("_Alloc" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [2442 2508])
+                                    ("node_pointer" type
+                                       (:typedef ("base_type::node_pointer" type (:type "class") nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [2515 2571])
+                                    ("node_const_pointer" type
+                                       (:typedef ("base_type::node_const_pointer" type (:type "class") nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [2578 2645])
+                                    ("public" label nil (reparse-symbol classsubparts) [2651 2658])
+                                    ("value_type" type
+                                       (:typedef ("Value_Type" type (:type "class") nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [2665 2699])
+                                    ("size_type" type
+                                       (:typedef ("_Alloc::size_type" type (:type "class") nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [2706 2753])
+                                    ("difference_type" type
+                                       (:typedef ("_Alloc::difference_type" type (:type "class") nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [2760 2819])
+                                    ("pointer" type
+                                       (:typedef ("base_type::pointer" type (:type "class") nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [2826 2872])
+                                    ("const_pointer" type
+                                       (:typedef ("base_type::const_pointer" type (:type "class") nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [2879 2936])
+                                    ("reference" type
+                                       (:typedef ("base_type::reference" type (:type "class") nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [2943 2993])
+                                    ("const_reference" type
+                                       (:typedef ("base_type::const_reference" type (:type "class") nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [3000 3061])
+                                    ("point_const_iterator" type
+                                       (:typedef ("base_type::point_const_iterator" type (:type "class") nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [3068 3139])
+                                    ("point_iterator" type
+                                       (:typedef ("base_type::point_iterator" type (:type "class") nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [3146 3205])
+                                    ("const_iterator" type
+                                       (:typedef ("base_type::const_iterator" type (:type "class") nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [3212 3271])
+                                    ("iterator" type
+                                       (:typedef ("base_type::iterator" type (:type "class") nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [3278 3326])
+                                    ("cmp_fn" type
+                                       (:typedef ("base_type::cmp_fn" type (:type "class") nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [3333 3377])
+                                    ("allocator_type" type
+                                       (:typedef ("base_type::allocator_type" type (:type "class") nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [3384 3443])
+                                    ("binomial_heap" function
+                                       (:prototype-flag t
+                                        :constructor-flag t
+                                        :type ("binomial_heap" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [3451 3467])
+                                    ("binomial_heap" function
+                                       (:prototype-flag t
+                                        :constructor-flag t
+                                        :arguments 
+                                          ( ("" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("Cmp_Fn" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [3489 3503]))                                          
+                                        :type ("binomial_heap" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [3475 3504])
+                                    ("binomial_heap" function
+                                       (:prototype-flag t
+                                        :constructor-flag t
+                                        :arguments 
+                                          ( ("" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("binomial_heap" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [3526 3547]))                                          
+                                        :type ("binomial_heap" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [3512 3548])
+                                    ("binomial_heap" function
+                                       (:prototype-flag t
+                                        :destructor-flag t
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [3556 3573])
+                                    ("protected" label nil (reparse-symbol classsubparts) [3579 3589]))                                  
+                                :superclasses 
+                                  ( ("binomial_heap_base" type
+                                       (:protection "public"
+                                        :type "class")
+                                        nil nil))                                  )
+                                (reparse-symbol namespacesubparts) [2269 3680]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [1997 3876]))                  
+                :type "namespace")
+                nil [1972 3898]))          
+      :file "binomial_heap_.hpp"
+      :pointmax 3923
+      :fsize 3922
+      :lastmodtime '(23161 10764 0 0)
+      :unmatched-syntax '((spp-system-include "ext/pb_ds/detail/binomial_heap_/debug_fn_imps.hpp" 3761 . 3821) (spp-system-include "ext/pb_ds/detail/binomial_heap_/constructors_destructor_fn_imps.hpp" 3682 . 3760))))
+  :file "!usr!include!c++!5!ext!pb_ds!detail!binomial_heap_!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

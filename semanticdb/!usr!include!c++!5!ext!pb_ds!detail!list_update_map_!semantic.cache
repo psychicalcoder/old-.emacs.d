@@ -1,0 +1,512 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("utility" include (:system-flag t) nil [1691 1709])
+            ("iterator" include (:system-flag t) nil [1710 1729])
+            ("ext/pb_ds/detail/cond_dealtor.hpp" include (:system-flag t) nil [1730 1774])
+            ("ext/pb_ds/tag_and_trait.hpp" include (:system-flag t) nil [1775 1813])
+            ("ext/pb_ds/detail/types_traits.hpp" include (:system-flag t) nil [1814 1858])
+            ("ext/pb_ds/detail/list_update_map_/entry_metadata_base.hpp" include (:system-flag t) nil [1859 1927])
+            ("ext/pb_ds/exception.hpp" include (:system-flag t) nil [1928 1962])
+            ("debug/debug.h" include (:system-flag t) nil [2093 2117])
+            ("__gnu_pbds" type
+               (:members 
+                  ( ("detail" type
+                       (:members 
+                          ( ("PB_DS_CLASS_T_DEC" variable (:constant-flag t) (reparse-symbol namespacesubparts) [2314 2331])
+                            ("PB_DS_CLASS_C_DEC" variable (:constant-flag t) (reparse-symbol namespacesubparts) [2452 2469])
+                            ("PB_DS_LU_TRAITS_BASE" variable (:constant-flag t) (reparse-symbol namespacesubparts) [2542 2562])
+                            ("PB_DS_LU_NAME" type
+                               (:template 
+                                  ( ("Key" type (:type "class") nil nil)
+                                    ("Mapped" type (:type "class") nil nil)
+                                    ("Eq_Fn" type (:type "class") nil nil)
+                                    ("_Alloc" type (:type "class") nil nil)
+                                    ("Update_Policy" type (:type "class") nil nil))                                  
+                                :type "class"
+                                :members 
+                                  ( ("private" label nil (reparse-symbol classsubparts) [3142 3150])
+                                    ("traits_base" type
+                                       (:typedef ("PB_DS_LU_TRAITS_BASE" type (:type "class") nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [3157 3207])
+                                    ("entry_allocator" variable (:type ("other" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3491 3513])
+                                    ("entry_pointer" type
+                                       (:typedef ("entry_allocator::pointer" type (:type "class") nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [3520 3576])
+                                    ("const_entry_pointer" type
+                                       (:typedef ("entry_allocator::const_pointer" type (:type "class") nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [3583 3651])
+                                    ("entry_reference" type
+                                       (:typedef ("entry_allocator::reference" type (:type "class") nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [3658 3718])
+                                    ("const_entry_reference" type
+                                       (:typedef ("entry_allocator::const_reference" type (:type "class") nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [3725 3797])
+                                    ("entry_pointer_allocator" variable (:type ("other" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3862 3892])
+                                    ("entry_pointer_array" type
+                                       (:typedef ("entry_pointer_allocator::pointer" type (:type "class") nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [3899 3969])
+                                    ("value_type_" type
+                                       (:typedef ("traits_base::value_type" type (:type "class") nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [3977 4030])
+                                    ("pointer_" type
+                                       (:typedef ("traits_base::pointer" type (:type "class") nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [4037 4084])
+                                    ("const_pointer_" type
+                                       (:typedef ("traits_base::const_pointer" type (:type "class") nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [4091 4150])
+                                    ("reference_" type
+                                       (:typedef ("traits_base::reference" type (:type "class") nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [4157 4208])
+                                    ("const_reference_" type
+                                       (:typedef ("traits_base::const_reference" type (:type "class") nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [4215 4278])
+                                    ("PB_DS_GEN_POS" variable (:constant-flag t) (reparse-symbol classsubparts) [4288 4301])
+                                    ("cond_dealtor_t" type
+                                       (:typedef ("cond_dealtor" type
+                                             (:template-specifier 
+                                                ( ("entry" type nil nil nil)
+                                                  ("_Alloc" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [4694 4745])
+                                    ("public" label nil (reparse-symbol classsubparts) [4751 4758])
+                                    ("allocator_type" type
+                                       (:typedef ("_Alloc" type (:type "class") nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [4765 4795])
+                                    ("size_type" type
+                                       (:typedef ("_Alloc::size_type" type (:type "class") nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [4802 4847])
+                                    ("difference_type" type
+                                       (:typedef ("_Alloc::difference_type" type (:type "class") nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [4854 4911])
+                                    ("eq_fn" type
+                                       (:typedef ("Eq_Fn" type (:type "class") nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [4918 4938])
+                                    ("update_policy" type
+                                       (:typedef ("Update_Policy" type (:type "class") nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [4945 4981])
+                                    ("update_metadata" type
+                                       (:typedef ("Update_Policy::metadata_type" type (:type "class") nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [4988 5050])
+                                    ("key_type" type
+                                       (:typedef ("traits_base::key_type" type (:type "class") nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [5057 5105])
+                                    ("key_pointer" type
+                                       (:typedef ("traits_base::key_pointer" type (:type "class") nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [5112 5166])
+                                    ("key_const_pointer" type
+                                       (:typedef ("traits_base::key_const_pointer" type (:type "class") nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [5173 5239])
+                                    ("key_reference" type
+                                       (:typedef ("traits_base::key_reference" type (:type "class") nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [5246 5304])
+                                    ("key_const_reference" type
+                                       (:typedef ("traits_base::key_const_reference" type (:type "class") nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [5311 5381])
+                                    ("mapped_type" type
+                                       (:typedef ("traits_base::mapped_type" type (:type "class") nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [5388 5442])
+                                    ("mapped_pointer" type
+                                       (:typedef ("traits_base::mapped_pointer" type (:type "class") nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [5449 5509])
+                                    ("mapped_const_pointer" type
+                                       (:typedef ("traits_base::mapped_const_pointer" type (:type "class") nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [5516 5588])
+                                    ("mapped_reference" type
+                                       (:typedef ("traits_base::mapped_reference" type (:type "class") nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [5595 5659])
+                                    ("mapped_const_reference" type
+                                       (:typedef ("traits_base::mapped_const_reference" type (:type "class") nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [5666 5742])
+                                    ("value_type" type
+                                       (:typedef ("traits_base::value_type" type (:type "class") nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [5749 5801])
+                                    ("pointer" type
+                                       (:typedef ("traits_base::pointer" type (:type "class") nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [5808 5854])
+                                    ("const_pointer" type
+                                       (:typedef ("traits_base::const_pointer" type (:type "class") nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [5861 5919])
+                                    ("reference" type
+                                       (:typedef ("traits_base::reference" type (:type "class") nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [5926 5976])
+                                    ("const_reference" type
+                                       (:typedef ("traits_base::const_reference" type (:type "class") nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [5983 6045])
+                                    ("point_const_iterator" type
+                                       (:typedef ("point_const_iterator_" type (:type "class") nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [6239 6292])
+                                    ("const_iterator" type
+                                       (:typedef ("const_iterator_" type (:type "class") nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [6463 6505])
+                                    ("public" label nil (reparse-symbol classsubparts) [6511 6518])
+                                    ("PB_DS_LU_NAME" function
+                                       (:prototype-flag t
+                                        :constructor-flag t
+                                        :type ("PB_DS_LU_NAME" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [6525 6541])
+                                    ("PB_DS_LU_NAME" function
+                                       (:prototype-flag t
+                                        :constructor-flag t
+                                        :arguments 
+                                          ( ("" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("PB_DS_CLASS_C_DEC" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [6563 6588]))                                          
+                                        :type ("PB_DS_LU_NAME" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [6549 6589])
+                                    ("PB_DS_LU_NAME" function
+                                       (:prototype-flag t
+                                        :destructor-flag t
+                                        :typemodifiers ("virtual")
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [6597 6628])
+                                    ("PB_DS_LU_NAME" function
+                                       (:template 
+                                          ( ("It" type (:type "class") nil nil))                                          
+                                        :type ("PB_DS_LU_NAME" type (:type "class") nil nil)
+                                        :arguments 
+                                          ( ("" variable (:type ("It" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6678 6681])
+                                            ("" variable (:type ("It" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6682 6685]))                                          
+                                        :constructor-flag t
+                                        :prototype-flag t)
+                                        (reparse-symbol classsubparts) [6636 6686])
+                                    ("swap" function
+                                       (:prototype-flag t
+                                        :arguments 
+                                          ( ("" variable
+                                               (:reference 1
+                                                :type ("PB_DS_CLASS_C_DEC" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [6710 6729]))                                          
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [6694 6730])
+                                    ("size" function
+                                       (:prototype-flag t
+                                        :methodconst-flag t
+                                        :typemodifiers ("inline")
+                                        :type ("size_type" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [6738 6774])
+                                    ("max_size" function
+                                       (:prototype-flag t
+                                        :methodconst-flag t
+                                        :typemodifiers ("inline")
+                                        :type ("size_type" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [6782 6822])
+                                    ("empty" function
+                                       (:prototype-flag t
+                                        :methodconst-flag t
+                                        :typemodifiers ("inline")
+                                        :type "bool")
+                                        (reparse-symbol classsubparts) [6830 6862])
+                                    ("[]" function
+                                       (:operator-flag t
+                                        :typemodifiers ("inline")
+                                        :arguments 
+                                          ( ("r_key" variable (:type ("key_const_reference" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6911 6937]))                                          
+                                        :type ("mapped_reference" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [6870 7173])
+                                    ("insert" function
+                                       (:prototype-flag t
+                                        :typemodifiers ("inline")
+                                        :arguments 
+                                          ( ("" variable (:type ("const_reference" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7233 7249]))                                          
+                                        :type ("std::pair" type
+                                             (:template-specifier 
+                                                ( ("point_iterator" type nil nil nil)
+                                                  ("bool" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol classsubparts) [7181 7250])
+                                    ("find" function
+                                       (:typemodifiers ("inline")
+                                        :arguments 
+                                          ( ("r_key" variable (:type ("key_const_reference" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7291 7317]))                                          
+                                        :type ("point_iterator" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [7258 7480])
+                                    ("find" function
+                                       (:methodconst-flag t
+                                        :typemodifiers ("inline")
+                                        :arguments 
+                                          ( ("r_key" variable (:type ("key_const_reference" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7527 7553]))                                          
+                                        :type ("point_const_iterator" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [7488 7728])
+                                    ("erase" function
+                                       (:prototype-flag t
+                                        :typemodifiers ("inline")
+                                        :arguments 
+                                          ( ("" variable (:type ("key_const_reference" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7760 7780]))                                          
+                                        :type "bool")
+                                        (reparse-symbol classsubparts) [7736 7781])
+                                    ("erase_if" function
+                                       (:template 
+                                          ( ("Pred" type (:type "class") nil nil))                                          
+                                        :type ("size_type" type (:type "class") nil nil)
+                                        :arguments 
+                                          ( ("" variable (:type ("Pred" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7851 7856]))                                          
+                                        :typemodifiers ("inline")
+                                        :prototype-flag t)
+                                        (reparse-symbol classsubparts) [7789 7857])
+                                    ("clear" function
+                                       (:prototype-flag t
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [7865 7884])
+                                    ("begin" function
+                                       (:prototype-flag t
+                                        :typemodifiers ("inline")
+                                        :type ("iterator" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [7892 7922])
+                                    ("begin" function
+                                       (:prototype-flag t
+                                        :methodconst-flag t
+                                        :typemodifiers ("inline")
+                                        :type ("const_iterator" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [7930 7972])
+                                    ("end" function
+                                       (:prototype-flag t
+                                        :typemodifiers ("inline")
+                                        :type ("iterator" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [7980 8008])
+                                    ("end" function
+                                       (:prototype-flag t
+                                        :methodconst-flag t
+                                        :typemodifiers ("inline")
+                                        :type ("const_iterator" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [8016 8056])
+                                    ("protected" label nil (reparse-symbol classsubparts) [8224 8234])
+                                    ("copy_from_range" function
+                                       (:template 
+                                          ( ("It" type (:type "class") nil nil))                                          
+                                        :type "void"
+                                        :arguments 
+                                          ( ("" variable (:type ("It" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8297 8300])
+                                            ("" variable (:type ("It" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8301 8304]))                                          
+                                        :prototype-flag t)
+                                        (reparse-symbol classsubparts) [8242 8305])
+                                    ("private" label nil (reparse-symbol classsubparts) [8311 8319])
+                                    ("const_iterator_" friend nil (reparse-symbol classsubparts) [8397 8425])
+                                    ("allocate_new_entry" function
+                                       (:prototype-flag t
+                                        :typemodifiers ("inline")
+                                        :arguments 
+                                          ( ("" variable (:type ("const_reference" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8480 8496])
+                                            ("" variable (:type ("false_type" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8497 8508]))                                          
+                                        :type ("entry_pointer" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [8434 8509])
+                                    ("allocate_new_entry" function
+                                       (:prototype-flag t
+                                        :typemodifiers ("inline")
+                                        :arguments 
+                                          ( ("" variable (:type ("const_reference" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8563 8579])
+                                            ("" variable (:type ("true_type" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8580 8590]))                                          
+                                        :type ("entry_pointer" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [8517 8591])
+                                    ("init_entry_metadata" function
+                                       (:template 
+                                          ( ("Metadata" type (:type "class") nil nil))                                          
+                                        :type "void"
+                                        :arguments 
+                                          ( ("" variable (:type ("entry_pointer" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8678 8692])
+                                            ("" variable (:type ("type_to_type" type
+                                                 (:template-specifier 
+                                                    ( ("Metadata" type nil nil nil))                                                    
+                                                  :type "class")
+                                                  nil nil)) (reparse-symbol arg-sub-list) [8693 8716]))                                          
+                                        :typemodifiers ("inline" "static")
+                                        :prototype-flag t)
+                                        (reparse-symbol classsubparts) [8599 8717])
+                                    ("init_entry_metadata" function
+                                       (:prototype-flag t
+                                        :typemodifiers ("inline" "static")
+                                        :arguments 
+                                          ( ("" variable (:type ("entry_pointer" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8770 8784])
+                                            ("" variable (:type ("type_to_type" type
+                                                 (:template-specifier 
+                                                    ( ("null_type" type nil nil nil))                                                    
+                                                  :type "class")
+                                                  nil nil)) (reparse-symbol arg-sub-list) [8785 8809]))                                          
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [8725 8810])
+                                    ("deallocate_all" function
+                                       (:prototype-flag t
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [8818 8846])
+                                    ("erase_next" function
+                                       (:prototype-flag t
+                                        :arguments 
+                                          ( ("" variable (:type ("entry_pointer" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8876 8890]))                                          
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [8854 8891])
+                                    ("actual_erase_entry" function
+                                       (:prototype-flag t
+                                        :arguments 
+                                          ( ("" variable (:type ("entry_pointer" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8929 8943]))                                          
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [8899 8944])
+                                    ("inc_it_state" function
+                                       (:methodconst-flag t
+                                        :arguments 
+                                          ( ("r_p_value" variable
+                                               (:reference 1
+                                                :type ("const_pointer" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [8976 9001])
+                                            ("r_pos" variable
+                                               (:reference 1
+                                                :type ("entry_pointer" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [9002 9023]))                                          
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [8952 9120])
+                                    ("apply_update" function
+                                       (:template 
+                                          ( ("Metadata" type (:type "class") nil nil))                                          
+                                        :type "bool"
+                                        :arguments 
+                                          ( ("" variable (:type ("entry_pointer" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9200 9214])
+                                            ("" variable (:type ("type_to_type" type
+                                                 (:template-specifier 
+                                                    ( ("Metadata" type nil nil nil))                                                    
+                                                  :type "class")
+                                                  nil nil)) (reparse-symbol arg-sub-list) [9215 9238]))                                          
+                                        :typemodifiers ("inline" "static")
+                                        :prototype-flag t)
+                                        (reparse-symbol classsubparts) [9128 9239])
+                                    ("apply_update" function
+                                       (:prototype-flag t
+                                        :typemodifiers ("inline" "static")
+                                        :arguments 
+                                          ( ("" variable (:type ("entry_pointer" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9285 9299])
+                                            ("" variable (:type ("type_to_type" type
+                                                 (:template-specifier 
+                                                    ( ("null_type" type nil nil nil))                                                    
+                                                  :type "class")
+                                                  nil nil)) (reparse-symbol arg-sub-list) [9300 9324]))                                          
+                                        :type "bool")
+                                        (reparse-symbol classsubparts) [9247 9325])
+                                    ("find_imp" function
+                                       (:prototype-flag t
+                                        :methodconst-flag t
+                                        :typemodifiers ("inline")
+                                        :arguments 
+                                          ( ("" variable (:type ("key_const_reference" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9369 9389]))                                          
+                                        :type ("entry_pointer" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [9333 9396])
+                                    ("s_entry_allocator" variable
+                                       (:typemodifiers ("static")
+                                        :type ("entry_allocator" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [9404 9448])
+                                    ("s_eq_fn" variable
+                                       (:typemodifiers ("static")
+                                        :type ("Eq_Fn" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [9455 9480])
+                                    ("s_update_policy" variable
+                                       (:typemodifiers ("static")
+                                        :type ("Update_Policy" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [9487 9527])
+                                    ("s_metadata_type_indicator" variable
+                                       (:typemodifiers ("static")
+                                        :type ("type_to_type" type
+                                             (:template-specifier 
+                                                ( ("update_metadata" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol classsubparts) [9534 9598])
+                                    ("s_null_type" variable
+                                       (:typemodifiers ("static")
+                                        :type ("null_type" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [9605 9638])
+                                    ("m_p_l" variable
+                                       (:typemodifiers ("mutable")
+                                        :type ("entry_pointer" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [9646 9677]))                                  
+                                :superclasses 
+                                  ( ("types_traits" type
+                                       (:protection "public"
+                                        :type "class")
+                                        nil nil))                                  )
+                                (reparse-symbol namespacesubparts) [2878 9684]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [2144 10347]))                  
+                :type "namespace")
+                nil [2119 10369]))          
+      :file "lu_map_.hpp"
+      :pointmax 10394
+      :fsize 10393
+      :lastmodtime '(23161 10764 0 0)
+      :unmatched-syntax '((spp-system-include "ext/pb_ds/detail/list_update_map_/trace_fn_imps.hpp" 10147 . 10209) (spp-system-include "ext/pb_ds/detail/list_update_map_/insert_fn_imps.hpp" 10083 . 10146) (spp-system-include "ext/pb_ds/detail/list_update_map_/find_fn_imps.hpp" 10021 . 10082) (spp-system-include "ext/pb_ds/detail/list_update_map_/erase_fn_imps.hpp" 9958 . 10020) (spp-system-include "ext/pb_ds/detail/list_update_map_/iterators_fn_imps.hpp" 9891 . 9957) (spp-system-include "ext/pb_ds/detail/list_update_map_/debug_fn_imps.hpp" 9828 . 9890) (spp-system-include "ext/pb_ds/detail/list_update_map_/info_fn_imps.hpp" 9766 . 9827) (spp-system-include "ext/pb_ds/detail/list_update_map_/constructor_destructor_fn_imps.hpp" 9686 . 9765) (punctuation 8425 . 8426) (spp-system-include "ext/pb_ds/detail/unordered_iterator/iterator.hpp" 4521 . 4580) (spp-system-include "ext/pb_ds/detail/unordered_iterator/const_iterator.hpp" 4455 . 4520) (spp-system-include "ext/pb_ds/detail/unordered_iterator/point_iterator.hpp" 4389 . 4454) (spp-system-include "ext/pb_ds/detail/unordered_iterator/point_const_iterator.hpp" 4317 . 4388) (punctuation 3861 . 3862) (punctuation 3860 . 3861) (punctuation 3859 . 3860) (symbol 3846 . 3859) (punctuation 3845 . 3846) (symbol 3839 . 3845) (TEMPLATE 3830 . 3838) (punctuation 3829 . 3830) (punctuation 3828 . 3829) (symbol 3822 . 3828) (TYPENAME 3813 . 3821) (TYPEDEF 3805 . 3812) (punctuation 3490 . 3491) (punctuation 3489 . 3490) (punctuation 3488 . 3489) (symbol 3483 . 3488) (punctuation 3482 . 3483) (symbol 3476 . 3482) (TEMPLATE 3467 . 3475) (punctuation 3466 . 3467) (punctuation 3465 . 3466) (symbol 3459 . 3465) (TYPENAME 3450 . 3458) (TYPEDEF 3442 . 3449) (punctuation 3433 . 3434) (semantic-list 3314 . 3433) (punctuation 3306 . 3307) (symbol 3293 . 3306) (punctuation 3292 . 3293) (punctuation 3291 . 3292) (symbol 3278 . 3291) (TYPENAME 3269 . 3277) (punctuation 3268 . 3269) (symbol 3242 . 3268) (PUBLIC 3235 . 3241) (punctuation 3233 . 3234) (symbol 3222 . 3227) (STRUCT 3215 . 3221)))
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("PB_DS_LU_MAP_ENTRY_METADATA_BASE_HPP" variable (:constant-flag t) nil [1778 1814])
+            ("__gnu_pbds" type
+               (:members 
+                  ( ("detail" type
+                       (:members 
+                          ( ("lu_map_entry_metadata_base" type
+                               (:template 
+                                  ( ("Metadata" type (:type "class") nil nil))                                  
+                                :type "struct"
+                                :members 
+                                  ( ("m_update_metadata" variable (:type ("Metadata" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1944 1971]))                                  )
+                                (reparse-symbol namespacesubparts) [1866 1978])
+                            ("lu_map_entry_metadata_base" type
+                               (:type "struct"
+                                :template-specifier 
+                                  ( ("null_type" type nil nil nil))                                  )
+                                (reparse-symbol namespacesubparts) [1988 2056]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [1841 2062]))                  
+                :type "namespace")
+                nil [1816 2084]))          
+      :file "entry_metadata_base.hpp"
+      :pointmax 2118
+      :fsize 2117
+      :lastmodtime '(23161 10764 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("PB_DS_LU_MAP_ENTRY_METADATA_BASE_HPP")
+          )
+))
+  :file "!usr!include!c++!5!ext!pb_ds!detail!list_update_map_!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

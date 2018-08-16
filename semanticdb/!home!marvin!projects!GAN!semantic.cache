@@ -1,0 +1,108 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode python-mode
+      :tags 
+        '( ("tensorflow" include nil nil [17 40])
+            ("numpy" include nil nil [41 59])
+            ("os" include nil nil [60 69])
+            ("conv2d" function (:arguments 
+              ( ("x" variable nil (reparse-symbol function_parameters) [83 84])
+                ("W" variable nil (reparse-symbol function_parameters) [86 87]))              ) nil [72 158])
+            ("weight_variable" function (:arguments 
+              ( ("shape" variable nil (reparse-symbol function_parameters) [180 185])
+                ("name" variable nil (reparse-symbol function_parameters) [187 191]))              ) nil [160 269])
+            ("bias_variable" function (:arguments 
+              ( ("shape" variable nil (reparse-symbol function_parameters) [289 294])
+                ("name" variable nil (reparse-symbol function_parameters) [296 300]))              ) nil [271 368])
+            ("save" function (:arguments 
+              ( ("ckpt_dir" variable nil (reparse-symbol function_parameters) [379 387])
+                ("saver" variable nil (reparse-symbol function_parameters) [389 394])
+                ("sess" variable nil (reparse-symbol function_parameters) [396 400]))              ) nil [370 637])
+            ("load" function (:arguments 
+              ( ("ckpt_dir" variable nil (reparse-symbol function_parameters) [648 656])
+                ("saver" variable nil (reparse-symbol function_parameters) [658 663])
+                ("sess" variable nil (reparse-symbol function_parameters) [665 669]))              ) nil [639 1059])
+            ("x_image" variable nil nil [1061 1124])
+            ("x_label" variable nil nil [1125 1188])
+            ("w1" variable nil nil [1190 1231])
+            ("w2" variable nil nil [1232 1274])
+            ("w3" variable nil nil [1275 1316])
+            ("b1" variable nil nil [1318 1348])
+            ("b2" variable nil nil [1349 1379])
+            ("b3" variable nil nil [1380 1409])
+            ("conv1" code nil nil [1411 1453])
+            ("conv2" code nil nil [1454 1494])
+            ("conv3" code nil nil [1495 1523])
+            ("loss" variable nil nil [1525 1572])
+            ("train" variable nil nil [1574 1625])
+            ("with" code nil nil [1627 2768]))          
+      :file "gan.py"
+      :pointmax 2768
+      :fsize 2767
+      :lastmodtime '(23242 57731 969703 693000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :file "imagereader.py"
+      :fsize 2737
+      :lastmodtime '(23189 65241 472539 313000))
+    (semanticdb-table "semanticdb-table"
+      :major-mode python-mode
+      :tags 
+        '( ("numpy" include nil nil [16 34])
+            ("tensorflow" include nil nil [35 58])
+            ("time" include nil nil [59 70])
+            ("scipy.misc" include nil nil [71 110])
+            ("os" include nil nil [111 130])
+            ("os.path" include nil nil [131 155])
+            ("IMAGE_DIR" variable nil nil [157 184])
+            ("LABEL_DIR" variable nil nil [185 212])
+            ("IMG_HEIGHT" variable nil nil [214 230])
+            ("IMG_WIDTH" variable nil nil [231 246])
+            ("IMG_CHANNEL" variable nil nil [247 262])
+            ("NUM_TRAIN" variable nil nil [263 279])
+            ("NUM_VALIDARION" variable nil nil [280 300])
+            ("read_images" function (:arguments 
+              ( ("zip_path" variable nil (reparse-symbol function_parameters) [319 327])
+                ("raw_path" variable nil (reparse-symbol function_parameters) [329 337])
+                ("sz" variable nil (reparse-symbol function_parameters) [339 341]))              ) nil [303 980])
+            ("_int64_feature" function (:arguments 
+              ( ("value" variable nil (reparse-symbol function_parameters) [1001 1006]))              ) nil [982 1083])
+            ("_bytes_feature" function (:arguments 
+              ( ("value" variable nil (reparse-symbol function_parameters) [1104 1109]))              ) nil [1085 1186])
+            ("convert" function (:arguments 
+              ( ("images" variable nil (reparse-symbol function_parameters) [1200 1206])
+                ("labels" variable nil (reparse-symbol function_parameters) [1208 1214])
+                ("name" variable nil (reparse-symbol function_parameters) [1216 1220]))              ) nil [1188 1660])
+            ("main" function (:arguments 
+              ( ("argv" variable nil (reparse-symbol function_parameters) [1671 1675]))              ) nil [1662 2504])
+            ("if" code nil nil [2506 2550]))          
+      :file "imgrecord.py"
+      :pointmax 2550
+      :fsize 2549
+      :lastmodtime '(23190 27669 21229 406000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode python-mode
+      :tags 
+        '( ("tensorflow" include nil nil [16 39])
+            ("os" include nil nil [40 49])
+            ("gan" include nil nil [50 71])
+            ("imagereader" include nil nil [72 106])
+            ("IMGAE_PATH" variable nil nil [108 152])
+            ("TRAIN_PREFIX" variable nil nil [153 176])
+            ("LABLE_PREFIX" variable nil nil [177 203])
+            ("CHECKPOINT_DIR" variable nil nil [205 234])
+            ("main" function (:arguments 
+              ( ("_" variable nil (reparse-symbol function_parameters) [246 247]))              ) nil [237 374]))          
+      :file "main.py"
+      :pointmax 379
+      :fsize 378
+      :lastmodtime '(23186 17617 685715 841000)
+      :unmatched-syntax nil))
+  :file "!home!marvin!projects!GAN!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

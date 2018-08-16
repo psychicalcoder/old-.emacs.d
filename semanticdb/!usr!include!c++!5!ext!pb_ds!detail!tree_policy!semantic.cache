@@ -1,0 +1,124 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("PB_DS_TREE_NODE_METADATA_DISPATCH_HPP" variable (:constant-flag t) nil [1771 1808])
+            ("ext/pb_ds/detail/branch_policy/null_node_metadata.hpp" include (:system-flag t) nil [1810 1874])
+            ("ext/pb_ds/detail/types_traits.hpp" include (:system-flag t) nil [1875 1919])
+            ("__gnu_pbds" type
+               (:members 
+                  ( ("detail" type
+                       (:members 
+                          ( ("tree_metadata_helper" type
+                               (:template 
+                                  ( ("Node_Update" type (:type "class") nil nil)
+                                    ("bool" type (:typevar "_BTp") nil nil))                                  
+                                :type "struct"
+                                :prototype t)
+                                (reparse-symbol namespacesubparts) [2063 2139])
+                            ("tree_metadata_helper" type
+                               (:template 
+                                  ( ("Node_Update" type (:type "class") nil nil))                                  
+                                :type "struct"
+                                :members 
+                                  ( ("type" type
+                                       (:typedef ("Node_Update::metadata_type" type (:type "class") nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [2270 2320]))                                  
+                                :template-specifier 
+                                  ( ("Node_Update" type nil nil nil)
+                                    ("false" type nil nil nil))                                  )
+                                (reparse-symbol namespacesubparts) [2176 2329])
+                            ("tree_metadata_helper" type
+                               (:template 
+                                  ( ("Node_Update" type (:type "class") nil nil))                                  
+                                :type "struct"
+                                :members 
+                                  ( ("type" type
+                                       (:typedef ("null_type" type (:type "class") nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [2458 2485]))                                  
+                                :template-specifier 
+                                  ( ("Node_Update" type nil nil nil)
+                                    ("true" type nil nil nil))                                  )
+                                (reparse-symbol namespacesubparts) [2365 2494])
+                            ("tree_node_metadata_dispatch" type
+                               (:members 
+                                  ( ("private" label nil (reparse-symbol classsubparts) [2821 2829])
+                                    ("__it_type" type
+                                       (:typedef ("dumnode_const_iterator" type
+                                             (:template-specifier 
+                                                ( ("Key" type nil nil nil)
+                                                  ("Data" type nil nil nil)
+                                                  ("_Alloc" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [2836 2897])
+                                    ("__node_u" type
+                                       (:typedef ("Node_Update" type
+                                             (:template-specifier 
+                                                ( ("__it_type" type nil nil nil)
+                                                  ("__it_type" type nil nil nil)
+                                                  ("Cmp_Fn" type nil nil nil)
+                                                  ("_Alloc" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [2904 2971])
+                                    ("__nnode_u" type
+                                       (:typedef ("null_node_update" type
+                                             (:template-specifier 
+                                                ( ("__it_type" type nil nil nil)
+                                                  ("__it_type" type nil nil nil)
+                                                  ("Cmp_Fn" type nil nil nil)
+                                                  ("_Alloc" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [2978 3051])
+                                    ("" type
+                                       (:members 
+                                          ( ("null_update" variable
+                                               (:constant-flag t
+                                                :default-value (3084 3091)
+                                                :type "int")
+                                                (reparse-symbol enumsubparts) [3070 3091])
+                                            ("__node_u" variable
+                                               (:constant-flag t
+                                                :type "int")
+                                                (reparse-symbol enumsubparts) [3092 3101])
+                                            ("__nnode_u" variable
+                                               (:constant-flag t
+                                                :type "int")
+                                                (reparse-symbol enumsubparts) [3102 3112])
+                                            ("value" variable
+                                               (:constant-flag t
+                                                :type "int")
+                                                (reparse-symbol enumsubparts) [3114 3122]))                                          
+                                        :type "enum")
+                                        (reparse-symbol classsubparts) [3059 3123])
+                                    ("public" label nil (reparse-symbol classsubparts) [3129 3136])
+                                    ("type" variable (:type ("type" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3205 3215]))                                  
+                                :type "struct")
+                                (reparse-symbol namespacesubparts) [2776 3222]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [1946 3235]))                  
+                :type "namespace")
+                nil [1921 3257]))          
+      :file "node_metadata_selector.hpp"
+      :pointmax 3339
+      :fsize 3338
+      :lastmodtime '(23161 10765 0 0)
+      :unmatched-syntax '((punctuation 3204 . 3205) (punctuation 3203 . 3204) (punctuation 3202 . 3203) (symbol 3191 . 3202) (punctuation 3189 . 3190) (symbol 3181 . 3189) (punctuation 3180 . 3181) (symbol 3160 . 3180) (TYPENAME 3151 . 3159) (TYPEDEF 3143 . 3150) (punctuation 3113 . 3114) (punctuation 3112 . 3113) (punctuation 3111 . 3112) (punctuation 3091 . 3092) (punctuation 3113 . 3114) (punctuation 3112 . 3113) (punctuation 3111 . 3112) (punctuation 3091 . 3092) (punctuation 2770 . 2771) (symbol 2764 . 2770) (TYPENAME 2755 . 2763) (punctuation 2747 . 2748) (symbol 2736 . 2747) (CLASS 2730 . 2735) (punctuation 2722 . 2723) (symbol 2715 . 2722) (TYPENAME 2706 . 2714) (punctuation 2696 . 2697) (symbol 2689 . 2696) (TYPENAME 2680 . 2688) (punctuation 2670 . 2671) (symbol 2656 . 2670) (TYPENAME 2647 . 2655) (punctuation 2637 . 2638) (symbol 2628 . 2637) (TYPENAME 2619 . 2627) (punctuation 2618 . 2619) (TEMPLATE 2610 . 2618) (punctuation 2602 . 2603) (symbol 2596 . 2602) (TYPENAME 2587 . 2595) (punctuation 2579 . 2580) (symbol 2575 . 2579) (TYPENAME 2566 . 2574) (punctuation 2558 . 2559) (symbol 2555 . 2558) (TYPENAME 2546 . 2554) (punctuation 2545 . 2546) (TEMPLATE 2537 . 2545))
+      :lexical-table 
+        '(("PB_DS_TREE_NODE_METADATA_DISPATCH_HPP")
+          )
+))
+  :file "!usr!include!c++!5!ext!pb_ds!detail!tree_policy!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

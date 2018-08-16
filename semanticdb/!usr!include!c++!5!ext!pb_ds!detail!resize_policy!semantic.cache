@@ -1,0 +1,106 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("PB_DS_HASH_LOAD_CHECK_RESIZE_TRIGGER_SIZE_BASE_HPP" variable (:constant-flag t) nil [1802 1852])
+            ("__gnu_pbds" type
+               (:members 
+                  ( ("detail" type
+                       (:members 
+                          ( ("hash_load_check_resize_trigger_size_base" type
+                               (:template 
+                                  ( ("Size_Type" type (:type "class") nil nil)
+                                    ("bool" type (:typevar "Hold_Size") nil nil))                                  
+                                :type "class"
+                                :prototype t)
+                                (reparse-symbol namespacesubparts) [1930 2026])
+                            ("hash_load_check_resize_trigger_size_base" type
+                               (:template 
+                                  ( ("Size_Type" type (:type "class") nil nil))                                  
+                                :type "class"
+                                :members 
+                                  ( ("protected" label nil (reparse-symbol classsubparts) [2164 2174])
+                                    ("size_type" type
+                                       (:typedef ("Size_Type" type (:type "class") nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [2181 2209])
+                                    ("hash_load_check_resize_trigger_size_base" function
+                                       (:constructor-flag t
+                                        :type ("hash_load_check_resize_trigger_size_base" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [2217 2280])
+                                    ("swap" function
+                                       (:typemodifiers ("inline")
+                                        :arguments 
+                                          ( ("other" variable
+                                               (:reference 1
+                                                :type ("hash_load_check_resize_trigger_size_base" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [2311 2359]))                                          
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [2288 2402])
+                                    ("set_size" function
+                                       (:typemodifiers ("inline")
+                                        :arguments 
+                                          ( ("size" variable (:type ("size_type" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2437 2452]))                                          
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [2410 2477])
+                                    ("get_size" function
+                                       (:methodconst-flag t
+                                        :typemodifiers ("inline")
+                                        :type ("size_type" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [2485 2549])
+                                    ("private" label nil (reparse-symbol classsubparts) [2555 2563])
+                                    ("m_size" variable (:type ("size_type" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2570 2587]))                                  
+                                :template-specifier 
+                                  ( ("Size_Type" type nil nil nil)
+                                    ("true" type nil nil nil))                                  )
+                                (reparse-symbol namespacesubparts) [2057 2594])
+                            ("hash_load_check_resize_trigger_size_base" type
+                               (:template 
+                                  ( ("Size_Type" type (:type "class") nil nil))                                  
+                                :type "class"
+                                :members 
+                                  ( ("protected" label nil (reparse-symbol classsubparts) [2708 2718])
+                                    ("size_type" type
+                                       (:typedef ("Size_Type" type (:type "class") nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [2725 2753])
+                                    ("protected" label nil (reparse-symbol classsubparts) [2759 2769])
+                                    ("swap" function
+                                       (:typemodifiers ("inline")
+                                        :arguments 
+                                          ( ("other" variable
+                                               (:reference 1
+                                                :type ("hash_load_check_resize_trigger_size_base" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [2799 2847]))                                          
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [2776 2851])
+                                    ("set_size" function
+                                       (:typemodifiers ("inline")
+                                        :arguments 
+                                          ( ("size" variable (:type ("size_type" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2886 2901]))                                          
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [2859 2905]))                                  
+                                :template-specifier 
+                                  ( ("Size_Type" type nil nil nil)
+                                    ("false" type nil nil nil))                                  )
+                                (reparse-symbol namespacesubparts) [2600 2912]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [1879 2916]))                  
+                :type "namespace")
+                nil [1854 2938]))          
+      :file "hash_load_check_resize_trigger_size_base.hpp"
+      :pointmax 2971
+      :fsize 2970
+      :lastmodtime '(23161 10764 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("PB_DS_HASH_LOAD_CHECK_RESIZE_TRIGGER_SIZE_BASE_HPP")
+          )
+))
+  :file "!usr!include!c++!5!ext!pb_ds!detail!resize_policy!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

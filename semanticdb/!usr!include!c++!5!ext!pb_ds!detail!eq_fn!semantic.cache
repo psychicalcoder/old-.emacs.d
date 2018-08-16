@@ -1,0 +1,216 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("PB_DS_EQ_BY_LESS_HPP" variable (:constant-flag t) nil [1720 1740])
+            ("utility" include (:system-flag t) nil [1742 1760])
+            ("functional" include (:system-flag t) nil [1761 1782])
+            ("vector" include (:system-flag t) nil [1783 1800])
+            ("assert.h" include (:system-flag t) nil [1801 1820])
+            ("ext/pb_ds/detail/types_traits.hpp" include (:system-flag t) nil [1821 1865])
+            ("__gnu_pbds" type
+               (:members 
+                  ( ("detail" type
+                       (:members 
+                          ( ("eq_by_less" type
+                               (:template 
+                                  ( ("Key" type (:type "class") nil nil)
+                                    ("Cmp_Fn" type (:type "class") nil nil))                                  
+                                :type "struct"
+                                :members 
+                                  ( ("()" function
+                                       (:methodconst-flag t
+                                        :operator-flag t
+                                        :arguments 
+                                          ( ("r_lhs" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("Key" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [2057 2074])
+                                            ("r_rhs" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("Key" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [2075 2092]))                                          
+                                        :type "bool")
+                                        (reparse-symbol classsubparts) [2035 2233]))                                  
+                                :superclasses 
+                                  ( ("Cmp_Fn" type
+                                       (:protection "private"
+                                        :type "class")
+                                        nil nil))                                  )
+                                (reparse-symbol namespacesubparts) [1947 2240]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [1892 2244]))                  
+                :type "namespace")
+                nil [1867 2266]))          
+      :file "eq_by_less.hpp"
+      :pointmax 2331
+      :fsize 2330
+      :lastmodtime '(23161 10764 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("PB_DS_EQ_BY_LESS_HPP")
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("PB_DS_HASH_EQ_FN_HPP" variable (:constant-flag t) nil [1771 1791])
+            ("utility" include (:system-flag t) nil [1793 1811])
+            ("debug/debug.h" include (:system-flag t) nil [1812 1836])
+            ("__gnu_pbds" type
+               (:members 
+                  ( ("detail" type
+                       (:members 
+                          ( ("hash_eq_fn" type
+                               (:template 
+                                  ( ("Key" type (:type "class") nil nil)
+                                    ("Eq_Fn" type (:type "class") nil nil)
+                                    ("_Alloc" type (:type "class") nil nil)
+                                    ("bool" type (:typevar "Store_Hash") nil nil))                                  
+                                :type "struct"
+                                :prototype t)
+                                (reparse-symbol namespacesubparts) [1914 2011])
+                            ("hash_eq_fn" type
+                               (:template 
+                                  ( ("Key" type (:type "class") nil nil)
+                                    ("Eq_Fn" type (:type "class") nil nil)
+                                    ("_Alloc" type (:type "class") nil nil))                                  
+                                :type "struct"
+                                :members 
+                                  ( ("eq_fn_base" type
+                                       (:typedef ("Eq_Fn" type (:type "class") nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [2228 2261])
+                                    ("key_allocator" variable (:type ("other" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2315 2335])
+                                    ("key_const_reference" type
+                                       (:typedef ("key_allocator::const_reference" type (:type "class") nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [2342 2414])
+                                    ("hash_eq_fn" function
+                                       (:constructor-flag t
+                                        :type ("hash_eq_fn" type (:type "struct") nil nil))
+                                        (reparse-symbol classsubparts) [2422 2438])
+                                    ("hash_eq_fn" function
+                                       (:constructor-flag t
+                                        :arguments 
+                                          ( ("r_eq_fn" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("Eq_Fn" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [2457 2478]))                                          
+                                        :type ("hash_eq_fn" type (:type "struct") nil nil))
+                                        (reparse-symbol classsubparts) [2446 2499])
+                                    ("()" function
+                                       (:methodconst-flag t
+                                        :operator-flag t
+                                        :arguments 
+                                          ( ("r_lhs_key" variable (:type ("key_const_reference" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2529 2559])
+                                            ("r_rhs_key" variable (:type ("key_const_reference" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2564 2594]))                                          
+                                        :type "bool")
+                                        (reparse-symbol classsubparts) [2507 2663])
+                                    ("swap" function
+                                       (:arguments 
+                                          ( ("other" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("hash_eq_fn" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [2687 2711]))                                          
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [2671 2764]))                                  
+                                :superclasses 
+                                  ( ("Eq_Fn" type
+                                       (:protection "public"
+                                        :type "class")
+                                        nil nil))                                  
+                                :template-specifier 
+                                  ( ("Key" type nil nil nil)
+                                    ("Eq_Fn" type nil nil nil)
+                                    ("_Alloc" type nil nil nil)
+                                    ("false" type nil nil nil))                                  )
+                                (reparse-symbol namespacesubparts) [2096 2771])
+                            ("hash_eq_fn" type
+                               (:template 
+                                  ( ("Key" type (:type "class") nil nil)
+                                    ("Eq_Fn" type (:type "class") nil nil)
+                                    ("_Alloc" type (:type "class") nil nil))                                  
+                                :type "struct"
+                                :members 
+                                  ( ("size_type" type
+                                       (:typedef ("_Alloc::size_type" type (:type "class") nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [2978 3028])
+                                    ("eq_fn_base" type
+                                       (:typedef ("Eq_Fn" type (:type "class") nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [3035 3068])
+                                    ("key_allocator" variable (:type ("other" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3122 3142])
+                                    ("key_const_reference" type
+                                       (:typedef ("key_allocator::const_reference" type (:type "class") nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [3149 3221])
+                                    ("hash_eq_fn" function
+                                       (:constructor-flag t
+                                        :type ("hash_eq_fn" type (:type "struct") nil nil))
+                                        (reparse-symbol classsubparts) [3229 3245])
+                                    ("hash_eq_fn" function
+                                       (:constructor-flag t
+                                        :arguments 
+                                          ( ("r_eq_fn" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("Eq_Fn" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [3264 3285]))                                          
+                                        :type ("hash_eq_fn" type (:type "struct") nil nil))
+                                        (reparse-symbol classsubparts) [3253 3306])
+                                    ("()" function
+                                       (:methodconst-flag t
+                                        :operator-flag t
+                                        :arguments 
+                                          ( ("r_lhs_key" variable (:type ("key_const_reference" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3336 3366])
+                                            ("lhs_hash" variable (:type ("size_type" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3367 3386])
+                                            ("r_rhs_key" variable (:type ("key_const_reference" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3391 3421])
+                                            ("rhs_hash" variable (:type ("size_type" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3422 3441]))                                          
+                                        :type "bool")
+                                        (reparse-symbol classsubparts) [3314 3652])
+                                    ("swap" function
+                                       (:arguments 
+                                          ( ("other" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("hash_eq_fn" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [3676 3700]))                                          
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [3660 3755]))                                  
+                                :superclasses 
+                                  ( ("Eq_Fn" type
+                                       (:protection "public"
+                                        :type "class")
+                                        nil nil))                                  
+                                :template-specifier 
+                                  ( ("Key" type nil nil nil)
+                                    ("Eq_Fn" type nil nil nil)
+                                    ("_Alloc" type nil nil nil)
+                                    ("true" type nil nil nil))                                  )
+                                (reparse-symbol namespacesubparts) [2853 3762]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [1863 3766]))                  
+                :type "namespace")
+                nil [1838 3788]))          
+      :file "hash_eq_fn.hpp"
+      :pointmax 3822
+      :fsize 3821
+      :lastmodtime '(23161 10764 0 0)
+      :unmatched-syntax '((punctuation 3121 . 3122) (punctuation 3120 . 3121) (punctuation 3119 . 3120) (symbol 3116 . 3119) (punctuation 3115 . 3116) (symbol 3109 . 3115) (TEMPLATE 3100 . 3108) (punctuation 3099 . 3100) (punctuation 3098 . 3099) (symbol 3092 . 3098) (TYPENAME 3083 . 3091) (TYPEDEF 3075 . 3082) (punctuation 2314 . 2315) (punctuation 2313 . 2314) (punctuation 2312 . 2313) (symbol 2309 . 2312) (punctuation 2308 . 2309) (symbol 2302 . 2308) (TEMPLATE 2293 . 2301) (punctuation 2292 . 2293) (punctuation 2291 . 2292) (symbol 2285 . 2291) (TYPENAME 2276 . 2284) (TYPEDEF 2268 . 2275))
+      :lexical-table 
+        '(("PB_DS_HASH_EQ_FN_HPP")
+          )
+))
+  :file "!usr!include!c++!5!ext!pb_ds!detail!eq_fn!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

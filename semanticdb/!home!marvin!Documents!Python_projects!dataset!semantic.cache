@@ -1,0 +1,28 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+
+    (semanticdb-table "semanticdb-table"
+      :major-mode python-mode
+      :tags 
+        '( ("tensorflow" include nil nil [18 41])
+            ("os" include nil nil [42 51])
+            ("glob" include nil nil [52 63])
+            ("matplotlib.pyplot" include nil nil [64 95])
+            ("cwd1" variable nil nil [142 156])
+            ("cwd2" variable nil nil [157 172])
+            ("writer" variable nil nil [174 230])
+            ("_bytes_feature" function (:arguments 
+              ( ("value" variable nil (reparse-symbol function_parameters) [252 257]))              ) nil [233 334])
+            ("for" code nil nil [336 788])
+            ("writer" code nil nil [789 803]))          
+      :file "tfr.py"
+      :pointmax 804
+      :fsize 803
+      :lastmodtime '(23283 62549 739464 24000)
+      :unmatched-syntax nil))
+  :file "!home!marvin!Documents!Python_projects!dataset!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

@@ -1,0 +1,363 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("PB_DS_TRIE_NODE_METADATA_DISPATCH_HPP" variable (:constant-flag t) nil [1771 1808])
+            ("ext/pb_ds/detail/branch_policy/null_node_metadata.hpp" include (:system-flag t) nil [1810 1874])
+            ("ext/pb_ds/detail/types_traits.hpp" include (:system-flag t) nil [1875 1919])
+            ("__gnu_pbds" type
+               (:members 
+                  ( ("detail" type
+                       (:members 
+                          ( ("trie_metadata_helper" type
+                               (:template 
+                                  ( ("Node_Update" type (:type "class") nil nil)
+                                    ("bool" type (:typevar "_BTp") nil nil))                                  
+                                :type "struct"
+                                :prototype t)
+                                (reparse-symbol namespacesubparts) [2063 2139])
+                            ("trie_metadata_helper" type
+                               (:template 
+                                  ( ("Node_Update" type (:type "class") nil nil))                                  
+                                :type "struct"
+                                :members 
+                                  ( ("type" type
+                                       (:typedef ("Node_Update::metadata_type" type (:type "class") nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [2270 2320]))                                  
+                                :template-specifier 
+                                  ( ("Node_Update" type nil nil nil)
+                                    ("false" type nil nil nil))                                  )
+                                (reparse-symbol namespacesubparts) [2176 2329])
+                            ("trie_metadata_helper" type
+                               (:template 
+                                  ( ("Node_Update" type (:type "class") nil nil))                                  
+                                :type "struct"
+                                :members 
+                                  ( ("type" type
+                                       (:typedef ("null_type" type (:type "class") nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [2458 2485]))                                  
+                                :template-specifier 
+                                  ( ("Node_Update" type nil nil nil)
+                                    ("true" type nil nil nil))                                  )
+                                (reparse-symbol namespacesubparts) [2365 2494])
+                            ("trie_node_metadata_dispatch" type
+                               (:members 
+                                  ( ("private" label nil (reparse-symbol classsubparts) [2821 2829])
+                                    ("__it_type" type
+                                       (:typedef ("dumnode_const_iterator" type
+                                             (:template-specifier 
+                                                ( ("Key" type nil nil nil)
+                                                  ("Data" type nil nil nil)
+                                                  ("_Alloc" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [2836 2897])
+                                    ("__node_u" type
+                                       (:typedef ("Node_Update" type
+                                             (:template-specifier 
+                                                ( ("__it_type" type nil nil nil)
+                                                  ("__it_type" type nil nil nil)
+                                                  ("Cmp_Fn" type nil nil nil)
+                                                  ("_Alloc" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [2904 2971])
+                                    ("__nnode_u" type
+                                       (:typedef ("null_node_update" type
+                                             (:template-specifier 
+                                                ( ("__it_type" type nil nil nil)
+                                                  ("__it_type" type nil nil nil)
+                                                  ("Cmp_Fn" type nil nil nil)
+                                                  ("_Alloc" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [2978 3051])
+                                    ("" type
+                                       (:members 
+                                          ( ("null_update" variable
+                                               (:constant-flag t
+                                                :default-value (3084 3091)
+                                                :type "int")
+                                                (reparse-symbol enumsubparts) [3070 3091])
+                                            ("__node_u" variable
+                                               (:constant-flag t
+                                                :type "int")
+                                                (reparse-symbol enumsubparts) [3092 3101])
+                                            ("__nnode_u" variable
+                                               (:constant-flag t
+                                                :type "int")
+                                                (reparse-symbol enumsubparts) [3102 3112])
+                                            ("value" variable
+                                               (:constant-flag t
+                                                :type "int")
+                                                (reparse-symbol enumsubparts) [3114 3122]))                                          
+                                        :type "enum")
+                                        (reparse-symbol classsubparts) [3059 3123])
+                                    ("public" label nil (reparse-symbol classsubparts) [3129 3136])
+                                    ("type" variable (:type ("type" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3205 3215]))                                  
+                                :type "struct")
+                                (reparse-symbol namespacesubparts) [2776 3222]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [1946 3235]))                  
+                :type "namespace")
+                nil [1921 3257]))          
+      :file "node_metadata_selector.hpp"
+      :pointmax 3339
+      :fsize 3338
+      :lastmodtime '(23161 10765 0 0)
+      :unmatched-syntax '((punctuation 3204 . 3205) (punctuation 3203 . 3204) (punctuation 3202 . 3203) (symbol 3191 . 3202) (punctuation 3189 . 3190) (symbol 3181 . 3189) (punctuation 3180 . 3181) (symbol 3160 . 3180) (TYPENAME 3151 . 3159) (TYPEDEF 3143 . 3150) (punctuation 3113 . 3114) (punctuation 3112 . 3113) (punctuation 3111 . 3112) (punctuation 3091 . 3092) (punctuation 3113 . 3114) (punctuation 3112 . 3113) (punctuation 3111 . 3112) (punctuation 3091 . 3092) (punctuation 2770 . 2771) (symbol 2764 . 2770) (TYPENAME 2755 . 2763) (punctuation 2747 . 2748) (symbol 2736 . 2747) (CLASS 2730 . 2735) (punctuation 2722 . 2723) (symbol 2715 . 2722) (TYPENAME 2706 . 2714) (punctuation 2696 . 2697) (symbol 2689 . 2696) (TYPENAME 2680 . 2688) (punctuation 2670 . 2671) (symbol 2656 . 2670) (TYPENAME 2647 . 2655) (punctuation 2637 . 2638) (symbol 2628 . 2637) (TYPENAME 2619 . 2627) (punctuation 2618 . 2619) (TEMPLATE 2610 . 2618) (punctuation 2602 . 2603) (symbol 2596 . 2602) (TYPENAME 2587 . 2595) (punctuation 2579 . 2580) (symbol 2575 . 2579) (TYPENAME 2566 . 2574) (punctuation 2558 . 2559) (symbol 2555 . 2558) (TYPENAME 2546 . 2554) (punctuation 2545 . 2546) (TEMPLATE 2537 . 2545))
+      :lexical-table 
+        '(("PB_DS_TRIE_NODE_METADATA_DISPATCH_HPP")
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("PB_DS_TRIE_POLICY_BASE_HPP" variable (:constant-flag t) nil [1758 1784])
+            ("ext/pb_ds/detail/branch_policy/branch_policy.hpp" include (:system-flag t) nil [1786 1845])
+            ("__gnu_pbds" type
+               (:members 
+                  ( ("detail" type
+                       (:members 
+                          ( ("trie_policy_base" type
+                               (:template 
+                                  ( ("Node_CItr" type (:type "class") nil nil)
+                                    ("Node_Itr" type (:type "class") nil nil)
+                                    ("_ATraits" type (:type "class") nil nil)
+                                    ("_Alloc" type (:type "class") nil nil))                                  
+                                :type "class"
+                                :members 
+                                  ( ("base_type" type
+                                       (:typedef ("branch_policy" type
+                                             (:template-specifier 
+                                                ( ("Node_CItr" type nil nil nil)
+                                                  ("Node_Itr" type nil nil nil)
+                                                  ("_Alloc" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [2120 2181])
+                                    ("public" label nil (reparse-symbol classsubparts) [2187 2194])
+                                    ("access_traits" type
+                                       (:typedef ("_ATraits" type (:type "class") nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [2201 2236])
+                                    ("allocator_type" type
+                                       (:typedef ("_Alloc" type (:type "class") nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [2243 2278])
+                                    ("size_type" type
+                                       (:typedef ("allocator_type::size_type" type (:type "class") nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [2285 2339])
+                                    ("metadata_type" type
+                                       (:typedef ("null_type" type (:type "class") nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [2346 2382])
+                                    ("node_const_iterator" type
+                                       (:typedef ("Node_CItr" type (:type "class") nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [2389 2431])
+                                    ("node_iterator" type
+                                       (:typedef ("Node_Itr" type (:type "class") nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [2438 2474])
+                                    ("const_iterator" type
+                                       (:typedef ("node_const_iterator::value_type" type (:type "class") nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [2481 2546])
+                                    ("iterator" type
+                                       (:typedef ("node_iterator::value_type" type (:type "class") nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [2553 2606])
+                                    ("key_type" type
+                                       (:typedef ("base_type::key_type" type (:type "class") nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [2613 2661])
+                                    ("key_const_reference" type
+                                       (:typedef ("base_type::key_const_reference" type (:type "class") nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [2668 2737])
+                                    ("protected" label nil (reparse-symbol classsubparts) [2743 2753])
+                                    ("end" function
+                                       (:pure-virtual-flag t
+                                        :prototype-flag t
+                                        :methodconst-flag t
+                                        :typemodifiers ("virtual")
+                                        :type ("const_iterator" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [2760 2805])
+                                    ("end" function
+                                       (:pure-virtual-flag t
+                                        :prototype-flag t
+                                        :typemodifiers ("virtual")
+                                        :type ("iterator" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [2813 2846])
+                                    ("node_begin" function
+                                       (:pure-virtual-flag t
+                                        :prototype-flag t
+                                        :methodconst-flag t
+                                        :typemodifiers ("virtual")
+                                        :type ("node_const_iterator" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [2854 2911])
+                                    ("node_begin" function
+                                       (:pure-virtual-flag t
+                                        :prototype-flag t
+                                        :typemodifiers ("virtual")
+                                        :type ("node_iterator" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [2919 2964])
+                                    ("node_end" function
+                                       (:pure-virtual-flag t
+                                        :prototype-flag t
+                                        :methodconst-flag t
+                                        :typemodifiers ("virtual")
+                                        :type ("node_const_iterator" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [2972 3027])
+                                    ("node_end" function
+                                       (:pure-virtual-flag t
+                                        :prototype-flag t
+                                        :typemodifiers ("virtual")
+                                        :type ("node_iterator" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [3035 3078])
+                                    ("get_access_traits" function
+                                       (:pure-virtual-flag t
+                                        :prototype-flag t
+                                        :methodconst-flag t
+                                        :typemodifiers ("virtual")
+                                        :constant-flag t
+                                        :type ("access_traits" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [3086 3151])
+                                    ("private" label nil (reparse-symbol classsubparts) [3157 3165])
+                                    ("e_const_iterator" type
+                                       (:typedef ("access_traits::const_iterator" type (:type "class") nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [3172 3237])
+                                    ("prefix_range_t" type
+                                       (:typedef ("std::pair" type
+                                             (:template-specifier 
+                                                ( ("e_const_iterator" type nil nil nil)
+                                                  ("e_const_iterator" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [3244 3313])
+                                    ("protected" label nil (reparse-symbol classsubparts) [3319 3329])
+                                    ("common_prefix_len" function
+                                       (:prototype-flag t
+                                        :typemodifiers ("static")
+                                        :arguments 
+                                          ( ("" variable (:type ("node_iterator" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3377 3391])
+                                            ("" variable (:type ("e_const_iterator" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3392 3409])
+                                            ("" variable (:type ("e_const_iterator" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3413 3430])
+                                            ("" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("access_traits" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [3431 3452]))                                          
+                                        :type ("size_type" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [3336 3453])
+                                    ("leftmost_it" function
+                                       (:prototype-flag t
+                                        :typemodifiers ("static")
+                                        :arguments 
+                                          ( ("" variable (:type ("node_iterator" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3495 3509]))                                          
+                                        :type ("iterator" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [3461 3510])
+                                    ("rightmost_it" function
+                                       (:prototype-flag t
+                                        :typemodifiers ("static")
+                                        :arguments 
+                                          ( ("" variable (:type ("node_iterator" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3553 3567]))                                          
+                                        :type ("iterator" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [3518 3568])
+                                    ("less" function
+                                       (:prototype-flag t
+                                        :typemodifiers ("static")
+                                        :arguments 
+                                          ( ("" variable (:type ("e_const_iterator" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3599 3616])
+                                            ("" variable (:type ("e_const_iterator" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3617 3634])
+                                            ("" variable (:type ("e_const_iterator" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3635 3652])
+                                            ("" variable (:type ("e_const_iterator" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3657 3674])
+                                            ("" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("access_traits" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [3675 3696]))                                          
+                                        :type "bool")
+                                        (reparse-symbol classsubparts) [3576 3697]))                                  
+                                :superclasses 
+                                  ( ("branch_policy" type
+                                       (:protection "public"
+                                        :type "class")
+                                        nil nil))                                  )
+                                (reparse-symbol namespacesubparts) [1935 3704])
+                            ("PB_DS_CLASS_T_DEC" variable (:constant-flag t) (reparse-symbol namespacesubparts) [3715 3732])
+                            ("PB_DS_CLASS_C_DEC" variable (:constant-flag t) (reparse-symbol namespacesubparts) [3840 3857])
+                            ("common_prefix_len" function
+                               (:parent "trie_policy_base"
+                                :arguments 
+                                  ( ("nd_it" variable (:type ("node_iterator" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4031 4051])
+                                    ("b_r" variable (:type ("e_const_iterator" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4052 4073])
+                                    ("e_r" variable (:type ("e_const_iterator" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4082 4103])
+                                    ("r_traits" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("access_traits" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [4104 4134]))                                  
+                                :type ("size_type" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [3975 4702])
+                            ("leftmost_it" function
+                               (:parent "trie_policy_base"
+                                :arguments 
+                                  ( ("nd_it" variable (:type ("node_iterator" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4807 4827]))                                  
+                                :type ("iterator" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [4758 4939])
+                            ("rightmost_it" function
+                               (:parent "trie_policy_base"
+                                :arguments 
+                                  ( ("nd_it" variable (:type ("node_iterator" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5045 5065]))                                  
+                                :type ("iterator" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [4995 5245])
+                            ("less" function
+                               (:template 
+                                  ( ("Node_CItr" type (:type "class") nil nil)
+                                    ("Node_Itr" type (:type "class") nil nil)
+                                    ("_ATraits" type (:type "class") nil nil)
+                                    ("_Alloc" type (:type "class") nil nil))                                  
+                                :type "bool"
+                                :arguments 
+                                  ( ("b_l" variable (:type ("e_const_iterator" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5311 5332])
+                                    ("e_l" variable (:type ("e_const_iterator" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5333 5354])
+                                    ("b_r" variable (:type ("e_const_iterator" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5357 5378])
+                                    ("e_r" variable (:type ("e_const_iterator" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5379 5400])
+                                    ("r_traits" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("access_traits" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [5403 5433]))                                  
+                                :parent "trie_policy_base")
+                                (reparse-symbol namespacesubparts) [5251 5699]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [1872 5755]))                  
+                :type "namespace")
+                nil [1847 5777]))          
+      :file "trie_policy_base.hpp"
+      :pointmax 5848
+      :fsize 5847
+      :lastmodtime '(23161 10765 0 0)
+      :unmatched-syntax '((punctuation 4994 . 4995) (punctuation 4993 . 4994) (punctuation ">" 4976 . 4993) (symbol "_Alloc" 4976 . 4993) (punctuation "," 4976 . 4993) (symbol "_ATraits" 4976 . 4993) (punctuation "," 4976 . 4993) (symbol "Node_Itr" 4976 . 4993) (punctuation "," 4976 . 4993) (symbol "Node_CItr" 4976 . 4993) (punctuation "<" 4976 . 4993) (symbol "trie_policy_base" 4976 . 4993) (TYPENAME 4967 . 4975) (punctuation ">" 4945 . 4962) (symbol "_Alloc" 4945 . 4962) (TYPENAME "typename" 4945 . 4962) (punctuation "," 4945 . 4962) (symbol "_ATraits" 4945 . 4962) (TYPENAME "typename" 4945 . 4962) (punctuation "," 4945 . 4962) (symbol "Node_Itr" 4945 . 4962) (TYPENAME "typename" 4945 . 4962) (punctuation "," 4945 . 4962) (symbol "Node_CItr" 4945 . 4962) (TYPENAME "typename" 4945 . 4962) (punctuation "<" 4945 . 4962) (TEMPLATE "template" 4945 . 4962) (punctuation 4757 . 4758) (punctuation 4756 . 4757) (punctuation ">" 4739 . 4756) (symbol "_Alloc" 4739 . 4756) (punctuation "," 4739 . 4756) (symbol "_ATraits" 4739 . 4756) (punctuation "," 4739 . 4756) (symbol "Node_Itr" 4739 . 4756) (punctuation "," 4739 . 4756) (symbol "Node_CItr" 4739 . 4756) (punctuation "<" 4739 . 4756) (symbol "trie_policy_base" 4739 . 4756) (TYPENAME 4730 . 4738) (punctuation ">" 4708 . 4725) (symbol "_Alloc" 4708 . 4725) (TYPENAME "typename" 4708 . 4725) (punctuation "," 4708 . 4725) (symbol "_ATraits" 4708 . 4725) (TYPENAME "typename" 4708 . 4725) (punctuation "," 4708 . 4725) (symbol "Node_Itr" 4708 . 4725) (TYPENAME "typename" 4708 . 4725) (punctuation "," 4708 . 4725) (symbol "Node_CItr" 4708 . 4725) (TYPENAME "typename" 4708 . 4725) (punctuation "<" 4708 . 4725) (TEMPLATE "template" 4708 . 4725) (punctuation 3974 . 3975) (punctuation 3973 . 3974) (punctuation ">" 3956 . 3973) (symbol "_Alloc" 3956 . 3973) (punctuation "," 3956 . 3973) (symbol "_ATraits" 3956 . 3973) (punctuation "," 3956 . 3973) (symbol "Node_Itr" 3956 . 3973) (punctuation "," 3956 . 3973) (symbol "Node_CItr" 3956 . 3973) (punctuation "<" 3956 . 3973) (symbol "trie_policy_base" 3956 . 3973) (TYPENAME 3947 . 3955) (punctuation ">" 3925 . 3942) (symbol "_Alloc" 3925 . 3942) (TYPENAME "typename" 3925 . 3942) (punctuation "," 3925 . 3942) (symbol "_ATraits" 3925 . 3942) (TYPENAME "typename" 3925 . 3942) (punctuation "," 3925 . 3942) (symbol "Node_Itr" 3925 . 3942) (TYPENAME "typename" 3925 . 3942) (punctuation "," 3925 . 3942) (symbol "Node_CItr" 3925 . 3942) (TYPENAME "typename" 3925 . 3942) (punctuation "<" 3925 . 3942) (TEMPLATE "template" 3925 . 3942))
+      :lexical-table 
+        '(("PB_DS_TRIE_POLICY_BASE_HPP")
+          )
+))
+  :file "!usr!include!c++!5!ext!pb_ds!detail!trie_policy!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

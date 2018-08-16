@@ -1,0 +1,57 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode python-mode
+      :tags 
+        '( ("tensorflow" include nil nil [19 42])
+            ("numpy" include nil nil [43 61])
+            ("os" include nil nil [62 71])
+            ("matplotlib.pyplot" include nil nil [72 103])
+            ("PIL" include nil nil [104 125])
+            ("LEN" variable nil nil [127 136])
+            ("add_layer" function (:arguments 
+              ( ("inputs" variable nil (reparse-symbol function_parameters) [152 158])
+                ("filter_shape" variable nil (reparse-symbol function_parameters) [160 172])
+                ("bias_shape" variable nil (reparse-symbol function_parameters) [174 184])
+                ("activation_function" variable nil (reparse-symbol function_parameters) [186 205]))              ) nil [138 793])
+            ("read_and_decode" function (:arguments 
+              ( ("filename" variable nil (reparse-symbol function_parameters) [815 823])
+                ("batch_sz" variable nil (reparse-symbol function_parameters) [825 833]))              ) nil [795 1762])
+            ("read_and_decode_all" function (:arguments 
+              ( ("filename" variable nil (reparse-symbol function_parameters) [1787 1795])
+                ("size" variable nil (reparse-symbol function_parameters) [1797 1801]))              ) nil [1763 2682])
+            ("LEARNING_RATE" variable nil nil [2683 2702])
+            ("BATCH_SIZE" variable nil nil [2703 2718])
+            ("STEP" variable nil nil [2719 2729])
+            ("MAX_EPOCH" variable nil nil [2730 2745])
+            ("with" code nil nil [2747 2945])
+            ("layers" variable nil nil [2947 2958])
+            ("layer1" variable nil nil [2960 3020])
+            ("prev_layer" variable nil nil [3021 3040])
+            ("layers" code nil nil [3042 3063])
+            ("for" code nil nil [3065 3188])
+            ("output_layer" variable nil nil [3188 3250])
+            ("with" code nil nil [3252 3469])
+            ("with" code nil nil [3470 3624])
+            ("with" code nil nil [3626 3720])
+            ("init" variable nil nil [3721 3761])
+            ("saver" variable nil nil [3763 3787])
+            ("train_filename" variable nil nil [3789 3823])
+            ("test_filename" variable nil nil [3825 3857])
+            ("images, labels" code nil nil [3859 3919])
+            ("test_images, test_labels" code nil nil [3920 3993])
+            ("try" code nil nil [3995 4130])
+            ("try" code nil nil [4131 4273])
+            ("with" code nil nil [4283 6536])
+            ("print" code nil nil [6537 6550]))          
+      :file "vdsr.py"
+      :pointmax 6551
+      :fsize 6746
+      :lastmodtime '(23274 42452 679917 857000)
+      :unmatched-syntax nil))
+  :file "!home!marvin!Downloads!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

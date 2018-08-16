@@ -1,0 +1,106 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("PB_DS_THIN_HEAP_HPP" variable (:constant-flag t) nil [1746 1765])
+            ("algorithm" include (:system-flag t) nil [1767 1787])
+            ("ext/pb_ds/detail/cond_dealtor.hpp" include (:system-flag t) nil [1788 1832])
+            ("ext/pb_ds/detail/type_utils.hpp" include (:system-flag t) nil [1833 1875])
+            ("ext/pb_ds/detail/left_child_next_sibling_heap_/left_child_next_sibling_heap_.hpp" include (:system-flag t) nil [1876 1967])
+            ("debug/debug.h" include (:system-flag t) nil [1968 1992])
+            ("__gnu_pbds" type
+               (:members 
+                  ( ("detail" type
+                       (:members 
+                          ( ("PB_DS_CLASS_T_DEC" variable (:constant-flag t) (reparse-symbol namespacesubparts) [2048 2065])
+                            ("PB_DS_CLASS_C_DEC" variable (:constant-flag t) (reparse-symbol namespacesubparts) [2145 2162])
+                            ("PB_DS_BASE_T_P" variable (:constant-flag t) (reparse-symbol namespacesubparts) [2336 2350])
+                            ("" type
+                               (:members 
+                                  ( ("num_distinct_rank_bounds" variable
+                                       (:constant-flag t
+                                        :default-value (6128 6130)
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [6101 6130]))                                  
+                                :type "enum")
+                                (reparse-symbol namespacesubparts) [6087 6139])
+                            ("g_a_rank_bounds" variable
+                               (:dereference 1
+                                :typemodifiers ("static")
+                                :constant-flag t
+                                :default-value "{
+	/* Dealing cards... */
+	/* 0     */ 0ul,
+	/* 1     */ 1ul,
+	/* 2     */ 1ul,
+	/* 3     */ 2ul,
+	/* 4     */ 4ul,
+	/* 5     */ 6ul,
+	/* 6     */ 11ul,
+	/* 7     */ 17ul,
+	/* 8     */ 29ul,
+	/* 9     */ 46ul,
+	/* 10    */ 76ul,
+	/* 11    */ 122ul,
+	/* 12    */ 199ul,
+	/* 13    */ 321ul,
+	/* 14    */ 521ul,
+	/* 15    */ 842ul,
+	/* 16    */ 1364ul,
+	/* 17    */ 2206ul,
+	/* 18    */ 3571ul,
+	/* 19    */ 5777ul,
+	/* 20    */ 9349ul,
+	/* 21    */ 15126ul,
+	/* 22    */ 24476ul,
+	/* 23    */ 39602ul,
+	/* 24    */ 64079ul,
+	/* 25    */ 103681ul,
+	/* 26    */ 167761ul,
+	/* 27    */ 271442ul,
+	/* 28    */ 439204ul,
+	/* 29    */ 710646ul,
+	/* 30    */ 1149851ul,
+	/* 31    */ 1860497ul,
+	/* 32    */ 3010349ul,
+	/* 33    */ 4870846ul,
+	/* 34    */ 7881196ul,
+	/* 35    */ 12752042ul,
+	/* 36    */ 20633239ul,
+	/* 37    */ 33385282ul,
+	/* 38    */ 54018521ul,
+	/* 39    */ 87403803ul,
+	/* 40    */ 141422324ul,
+	/* 41    */ 228826127ul,
+	/* 42    */ 370248451ul,
+	/* 43    */ 599074578ul,
+	/* 44    */ 969323029ul,
+	/* 45    */ 1568397607ul,
+	/* 46    */ 2537720636ul,
+	/* 47    */ 4106118243ul
+	/* Pot's good, let's play */
+      }"
+                                :type ("std::size_t" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [6213 7418])
+                            ("PB_DS_ASSERT_NODE_CONSISTENT" variable (:constant-flag t) (reparse-symbol namespacesubparts) [7428 7456])
+                            ("PB_DS_ASSERT_AUX_NULL" variable (:constant-flag t) (reparse-symbol namespacesubparts) [7578 7599]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [2019 8236]))                  
+                :type "namespace")
+                nil [1994 8258]))          
+      :file "thin_heap_.hpp"
+      :pointmax 8291
+      :fsize 8290
+      :lastmodtime '(23161 10765 0 0)
+      :unmatched-syntax '((spp-system-include "ext/pb_ds/detail/thin_heap_/split_join_fn_imps.hpp" 8032 . 8093) (spp-system-include "ext/pb_ds/detail/thin_heap_/erase_fn_imps.hpp" 7975 . 8031) (spp-system-include "ext/pb_ds/detail/thin_heap_/insert_fn_imps.hpp" 7917 . 7974) (spp-system-include "ext/pb_ds/detail/thin_heap_/find_fn_imps.hpp" 7861 . 7916) (spp-system-include "ext/pb_ds/detail/thin_heap_/trace_fn_imps.hpp" 7804 . 7860) (spp-system-include "ext/pb_ds/detail/thin_heap_/debug_fn_imps.hpp" 7747 . 7803) (spp-system-include "ext/pb_ds/detail/thin_heap_/constructors_destructor_fn_imps.hpp" 7672 . 7746) (punctuation 6080 . 6081) (semantic-list 2681 . 6080) (punctuation ">" 2662 . 2676) (symbol "_Alloc" 2662 . 2676) (punctuation "," 2662 . 2676) (symbol "size_type" 2662 . 2676) (punctuation ":" 2662 . 2676) (punctuation ":" 2662 . 2676) (symbol "_Alloc" 2662 . 2676) (TYPENAME "typename" 2662 . 2676) (punctuation "," 2662 . 2676) (symbol "Cmp_Fn" 2662 . 2676) (punctuation "," 2662 . 2676) (symbol "Value_Type" 2662 . 2676) (punctuation "<" 2662 . 2676) (symbol 2633 . 2661) (PUBLIC 2626 . 2632) (punctuation 2624 . 2625) (symbol 2610 . 2619) (CLASS 2604 . 2609) (punctuation 2598 . 2599) (symbol 2592 . 2598) (TYPENAME 2583 . 2591) (punctuation 2581 . 2582) (symbol 2575 . 2581) (TYPENAME 2566 . 2574) (punctuation 2564 . 2565) (symbol 2554 . 2564) (TYPENAME 2545 . 2553) (punctuation 2544 . 2545) (TEMPLATE 2536 . 2544))
+      :lexical-table 
+        '(("PB_DS_THIN_HEAP_HPP")
+          )
+))
+  :file "!usr!include!c++!5!ext!pb_ds!detail!thin_heap_!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

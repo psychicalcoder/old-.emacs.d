@@ -1,0 +1,4 @@
+{
+    "compile-command" : "g++ c-minitest.el -std=c++14 -O2 -o c-minitest.el.out",
+    "exec-file" : "c-minitest.el.out"
+}

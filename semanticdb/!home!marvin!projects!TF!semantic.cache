@@ -1,0 +1,41 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode python-mode
+      :tags 
+        '( ("selenium" include nil nil [34 64])
+            ("urllib.request" include nil nil [65 86])
+            ("target" variable nil nil [88 102])
+            ("img_idx" variable nil nil [103 112])
+            ("web" variable nil nil [113 137])
+            ("get_image" function (:arguments 
+              ( ("block" variable nil (reparse-symbol function_parameters) [154 159]))              ) nil [140 342])
+            ("scan_through_pages" function nil nil [348 1347])
+            ("if" code nil nil [1357 1409]))          
+      :file "words.py"
+      :pointmax 1409
+      :fsize 1438
+      :lastmodtime '(23207 52424 337694 113000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode python-mode
+      :tags 
+        '( ("selenium" include nil nil [1 31])
+            ("urllib.request" include nil nil [32 53])
+            ("selenium.common.exceptions" include nil nil [54 115])
+            ("web" variable nil nil [118 142])
+            ("getImage" function (:arguments 
+              ( ("page" variable nil (reparse-symbol function_parameters) [158 162])
+                ("code" variable nil (reparse-symbol function_parameters) [164 168]))              ) nil [145 1144])
+            ("if" code nil nil [1146 1885]))          
+      :file "main.py"
+      :pointmax 1885
+      :fsize 1900
+      :lastmodtime '(23152 32081 120007 644000)
+      :unmatched-syntax nil))
+  :file "!home!marvin!projects!TF!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

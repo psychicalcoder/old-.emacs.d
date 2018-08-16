@@ -1,0 +1,184 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode python-mode
+      :tags 
+        '( ("os" include nil nil [18 27])
+            ("tensorflow" include nil nil [28 51])
+            ("numpy" include nil nil [52 70])
+            ("PIL" include nil nil [71 92])
+            ("numpy" include nil nil [93 111])
+            ("model" include nil nil [112 135])
+            ("matplotlib.pyplot" include nil nil [136 167])
+            ("BATCH_SIZE" variable nil nil [169 184])
+            ("IMG_LEN" variable nil nil [185 198])
+            ("CHANNELS" variable nil nil [199 211])
+            ("BASE_LR" variable nil nil [212 226])
+            ("LR_RATE" variable nil nil [227 240])
+            ("MAX_EPOCH" variable nil nil [241 257])
+            ("TRAIN_DATA_SIZE" variable nil nil [258 279])
+            ("LR_STEP_SIZE" code nil nil [280 322])
+            ("TRAIN_DATA" variable nil nil [323 360])
+            ("TEST_DATA" variable nil nil [361 399])
+            ("CKPT_PATH" variable nil nil [400 435])
+            ("init" function nil nil [437 579])
+            ("save" function (:arguments 
+              ( ("saver" variable nil (reparse-symbol function_parameters) [590 595])
+                ("session" variable nil (reparse-symbol function_parameters) [597 604])
+                ("checkpoint_path" variable nil (reparse-symbol function_parameters) [606 621]))              ) nil [581 705])
+            ("restore" function (:arguments 
+              ( ("saver" variable nil (reparse-symbol function_parameters) [719 724])
+                ("session" variable nil (reparse-symbol function_parameters) [726 733])
+                ("checkpoint_path" variable nil (reparse-symbol function_parameters) [735 750]))              ) nil [707 1057])
+            ("get_image_batch" function (:arguments 
+              ( ("filename" variable nil (reparse-symbol function_parameters) [1078 1086])
+                ("batch_sz" variable nil (reparse-symbol function_parameters) [1088 1096]))              ) nil [1058 2004])
+            ("get_image_batch_not_random" function (:arguments 
+              ( ("filename" variable nil (reparse-symbol function_parameters) [2036 2044])
+                ("batch_sz" variable nil (reparse-symbol function_parameters) [2046 2054]))              ) nil [2005 2851])
+            ("if" code nil nil [2853 5502]))          
+      :file "vdsr.py"
+      :pointmax 5502
+      :fsize 5656
+      :lastmodtime '(23279 39098 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :file "model.py"
+      :fsize 1448
+      :lastmodtime '(23279 32430 0 0))
+    (semanticdb-table "semanticdb-table"
+      :major-mode python-mode
+      :tags 
+        '( ("os" include nil nil [18 27])
+            ("tensorflow" include nil nil [28 51])
+            ("numpy" include nil nil [52 70])
+            ("PIL" include nil nil [71 92])
+            ("numpy" include nil nil [93 111])
+            ("model" include nil nil [112 135])
+            ("matplotlib.pyplot" include nil nil [136 167])
+            ("BATCH_SIZE" variable nil nil [169 184])
+            ("IMG_LEN" variable nil nil [185 198])
+            ("CHANNELS" variable nil nil [199 211])
+            ("BASE_LR" variable nil nil [212 226])
+            ("LR_RATE" variable nil nil [227 240])
+            ("MAX_EPOCH" variable nil nil [241 257])
+            ("TRAIN_DATA_SIZE" variable nil nil [258 279])
+            ("LR_STEP_SIZE" code nil nil [280 322])
+            ("TRAIN_DATA" variable nil nil [323 360])
+            ("TEST_DATA" variable nil nil [361 399])
+            ("CKPT_PATH" variable nil nil [400 438])
+            ("init" function nil nil [440 588])
+            ("save" function (:arguments 
+              ( ("saver" variable nil (reparse-symbol function_parameters) [599 604])
+                ("session" variable nil (reparse-symbol function_parameters) [606 613])
+                ("checkpoint_path" variable nil (reparse-symbol function_parameters) [615 630]))              ) nil [590 714])
+            ("restore" function (:arguments 
+              ( ("saver" variable nil (reparse-symbol function_parameters) [728 733])
+                ("session" variable nil (reparse-symbol function_parameters) [735 742])
+                ("checkpoint_path" variable nil (reparse-symbol function_parameters) [744 759]))              ) nil [716 1066])
+            ("get_image_batch" function (:arguments 
+              ( ("filename" variable nil (reparse-symbol function_parameters) [1087 1095])
+                ("batch_sz" variable nil (reparse-symbol function_parameters) [1097 1105]))              ) nil [1067 2013])
+            ("get_image_batch_not_random" function (:arguments 
+              ( ("filename" variable nil (reparse-symbol function_parameters) [2045 2053])
+                ("batch_sz" variable nil (reparse-symbol function_parameters) [2055 2063]))              ) nil [2014 2860])
+            ("if" code nil nil [2862 6328]))          
+      :file "vdsr_gc.py"
+      :pointmax 6328
+      :fsize 6499
+      :lastmodtime '(23279 39030 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode python-mode
+      :tags 
+        '( ("os" include nil nil [18 27])
+            ("tensorflow" include nil nil [28 51])
+            ("numpy" include nil nil [52 70])
+            ("PIL" include nil nil [71 92])
+            ("numpy" include nil nil [93 111])
+            ("model2" include nil nil [112 136])
+            ("matplotlib.pyplot" include nil nil [137 168])
+            ("BATCH_SIZE" variable nil nil [170 185])
+            ("IMG_LEN" variable nil nil [186 199])
+            ("CHANNELS" variable nil nil [200 212])
+            ("BASE_LR" variable nil nil [213 227])
+            ("LR_RATE" variable nil nil [228 241])
+            ("MAX_EPOCH" variable nil nil [242 258])
+            ("TRAIN_DATA_SIZE" variable nil nil [259 280])
+            ("LR_STEP_SIZE" code nil nil [281 323])
+            ("TRAIN_DATA" variable nil nil [324 361])
+            ("TEST_DATA" variable nil nil [362 400])
+            ("CKPT_PATH" variable nil nil [401 446])
+            ("init" function nil nil [448 610])
+            ("save" function (:arguments 
+              ( ("saver" variable nil (reparse-symbol function_parameters) [621 626])
+                ("session" variable nil (reparse-symbol function_parameters) [628 635])
+                ("checkpoint_path" variable nil (reparse-symbol function_parameters) [637 652]))              ) nil [612 736])
+            ("restore" function (:arguments 
+              ( ("saver" variable nil (reparse-symbol function_parameters) [750 755])
+                ("session" variable nil (reparse-symbol function_parameters) [757 764])
+                ("checkpoint_path" variable nil (reparse-symbol function_parameters) [766 781]))              ) nil [738 1088])
+            ("get_image_batch" function (:arguments 
+              ( ("filename" variable nil (reparse-symbol function_parameters) [1109 1117])
+                ("batch_sz" variable nil (reparse-symbol function_parameters) [1119 1127]))              ) nil [1089 2035])
+            ("get_image_batch_not_random" function (:arguments 
+              ( ("filename" variable nil (reparse-symbol function_parameters) [2067 2075])
+                ("batch_sz" variable nil (reparse-symbol function_parameters) [2077 2085]))              ) nil [2036 2882])
+            ("if" code nil nil [2884 6371]))          
+      :file "vdsr_gc_model2.py"
+      :pointmax 6371
+      :fsize 6542
+      :lastmodtime '(23279 39240 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :file "model2.py"
+      :fsize 1447
+      :lastmodtime '(23279 38136 0 0))
+    (semanticdb-table "semanticdb-table"
+      :major-mode python-mode
+      :tags 
+        '( ("os" include nil nil [18 27])
+            ("tensorflow" include nil nil [28 51])
+            ("numpy" include nil nil [52 70])
+            ("PIL" include nil nil [71 92])
+            ("numpy" include nil nil [93 111])
+            ("model2" include nil nil [112 136])
+            ("matplotlib.pyplot" include nil nil [137 168])
+            ("BATCH_SIZE" variable nil nil [170 185])
+            ("IMG_LEN" variable nil nil [186 199])
+            ("CHANNELS" variable nil nil [200 212])
+            ("BASE_LR" variable nil nil [213 227])
+            ("LR_RATE" variable nil nil [228 241])
+            ("MAX_EPOCH" variable nil nil [242 258])
+            ("TRAIN_DATA_SIZE" variable nil nil [259 280])
+            ("LR_STEP_SIZE" code nil nil [281 323])
+            ("TRAIN_DATA" variable nil nil [324 361])
+            ("TEST_DATA" variable nil nil [362 400])
+            ("CKPT_PATH" variable nil nil [401 443])
+            ("init" function nil nil [445 601])
+            ("save" function (:arguments 
+              ( ("saver" variable nil (reparse-symbol function_parameters) [612 617])
+                ("session" variable nil (reparse-symbol function_parameters) [619 626])
+                ("checkpoint_path" variable nil (reparse-symbol function_parameters) [628 643]))              ) nil [603 727])
+            ("restore" function (:arguments 
+              ( ("saver" variable nil (reparse-symbol function_parameters) [741 746])
+                ("session" variable nil (reparse-symbol function_parameters) [748 755])
+                ("checkpoint_path" variable nil (reparse-symbol function_parameters) [757 772]))              ) nil [729 1079])
+            ("get_image_batch" function (:arguments 
+              ( ("filename" variable nil (reparse-symbol function_parameters) [1100 1108])
+                ("batch_sz" variable nil (reparse-symbol function_parameters) [1110 1118]))              ) nil [1080 2026])
+            ("get_image_batch_not_random" function (:arguments 
+              ( ("filename" variable nil (reparse-symbol function_parameters) [2058 2066])
+                ("batch_sz" variable nil (reparse-symbol function_parameters) [2068 2076]))              ) nil [2027 2873])
+            ("if" code nil nil [2875 5545]))          
+      :file "vdsr_model2.py"
+      :pointmax 5545
+      :fsize 5699
+      :lastmodtime '(23279 39272 0 0)
+      :unmatched-syntax nil))
+  :file "!media!marvin!FLASH DRIVE!NEW_MODEL!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

@@ -1,0 +1,818 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("ext/pb_ds/tag_and_trait.hpp" include (:system-flag t) nil [1727 1765])
+            ("ext/pb_ds/detail/hash_fn/ranged_probe_fn.hpp" include (:system-flag t) nil [1766 1821])
+            ("ext/pb_ds/detail/types_traits.hpp" include (:system-flag t) nil [1822 1866])
+            ("ext/pb_ds/exception.hpp" include (:system-flag t) nil [1867 1901])
+            ("ext/pb_ds/detail/eq_fn/hash_eq_fn.hpp" include (:system-flag t) nil [1902 1950])
+            ("utility" include (:system-flag t) nil [1951 1969])
+            ("debug/debug.h" include (:system-flag t) nil [2100 2124])
+            ("__gnu_pbds" type
+               (:members 
+                  ( ("detail" type
+                       (:members 
+                          ( ("PB_DS_CLASS_T_DEC" variable (:constant-flag t) (reparse-symbol namespacesubparts) [2337 2354])
+                            ("PB_DS_CLASS_C_DEC" variable (:constant-flag t) (reparse-symbol namespacesubparts) [2558 2575])
+                            ("PB_DS_HASH_EQ_FN_C_DEC" variable (:constant-flag t) (reparse-symbol namespacesubparts) [2706 2728])
+                            ("PB_DS_RANGED_PROBE_FN_C_DEC" variable (:constant-flag t) (reparse-symbol namespacesubparts) [2787 2814])
+                            ("PB_DS_GP_HASH_TRAITS_BASE" variable (:constant-flag t) (reparse-symbol namespacesubparts) [2904 2929])
+                            ("PB_DS_GP_HASH_NAME" type
+                               (:template 
+                                  ( ("Key" type (:type "class") nil nil)
+                                    ("Mapped" type (:type "class") nil nil)
+                                    ("Hash_Fn" type (:type "class") nil nil)
+                                    ("Eq_Fn" type (:type "class") nil nil)
+                                    ("_Alloc" type (:type "class") nil nil)
+                                    ("bool" type (:typevar "Store_Hash") nil nil)
+                                    ("Comb_Probe_Fn" type (:type "class") nil nil)
+                                    ("Probe_Fn" type (:type "class") nil nil)
+                                    ("Resize_Policy" type (:type "class") nil nil))                                  
+                                :type "class"
+                                :members 
+                                  ( ("private" label nil (reparse-symbol classsubparts) [5254 5262])
+                                    ("traits_base" type
+                                       (:typedef ("PB_DS_GP_HASH_TRAITS_BASE" type (:type "class") nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [5269 5323])
+                                    ("value_type_" type
+                                       (:typedef ("traits_base::value_type" type (:type "class") nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [5330 5384])
+                                    ("pointer_" type
+                                       (:typedef ("traits_base::pointer" type (:type "class") nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [5391 5439])
+                                    ("const_pointer_" type
+                                       (:typedef ("traits_base::const_pointer" type (:type "class") nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [5446 5505])
+                                    ("reference_" type
+                                       (:typedef ("traits_base::reference" type (:type "class") nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [5512 5564])
+                                    ("const_reference_" type
+                                       (:typedef ("traits_base::const_reference" type (:type "class") nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [5571 5634])
+                                    ("comp_hash" type
+                                       (:typedef ("traits_base::comp_hash" type (:type "class") nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [5641 5691])
+                                    ("entry_status" type
+                                       (:members 
+                                          ( ("empty_entry_status" variable
+                                               (:constant-flag t
+                                                :type "int")
+                                                (reparse-symbol enumsubparts) [5723 5742])
+                                            ("valid_entry_status" variable
+                                               (:constant-flag t
+                                                :type "int")
+                                                (reparse-symbol enumsubparts) [5746 5765])
+                                            ("erased_entry_status" variable
+                                               (:constant-flag t
+                                                :type "int")
+                                                (reparse-symbol enumsubparts) [5769 5791]))                                          
+                                        :type "enum")
+                                        (reparse-symbol classsubparts) [5699 5821])
+                                    ("entry" type
+                                       (:superclasses 
+                                          ( ("traits_base::stored_data_type" type
+                                               (:protection "public"
+                                                :type "class")
+                                                nil nil))                                          
+                                        :members 
+                                          ( ("m_stat" variable (:type ("entry_status" type (:type "class") nil nil)) (reparse-symbol classsubparts) [5890 5910]))                                          
+                                        :type "struct")
+                                        (reparse-symbol classsubparts) [5829 5919])
+                                    ("entry_allocator" variable (:type ("other" type (:type "class") nil nil)) (reparse-symbol classsubparts) [5976 5998])
+                                    ("entry_pointer" type
+                                       (:typedef ("entry_allocator::pointer" type (:type "class") nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [6005 6061])
+                                    ("const_entry_pointer" type
+                                       (:typedef ("entry_allocator::const_pointer" type (:type "class") nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [6068 6136])
+                                    ("entry_reference" type
+                                       (:typedef ("entry_allocator::reference" type (:type "class") nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [6143 6203])
+                                    ("const_entry_reference" type
+                                       (:typedef ("entry_allocator::const_reference" type (:type "class") nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [6210 6282])
+                                    ("entry_array" type
+                                       (:typedef ("entry_allocator::pointer" type (:type "class") nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [6289 6343])
+                                    ("ranged_probe_fn_base" type
+                                       (:typedef ("PB_DS_RANGED_PROBE_FN_C_DEC" type (:type "class") nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [6351 6409])
+                                    ("hash_eq_fn_base" type
+                                       (:typedef ("PB_DS_HASH_EQ_FN_C_DEC" type (:type "class") nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [6501 6550])
+                                    ("resize_base" type
+                                       (:typedef ("Resize_Policy" type (:type "class") nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [6557 6594])
+                                    ("PB_DS_GEN_POS" variable (:constant-flag t) (reparse-symbol classsubparts) [6604 6617])
+                                    ("public" label nil (reparse-symbol classsubparts) [6937 6944])
+                                    ("allocator_type" type
+                                       (:typedef ("_Alloc" type (:type "class") nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [6951 6985])
+                                    ("size_type" type
+                                       (:typedef ("_Alloc::size_type" type (:type "class") nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [6992 7038])
+                                    ("difference_type" type
+                                       (:typedef ("_Alloc::difference_type" type (:type "class") nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [7045 7103])
+                                    ("hash_fn" type
+                                       (:typedef ("Hash_Fn" type (:type "class") nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [7110 7138])
+                                    ("eq_fn" type
+                                       (:typedef ("Eq_Fn" type (:type "class") nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [7145 7169])
+                                    ("probe_fn" type
+                                       (:typedef ("Probe_Fn" type (:type "class") nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [7176 7206])
+                                    ("comb_probe_fn" type
+                                       (:typedef ("Comb_Probe_Fn" type (:type "class") nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [7213 7252])
+                                    ("resize_policy" type
+                                       (:typedef ("Resize_Policy" type (:type "class") nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [7259 7298])
+                                    ("" type
+                                       (:members 
+                                          ( ("store_hash" variable
+                                               (:constant-flag t
+                                                :default-value (7374 7384)
+                                                :type "int")
+                                                (reparse-symbol enumsubparts) [7361 7384]))                                          
+                                        :type "enum")
+                                        (reparse-symbol classsubparts) [7350 7388])
+                                    ("key_type" type
+                                       (:typedef ("traits_base::key_type" type (:type "class") nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [7396 7445])
+                                    ("key_pointer" type
+                                       (:typedef ("traits_base::key_pointer" type (:type "class") nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [7452 7506])
+                                    ("key_const_pointer" type
+                                       (:typedef ("traits_base::key_const_pointer" type (:type "class") nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [7513 7579])
+                                    ("key_reference" type
+                                       (:typedef ("traits_base::key_reference" type (:type "class") nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [7586 7644])
+                                    ("key_const_reference" type
+                                       (:typedef ("traits_base::key_const_reference" type (:type "class") nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [7651 7721])
+                                    ("mapped_type" type
+                                       (:typedef ("traits_base::mapped_type" type (:type "class") nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [7728 7782])
+                                    ("mapped_pointer" type
+                                       (:typedef ("traits_base::mapped_pointer" type (:type "class") nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [7789 7849])
+                                    ("mapped_const_pointer" type
+                                       (:typedef ("traits_base::mapped_const_pointer" type (:type "class") nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [7856 7928])
+                                    ("mapped_reference" type
+                                       (:typedef ("traits_base::mapped_reference" type (:type "class") nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [7935 7999])
+                                    ("mapped_const_reference" type
+                                       (:typedef ("traits_base::mapped_const_reference" type (:type "class") nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [8006 8082])
+                                    ("value_type" type
+                                       (:typedef ("traits_base::value_type" type (:type "class") nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [8089 8141])
+                                    ("pointer" type
+                                       (:typedef ("traits_base::pointer" type (:type "class") nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [8148 8194])
+                                    ("const_pointer" type
+                                       (:typedef ("traits_base::const_pointer" type (:type "class") nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [8201 8259])
+                                    ("reference" type
+                                       (:typedef ("traits_base::reference" type (:type "class") nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [8266 8316])
+                                    ("const_reference" type
+                                       (:typedef ("traits_base::const_reference" type (:type "class") nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [8323 8385])
+                                    ("point_const_iterator" type
+                                       (:typedef ("point_const_iterator_" type (:type "class") nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [8579 8632])
+                                    ("const_iterator" type
+                                       (:typedef ("const_iterator_" type (:type "class") nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [8803 8845])
+                                    ("PB_DS_GP_HASH_NAME" function
+                                       (:prototype-flag t
+                                        :constructor-flag t
+                                        :type ("PB_DS_GP_HASH_NAME" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [8853 8874])
+                                    ("PB_DS_GP_HASH_NAME" function
+                                       (:prototype-flag t
+                                        :constructor-flag t
+                                        :arguments 
+                                          ( ("" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("PB_DS_CLASS_C_DEC" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [8901 8926]))                                          
+                                        :type ("PB_DS_GP_HASH_NAME" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [8882 8927])
+                                    ("PB_DS_GP_HASH_NAME" function
+                                       (:prototype-flag t
+                                        :constructor-flag t
+                                        :arguments 
+                                          ( ("" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("Hash_Fn" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [8954 8969]))                                          
+                                        :type ("PB_DS_GP_HASH_NAME" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [8935 8970])
+                                    ("PB_DS_GP_HASH_NAME" function
+                                       (:prototype-flag t
+                                        :constructor-flag t
+                                        :arguments 
+                                          ( ("" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("Hash_Fn" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [8997 9012])
+                                            ("" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("Eq_Fn" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [9013 9026]))                                          
+                                        :type ("PB_DS_GP_HASH_NAME" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [8978 9027])
+                                    ("PB_DS_GP_HASH_NAME" function
+                                       (:prototype-flag t
+                                        :constructor-flag t
+                                        :arguments 
+                                          ( ("" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("Hash_Fn" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [9054 9069])
+                                            ("" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("Eq_Fn" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [9070 9083])
+                                            ("" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("Comb_Probe_Fn" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [9084 9105]))                                          
+                                        :type ("PB_DS_GP_HASH_NAME" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [9035 9106])
+                                    ("PB_DS_GP_HASH_NAME" function
+                                       (:prototype-flag t
+                                        :constructor-flag t
+                                        :arguments 
+                                          ( ("" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("Hash_Fn" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [9133 9148])
+                                            ("" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("Eq_Fn" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [9149 9162])
+                                            ("" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("Comb_Probe_Fn" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [9163 9184])
+                                            ("" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("Probe_Fn" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [9189 9205]))                                          
+                                        :type ("PB_DS_GP_HASH_NAME" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [9114 9206])
+                                    ("PB_DS_GP_HASH_NAME" function
+                                       (:prototype-flag t
+                                        :constructor-flag t
+                                        :arguments 
+                                          ( ("" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("Hash_Fn" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [9233 9248])
+                                            ("" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("Eq_Fn" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [9249 9262])
+                                            ("" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("Comb_Probe_Fn" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [9263 9284])
+                                            ("" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("Probe_Fn" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [9289 9305])
+                                            ("" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("Resize_Policy" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [9306 9327]))                                          
+                                        :type ("PB_DS_GP_HASH_NAME" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [9214 9328])
+                                    ("copy_from_range" function
+                                       (:template 
+                                          ( ("It" type (:type "class") nil nil))                                          
+                                        :type "void"
+                                        :arguments 
+                                          ( ("" variable (:type ("It" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9391 9394])
+                                            ("" variable (:type ("It" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9395 9398]))                                          
+                                        :prototype-flag t)
+                                        (reparse-symbol classsubparts) [9336 9399])
+                                    ("PB_DS_GP_HASH_NAME" function
+                                       (:prototype-flag t
+                                        :destructor-flag t
+                                        :typemodifiers ("virtual")
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [9407 9443])
+                                    ("swap" function
+                                       (:prototype-flag t
+                                        :arguments 
+                                          ( ("" variable
+                                               (:reference 1
+                                                :type ("PB_DS_CLASS_C_DEC" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [9467 9486]))                                          
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [9451 9487])
+                                    ("size" function
+                                       (:prototype-flag t
+                                        :methodconst-flag t
+                                        :typemodifiers ("inline")
+                                        :type ("size_type" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [9495 9531])
+                                    ("max_size" function
+                                       (:prototype-flag t
+                                        :methodconst-flag t
+                                        :typemodifiers ("inline")
+                                        :type ("size_type" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [9539 9579])
+                                    ("empty" function
+                                       (:prototype-flag t
+                                        :methodconst-flag t
+                                        :typemodifiers ("inline")
+                                        :type "bool")
+                                        (reparse-symbol classsubparts) [9618 9650])
+                                    ("get_hash_fn" function
+                                       (:prototype-flag t
+                                        :type ("Hash_Fn" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [9692 9721])
+                                    ("get_hash_fn" function
+                                       (:prototype-flag t
+                                        :methodconst-flag t
+                                        :constant-flag t
+                                        :type ("Hash_Fn" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [9769 9810])
+                                    ("get_eq_fn" function
+                                       (:prototype-flag t
+                                        :type ("Eq_Fn" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [9850 9875])
+                                    ("get_eq_fn" function
+                                       (:prototype-flag t
+                                        :methodconst-flag t
+                                        :constant-flag t
+                                        :type ("Eq_Fn" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [9921 9958])
+                                    ("get_probe_fn" function
+                                       (:prototype-flag t
+                                        :type ("Probe_Fn" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [10001 10032])
+                                    ("get_probe_fn" function
+                                       (:prototype-flag t
+                                        :methodconst-flag t
+                                        :constant-flag t
+                                        :type ("Probe_Fn" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [10081 10124])
+                                    ("get_comb_probe_fn" function
+                                       (:prototype-flag t
+                                        :type ("Comb_Probe_Fn" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [10172 10213])
+                                    ("get_comb_probe_fn" function
+                                       (:prototype-flag t
+                                        :methodconst-flag t
+                                        :constant-flag t
+                                        :type ("Comb_Probe_Fn" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [10267 10320])
+                                    ("get_resize_policy" function
+                                       (:prototype-flag t
+                                        :type ("Resize_Policy" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [10368 10409])
+                                    ("get_resize_policy" function
+                                       (:prototype-flag t
+                                        :methodconst-flag t
+                                        :constant-flag t
+                                        :type ("Resize_Policy" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [10463 10516])
+                                    ("insert" function
+                                       (:typemodifiers ("inline")
+                                        :arguments 
+                                          ( ("r_val" variable (:type ("const_reference" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10576 10598]))                                          
+                                        :type ("std::pair" type
+                                             (:template-specifier 
+                                                ( ("point_iterator" type nil nil nil)
+                                                  ("bool" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol classsubparts) [10524 10760])
+                                    ("[]" function
+                                       (:operator-flag t
+                                        :typemodifiers ("inline")
+                                        :arguments 
+                                          ( ("r_key" variable (:type ("key_const_reference" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10809 10835]))                                          
+                                        :type ("mapped_reference" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [10768 11015])
+                                    ("find" function
+                                       (:prototype-flag t
+                                        :typemodifiers ("inline")
+                                        :arguments 
+                                          ( ("" variable (:type ("key_const_reference" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11056 11076]))                                          
+                                        :type ("point_iterator" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [11023 11077])
+                                    ("find" function
+                                       (:prototype-flag t
+                                        :methodconst-flag t
+                                        :typemodifiers ("inline")
+                                        :arguments 
+                                          ( ("" variable (:type ("key_const_reference" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11124 11144]))                                          
+                                        :type ("point_const_iterator" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [11085 11151])
+                                    ("find_end" function
+                                       (:prototype-flag t
+                                        :typemodifiers ("inline")
+                                        :type ("point_iterator" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [11159 11198])
+                                    ("find_end" function
+                                       (:prototype-flag t
+                                        :methodconst-flag t
+                                        :typemodifiers ("inline")
+                                        :type ("point_const_iterator" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [11206 11257])
+                                    ("erase" function
+                                       (:prototype-flag t
+                                        :typemodifiers ("inline")
+                                        :arguments 
+                                          ( ("" variable (:type ("key_const_reference" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11289 11309]))                                          
+                                        :type "bool")
+                                        (reparse-symbol classsubparts) [11265 11310])
+                                    ("erase_if" function
+                                       (:template 
+                                          ( ("Pred" type (:type "class") nil nil))                                          
+                                        :type ("size_type" type (:type "class") nil nil)
+                                        :arguments 
+                                          ( ("" variable (:type ("Pred" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11384 11389]))                                          
+                                        :typemodifiers ("inline")
+                                        :prototype-flag t)
+                                        (reparse-symbol classsubparts) [11318 11390])
+                                    ("clear" function
+                                       (:prototype-flag t
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [11398 11417])
+                                    ("begin" function
+                                       (:prototype-flag t
+                                        :typemodifiers ("inline")
+                                        :type ("iterator" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [11425 11455])
+                                    ("begin" function
+                                       (:prototype-flag t
+                                        :methodconst-flag t
+                                        :typemodifiers ("inline")
+                                        :type ("const_iterator" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [11463 11505])
+                                    ("end" function
+                                       (:prototype-flag t
+                                        :typemodifiers ("inline")
+                                        :type ("iterator" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [11513 11541])
+                                    ("end" function
+                                       (:prototype-flag t
+                                        :methodconst-flag t
+                                        :typemodifiers ("inline")
+                                        :type ("const_iterator" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [11555 11595])
+                                    ("private" label nil (reparse-symbol classsubparts) [11753 11761])
+                                    ("const_iterator_" friend nil (reparse-symbol classsubparts) [11839 11867])
+                                    ("deallocate_all" function
+                                       (:prototype-flag t
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [11876 11904])
+                                    ("initialize" function
+                                       (:prototype-flag t
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [11912 11936])
+                                    ("erase_all_valid_entries" function
+                                       (:prototype-flag t
+                                        :arguments 
+                                          ( ("" variable (:type ("entry_array" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11979 11991])
+                                            ("" variable (:type ("size_type" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11992 12002]))                                          
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [11944 12003])
+                                    ("do_resize_if_needed" function
+                                       (:prototype-flag t
+                                        :typemodifiers ("inline")
+                                        :type "bool")
+                                        (reparse-symbol classsubparts) [12011 12051])
+                                    ("do_resize_if_needed_no_throw" function
+                                       (:prototype-flag t
+                                        :typemodifiers ("inline")
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [12059 12108])
+                                    ("resize_imp" function
+                                       (:prototype-flag t
+                                        :arguments 
+                                          ( ("" variable (:type ("size_type" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [12138 12148]))                                          
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [12116 12149])
+                                    ("do_resize" function
+                                       (:prototype-flag t
+                                        :typemodifiers ("virtual")
+                                        :arguments 
+                                          ( ("" variable (:type ("size_type" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [12186 12196]))                                          
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [12157 12197])
+                                    ("resize_imp" function
+                                       (:prototype-flag t
+                                        :arguments 
+                                          ( ("" variable (:type ("entry_array" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [12227 12239])
+                                            ("" variable (:type ("size_type" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [12240 12250]))                                          
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [12205 12251])
+                                    ("resize_imp_reassign" function
+                                       (:prototype-flag t
+                                        :typemodifiers ("inline")
+                                        :arguments 
+                                          ( ("" variable (:type ("entry_pointer" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [12297 12311])
+                                            ("" variable (:type ("entry_array" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [12312 12324])
+                                            ("" variable (:type ("false_type" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [12325 12336]))                                          
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [12259 12337])
+                                    ("resize_imp_reassign" function
+                                       (:prototype-flag t
+                                        :typemodifiers ("inline")
+                                        :arguments 
+                                          ( ("" variable (:type ("entry_pointer" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [12383 12397])
+                                            ("" variable (:type ("entry_array" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [12398 12410])
+                                            ("" variable (:type ("true_type" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [12411 12421]))                                          
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [12345 12422])
+                                    ("find_ins_pos" function
+                                       (:prototype-flag t
+                                        :typemodifiers ("inline")
+                                        :arguments 
+                                          ( ("" variable (:type ("key_const_reference" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [12466 12486])
+                                            ("" variable (:type ("false_type" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [12487 12498]))                                          
+                                        :type ("size_type" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [12430 12499])
+                                    ("find_ins_pos" function
+                                       (:prototype-flag t
+                                        :typemodifiers ("inline")
+                                        :arguments 
+                                          ( ("" variable (:type ("key_const_reference" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [12543 12563])
+                                            ("" variable (:type ("true_type" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [12564 12574]))                                          
+                                        :type ("comp_hash" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [12507 12575])
+                                    ("insert_imp" function
+                                       (:prototype-flag t
+                                        :typemodifiers ("inline")
+                                        :arguments 
+                                          ( ("" variable (:type ("const_reference" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [12639 12655])
+                                            ("" variable (:type ("false_type" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [12656 12667]))                                          
+                                        :type ("std::pair" type
+                                             (:template-specifier 
+                                                ( ("point_iterator" type nil nil nil)
+                                                  ("bool" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol classsubparts) [12583 12668])
+                                    ("insert_imp" function
+                                       (:prototype-flag t
+                                        :typemodifiers ("inline")
+                                        :arguments 
+                                          ( ("" variable (:type ("const_reference" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [12732 12748])
+                                            ("" variable (:type ("true_type" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [12749 12759]))                                          
+                                        :type ("std::pair" type
+                                             (:template-specifier 
+                                                ( ("point_iterator" type nil nil nil)
+                                                  ("bool" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol classsubparts) [12676 12760])
+                                    ("insert_new_imp" function
+                                       (:typemodifiers ("inline")
+                                        :arguments 
+                                          ( ("r_val" variable (:type ("const_reference" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [12804 12826])
+                                            ("pos" variable (:type ("size_type" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [12827 12841]))                                          
+                                        :type ("pointer" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [12768 13422])
+                                    ("insert_new_imp" function
+                                       (:typemodifiers ("inline")
+                                        :arguments 
+                                          ( ("r_val" variable (:type ("const_reference" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [13466 13488])
+                                            ("r_pos_hash_pair" variable
+                                               (:reference 1
+                                                :type ("comp_hash" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [13489 13516]))                                          
+                                        :type ("pointer" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [13430 14220])
+                                    ("find_key_pointer" function
+                                       (:typemodifiers ("inline")
+                                        :arguments 
+                                          ( ("key" variable (:type ("key_const_reference" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [15254 15278])
+                                            ("" variable (:type ("false_type" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [15279 15290]))                                          
+                                        :type ("pointer" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [15216 16312])
+                                    ("find_key_pointer" function
+                                       (:typemodifiers ("inline")
+                                        :arguments 
+                                          ( ("key" variable (:type ("key_const_reference" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [16358 16382])
+                                            ("" variable (:type ("true_type" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [16383 16393]))                                          
+                                        :type ("pointer" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [16320 17477])
+                                    ("erase_imp" function
+                                       (:prototype-flag t
+                                        :typemodifiers ("inline")
+                                        :arguments 
+                                          ( ("" variable (:type ("key_const_reference" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [17513 17533])
+                                            ("" variable (:type ("true_type" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [17534 17544]))                                          
+                                        :type "bool")
+                                        (reparse-symbol classsubparts) [17485 17545])
+                                    ("erase_imp" function
+                                       (:prototype-flag t
+                                        :typemodifiers ("inline")
+                                        :arguments 
+                                          ( ("" variable (:type ("key_const_reference" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [17581 17601])
+                                            ("" variable (:type ("false_type" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [17602 17613]))                                          
+                                        :type "bool")
+                                        (reparse-symbol classsubparts) [17553 17614])
+                                    ("erase_entry" function
+                                       (:prototype-flag t
+                                        :typemodifiers ("inline")
+                                        :arguments 
+                                          ( ("" variable (:type ("entry_pointer" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [17652 17666]))                                          
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [17622 17667])
+                                    ("inc_it_state" function
+                                       (:methodconst-flag t
+                                        :arguments 
+                                          ( ("r_p_value" variable
+                                               (:reference 1
+                                                :type ("const_pointer" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [17880 17905])
+                                            ("r_pos" variable
+                                               (:reference 1
+                                                :type ("size_type" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [17906 17923]))                                          
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [17856 18203])
+                                    ("get_start_it_state" function
+                                       (:methodconst-flag t
+                                        :arguments 
+                                          ( ("r_p_value" variable
+                                               (:reference 1
+                                                :type ("const_pointer" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [18241 18266])
+                                            ("r_pos" variable
+                                               (:reference 1
+                                                :type ("size_type" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [18267 18284]))                                          
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [18211 18526])
+                                    ("get_start_it_state" function
+                                       (:arguments 
+                                          ( ("r_p_value" variable
+                                               (:reference 1
+                                                :type ("pointer" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [18564 18583])
+                                            ("r_pos" variable
+                                               (:reference 1
+                                                :type ("size_type" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [18584 18601]))                                          
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [18534 18831])
+                                    ("s_entry_allocator" variable
+                                       (:typemodifiers ("static")
+                                        :type ("entry_allocator" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [19085 19127])
+                                    ("s_end_it" variable
+                                       (:typemodifiers ("static")
+                                        :type ("iterator" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [19134 19161])
+                                    ("s_const_end_it" variable
+                                       (:typemodifiers ("static")
+                                        :type ("const_iterator" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [19168 19206])
+                                    ("m_num_e" variable (:type ("size_type" type (:type "class") nil nil)) (reparse-symbol classsubparts) [19214 19234])
+                                    ("m_num_used_e" variable (:type ("size_type" type (:type "class") nil nil)) (reparse-symbol classsubparts) [19241 19266])
+                                    ("m_entries" variable (:type ("entry_pointer" type (:type "class") nil nil)) (reparse-symbol classsubparts) [19273 19299])
+                                    ("" type
+                                       (:members 
+                                          ( ("store_hash_ok" variable
+                                               (:constant-flag t
+                                                :type "int")
+                                                (reparse-symbol enumsubparts) [19318 19333])
+                                            ("Store_Hash" variable
+                                               (:constant-flag t
+                                                :type "int")
+                                                (reparse-symbol enumsubparts) [19335 19352])
+                                            ("is_same" variable
+                                               (:constant-flag t
+                                                :type "int")
+                                                (reparse-symbol enumsubparts) [19355 19363])
+                                            ("Hash_Fn" variable
+                                               (:constant-flag t
+                                                :type "int")
+                                                (reparse-symbol enumsubparts) [19363 19371])
+                                            ("__gnu_pbds" variable
+                                               (:constant-flag t
+                                                :type "int")
+                                                (reparse-symbol enumsubparts) [19372 19383])
+                                            ("null_type" variable
+                                               (:constant-flag t
+                                                :type "int")
+                                                (reparse-symbol enumsubparts) [19384 19394])
+                                            ("value" variable
+                                               (:constant-flag t
+                                                :type "int")
+                                                (reparse-symbol enumsubparts) [19396 19404]))                                          
+                                        :type "enum")
+                                        (reparse-symbol classsubparts) [19307 19405])
+                                    ("PB_DS_STATIC_ASSERT" function
+                                       (:prototype-flag t
+                                        :arguments 
+                                          ( ("" variable (:type ("sth" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [19433 19437])
+                                            ("" variable (:type ("store_hash_ok" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [19438 19452]))                                          
+                                        :type "int")
+                                        (reparse-symbol classsubparts) [19413 19453]))                                  
+                                :superclasses 
+                                  ( ("hash_eq_fn" type
+                                       (:protection "public"
+                                        :type "class")
+                                        nil nil)
+                                    ("Resize_Policy" type
+                                       (:protection "public"
+                                        :type "class")
+                                        nil nil)
+                                    ("ranged_probe_fn" type
+                                       (:protection "public"
+                                        :type "class")
+                                        nil nil)
+                                    ("types_traits" type
+                                       (:protection "public"
+                                        :type "class")
+                                        nil nil))                                  )
+                                (reparse-symbol namespacesubparts) [4771 19460]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [2151 20352]))                  
+                :type "namespace")
+                nil [2126 20374]))          
+      :file "gp_ht_map_.hpp"
+      :pointmax 20399
+      :fsize 20398
+      :lastmodtime '(23161 10764 0 0)
+      :unmatched-syntax '((spp-system-include "ext/pb_ds/detail/gp_hash_table_map_/trace_fn_imps.hpp" 20075 . 20139) (spp-system-include "ext/pb_ds/detail/gp_hash_table_map_/insert_fn_imps.hpp" 20009 . 20074) (spp-system-include "ext/pb_ds/detail/gp_hash_table_map_/iterator_fn_imps.hpp" 19941 . 20008) (spp-system-include "ext/pb_ds/detail/gp_hash_table_map_/erase_fn_imps.hpp" 19876 . 19940) (spp-system-include "ext/pb_ds/detail/gp_hash_table_map_/policy_access_fn_imps.hpp" 19803 . 19875) (spp-system-include "ext/pb_ds/detail/gp_hash_table_map_/info_fn_imps.hpp" 19739 . 19802) (spp-system-include "ext/pb_ds/detail/gp_hash_table_map_/debug_fn_imps.hpp" 19674 . 19738) (spp-system-include "ext/pb_ds/detail/gp_hash_table_map_/resize_fn_imps.hpp" 19608 . 19673) (spp-system-include "ext/pb_ds/detail/gp_hash_table_map_/find_fn_imps.hpp" 19544 . 19607) (spp-system-include "ext/pb_ds/detail/gp_hash_table_map_/constructor_destructor_fn_imps.hpp" 19462 . 19543) (punctuation 19395 . 19396) (punctuation 19394 . 19395) (punctuation 19393 . 19394) (punctuation 19383 . 19384) (punctuation 19382 . 19383) (punctuation 19362 . 19363) (punctuation 19354 . 19355) (punctuation 19352 . 19353) (punctuation 19351 . 19352) (punctuation 19334 . 19335) (punctuation 19332 . 19333) (punctuation 19395 . 19396) (punctuation 19394 . 19395) (punctuation 19393 . 19394) (punctuation 19383 . 19384) (punctuation 19382 . 19383) (punctuation 19362 . 19363) (punctuation 19354 . 19355) (punctuation 19352 . 19353) (punctuation 19351 . 19352) (punctuation 19334 . 19335) (punctuation 19332 . 19333) (punctuation 11867 . 11868) (spp-system-include "ext/pb_ds/detail/unordered_iterator/iterator.hpp" 6850 . 6909) (spp-system-include "ext/pb_ds/detail/unordered_iterator/const_iterator.hpp" 6784 . 6849) (spp-system-include "ext/pb_ds/detail/unordered_iterator/point_iterator.hpp" 6718 . 6783) (spp-system-include "ext/pb_ds/detail/unordered_iterator/point_const_iterator.hpp" 6646 . 6717) (punctuation 5975 . 5976) (punctuation 5974 . 5975) (punctuation 5973 . 5974) (symbol 5968 . 5973) (punctuation 5967 . 5968) (symbol 5961 . 5967) (TEMPLATE 5952 . 5960) (punctuation 5951 . 5952) (punctuation 5950 . 5951) (symbol 5944 . 5950) (TYPENAME 5935 . 5943) (TYPEDEF 5927 . 5934))))
+  :file "!usr!include!c++!5!ext!pb_ds!detail!gp_hash_table_map_!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

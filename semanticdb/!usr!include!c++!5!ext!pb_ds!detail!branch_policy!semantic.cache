@@ -1,0 +1,253 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("PB_DS_NODE_AND_IT_TRAITS_HPP" variable (:constant-flag t) nil [1760 1788])
+            ("ext/pb_ds/detail/types_traits.hpp" include (:system-flag t) nil [1790 1834])
+            ("ext/pb_ds/detail/bin_search_tree_/traits.hpp" include (:system-flag t) nil [1835 1890])
+            ("ext/pb_ds/detail/tree_policy/node_metadata_selector.hpp" include (:system-flag t) nil [1891 1957])
+            ("ext/pb_ds/detail/trie_policy/node_metadata_selector.hpp" include (:system-flag t) nil [1958 2024])
+            ("PB_DS_DEBUG_VERIFY" variable (:constant-flag t) nil [2034 2052])
+            ("__gnu_pbds" type
+               (:members 
+                  ( ("detail" type
+                       (:members 
+                          ( ("tree_traits" type
+                               (:prototype t
+                                :type "struct")
+                                (reparse-symbol namespacesubparts) [2578 2597])
+                            ("trie_traits" type
+                               (:prototype t
+                                :type "struct")
+                                (reparse-symbol namespacesubparts) [2904 2923]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [2256 2928]))                  
+                :type "namespace")
+                nil [2231 2950])
+            ("ext/pb_ds/detail/rb_tree_map_/traits.hpp" include (:system-flag t) nil [2976 3027])
+            ("ext/pb_ds/detail/splay_tree_/traits.hpp" include (:system-flag t) nil [3028 3078])
+            ("ext/pb_ds/detail/ov_tree_map_/traits.hpp" include (:system-flag t) nil [3079 3130])
+            ("ext/pb_ds/detail/pat_trie_/traits.hpp" include (:system-flag t) nil [3131 3179]))          
+      :file "traits.hpp"
+      :pointmax 3255
+      :fsize 3254
+      :lastmodtime '(23161 10764 0 0)
+      :unmatched-syntax '((punctuation 2898 . 2899) (symbol 2892 . 2898) (TYPENAME 2883 . 2891) (punctuation 2875 . 2876) (symbol 2872 . 2875) (TYPENAME 2863 . 2871) (punctuation 2855 . 2856) (symbol 2844 . 2855) (CLASS 2838 . 2843) (punctuation 2830 . 2831) (symbol 2824 . 2830) (TYPENAME 2815 . 2823) (punctuation 2805 . 2806) (symbol 2796 . 2805) (TYPENAME 2787 . 2795) (punctuation 2777 . 2778) (symbol 2769 . 2777) (TYPENAME 2760 . 2768) (punctuation 2750 . 2751) (symbol 2741 . 2750) (TYPENAME 2732 . 2740) (punctuation 2731 . 2732) (TEMPLATE 2723 . 2731) (punctuation 2715 . 2716) (symbol 2707 . 2715) (TYPENAME 2698 . 2706) (punctuation 2690 . 2691) (symbol 2686 . 2690) (TYPENAME 2677 . 2685) (punctuation 2669 . 2670) (symbol 2666 . 2669) (TYPENAME 2657 . 2665) (punctuation 2656 . 2657) (TEMPLATE 2648 . 2656) (punctuation 2572 . 2573) (symbol 2566 . 2572) (TYPENAME 2557 . 2565) (punctuation 2549 . 2550) (symbol 2546 . 2549) (TYPENAME 2537 . 2545) (punctuation 2529 . 2530) (symbol 2518 . 2529) (CLASS 2512 . 2517) (punctuation 2504 . 2505) (symbol 2498 . 2504) (TYPENAME 2489 . 2497) (punctuation 2479 . 2480) (symbol 2472 . 2479) (TYPENAME 2463 . 2471) (punctuation 2453 . 2454) (symbol 2445 . 2453) (TYPENAME 2436 . 2444) (punctuation 2426 . 2427) (symbol 2417 . 2426) (TYPENAME 2408 . 2416) (punctuation 2407 . 2408) (TEMPLATE 2399 . 2407) (punctuation 2391 . 2392) (symbol 2385 . 2391) (TYPENAME 2376 . 2384) (punctuation 2368 . 2369) (symbol 2364 . 2368) (TYPENAME 2355 . 2363) (punctuation 2347 . 2348) (symbol 2344 . 2347) (TYPENAME 2335 . 2343) (punctuation 2334 . 2335) (TEMPLATE 2326 . 2334))
+      :lexical-table 
+        '(("PB_DS_NODE_AND_IT_TRAITS_HPP")
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("PB_DS_0_NODE_METADATA_HPP" variable (:constant-flag t) nil [1769 1794])
+            ("ext/pb_ds/detail/types_traits.hpp" include (:system-flag t) nil [1796 1840])
+            ("__gnu_pbds" type
+               (:members 
+                  ( ("detail" type
+                       (:members 
+                          ( ("dumnode_const_iterator" type
+                               (:template 
+                                  ( ("Key" type (:type "class") nil nil)
+                                    ("Data" type (:type "class") nil nil)
+                                    ("_Alloc" type (:type "class") nil nil))                                  
+                                :type "struct"
+                                :members 
+                                  ( ("private" label nil (reparse-symbol classsubparts) [2029 2037])
+                                    ("__traits_type" type
+                                       (:typedef ("types_traits" type
+                                             (:template-specifier 
+                                                ( ("Key" type nil nil nil)
+                                                  ("Data" type nil nil nil)
+                                                  ("_Alloc" type nil nil nil)
+                                                  ("false" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [2039 2100])
+                                    ("const_iterator" type
+                                       (:typedef ("__traits_type::pointer" type (:type "class") nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [2102 2165])
+                                    ("public" label nil (reparse-symbol classsubparts) [2174 2181])
+                                    ("value_type" type
+                                       (:typedef ("const_iterator" type (:type "class") nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [2183 2221])
+                                    ("const_reference" type
+                                       (:typedef ("const_iterator" type (:type "class") nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [2223 2266])
+                                    ("reference" type
+                                       (:typedef ("const_reference" type (:type "class") nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [2268 2312]))                                  )
+                                (reparse-symbol namespacesubparts) [1924 2321]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [1867 2325]))                  
+                :type "namespace")
+                nil [1842 2347]))          
+      :file "null_node_metadata.hpp"
+      :pointmax 2380
+      :fsize 2379
+      :lastmodtime '(23161 10764 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("PB_DS_0_NODE_METADATA_HPP")
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("PB_DS_BRANCH_POLICY_BASE_HPP" variable (:constant-flag t) nil [1754 1782])
+            ("ext/pb_ds/tag_and_trait.hpp" include (:system-flag t) nil [1784 1822])
+            ("__gnu_pbds" type
+               (:members 
+                  ( ("detail" type
+                       (:members 
+                          ( ("branch_policy" type
+                               (:template 
+                                  ( ("Node_CItr" type (:type "class") nil nil)
+                                    ("Node_Itr" type (:type "class") nil nil)
+                                    ("_Alloc" type (:type "class") nil nil))                                  
+                                :type "struct"
+                                :members 
+                                  ( ("protected" label nil (reparse-symbol classsubparts) [2048 2058])
+                                    ("it_type" type
+                                       (:typedef ("Node_Itr::value_type" type (:type "class") nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [2060 2108])
+                                    ("value_type" type
+                                       (:typedef ("std::iterator_traits::value_type" type (:type "class") nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [2110 2180])
+                                    ("key_type" type
+                                       (:typedef ("value_type::first_type" type (:type "class") nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [2182 2232])
+                                    ("rcvalue_type" variable (:type ("type" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2278 2296])
+                                    ("rckey_type" variable (:type ("type" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2339 2355])
+                                    ("rebind_v" variable (:type ("other" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2414 2429])
+                                    ("rebind_k" variable (:type ("other" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2485 2502])
+                                    ("reference" type
+                                       (:typedef ("rebind_v::reference" type (:type "class") nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [2505 2554])
+                                    ("const_reference" type
+                                       (:typedef ("rebind_v::const_reference" type (:type "class") nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [2556 2616])
+                                    ("const_pointer" type
+                                       (:typedef ("rebind_v::const_pointer" type (:type "class") nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [2618 2673])
+                                    ("key_const_reference" type
+                                       (:typedef ("rebind_k::const_reference" type (:type "class") nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [2676 2740])
+                                    ("extract_key" function
+                                       (:typemodifiers ("static" "inline")
+                                        :arguments 
+                                          ( ("r_val" variable (:type ("const_reference" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2790 2812]))                                          
+                                        :type ("key_const_reference" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [2743 2837])
+                                    ("end" function
+                                       (:pure-virtual-flag t
+                                        :prototype-flag t
+                                        :typemodifiers ("virtual")
+                                        :type ("it_type" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [2840 2867])
+                                    ("end_iterator" function
+                                       (:methodconst-flag t
+                                        :type ("it_type" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [2870 2952])
+                                    ("branch_policy" function
+                                       (:destructor-flag t
+                                        :typemodifiers ("virtual")
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [2955 2984]))                                  )
+                                (reparse-symbol namespacesubparts) [1942 2993])
+                            ("branch_policy" type
+                               (:template 
+                                  ( ("Node_CItr" type (:type "class") nil nil)
+                                    ("_Alloc" type (:type "class") nil nil))                                  
+                                :type "struct"
+                                :members 
+                                  ( ("protected" label nil (reparse-symbol classsubparts) [3160 3170])
+                                    ("it_type" type
+                                       (:typedef ("Node_CItr::value_type" type (:type "class") nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [3172 3224])
+                                    ("value_type" type
+                                       (:typedef ("std::iterator_traits::value_type" type (:type "class") nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [3233 3303])
+                                    ("rcvalue_type" variable (:type ("type" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3348 3370])
+                                    ("rebind_v" variable (:type ("other" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3428 3443])
+                                    ("reference" type
+                                       (:typedef ("rebind_v::reference" type (:type "class") nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [3445 3494])
+                                    ("const_reference" type
+                                       (:typedef ("rebind_v::const_reference" type (:type "class") nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [3496 3556])
+                                    ("const_pointer" type
+                                       (:typedef ("rebind_v::const_pointer" type (:type "class") nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [3558 3613])
+                                    ("key_type" type
+                                       (:typedef ("value_type" type (:type "class") nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [3616 3648])
+                                    ("key_const_reference" type
+                                       (:typedef ("rebind_v::const_reference" type (:type "class") nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [3650 3714])
+                                    ("extract_key" function
+                                       (:typemodifiers ("static" "inline")
+                                        :arguments 
+                                          ( ("r_val" variable (:type ("const_reference" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3764 3786]))                                          
+                                        :type ("key_const_reference" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [3717 3805])
+                                    ("end" function
+                                       (:pure-virtual-flag t
+                                        :prototype-flag t
+                                        :methodconst-flag t
+                                        :typemodifiers ("virtual")
+                                        :type ("it_type" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [3808 3841])
+                                    ("end_iterator" function
+                                       (:methodconst-flag t
+                                        :type ("it_type" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [3844 3892])
+                                    ("branch_policy" function
+                                       (:destructor-flag t
+                                        :typemodifiers ("virtual")
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [3895 3924]))                                  
+                                :template-specifier 
+                                  ( ("Node_CItr" type nil nil nil)
+                                    ("Node_CItr" type nil nil nil)
+                                    ("_Alloc" type nil nil nil))                                  )
+                                (reparse-symbol namespacesubparts) [3043 3933]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [1849 3937]))                  
+                :type "namespace")
+                nil [1824 3959]))          
+      :file "branch_policy.hpp"
+      :pointmax 4032
+      :fsize 4031
+      :lastmodtime '(23161 10764 0 0)
+      :unmatched-syntax '((punctuation 3427 . 3428) (punctuation 3426 . 3427) (punctuation 3425 . 3426) (symbol 3413 . 3425) (punctuation 3412 . 3413) (symbol 3406 . 3412) (TEMPLATE 3397 . 3405) (punctuation 3396 . 3397) (punctuation 3395 . 3396) (symbol 3389 . 3395) (TYPENAME 3380 . 3388) (TYPEDEF 3372 . 3379) (punctuation 3347 . 3348) (punctuation 3346 . 3347) (punctuation 3345 . 3346) (symbol 3335 . 3345) (punctuation 3334 . 3335) (symbol 3322 . 3334) (TYPENAME 3313 . 3321) (TYPEDEF 3305 . 3312) (punctuation 2484 . 2485) (punctuation 2483 . 2484) (punctuation 2482 . 2483) (symbol 2472 . 2482) (punctuation 2471 . 2472) (symbol 2465 . 2471) (TEMPLATE 2456 . 2464) (punctuation 2455 . 2456) (punctuation 2454 . 2455) (symbol 2448 . 2454) (TYPENAME 2439 . 2447) (TYPEDEF 2431 . 2438) (punctuation 2413 . 2414) (punctuation 2412 . 2413) (punctuation 2411 . 2412) (symbol 2399 . 2411) (punctuation 2398 . 2399) (symbol 2392 . 2398) (TEMPLATE 2383 . 2391) (punctuation 2382 . 2383) (punctuation 2381 . 2382) (symbol 2375 . 2381) (TYPENAME 2366 . 2374) (TYPEDEF 2358 . 2365) (punctuation 2338 . 2339) (punctuation 2337 . 2338) (punctuation 2336 . 2337) (symbol 2328 . 2336) (punctuation 2327 . 2328) (symbol 2315 . 2327) (TYPENAME 2306 . 2314) (TYPEDEF 2298 . 2305) (punctuation 2277 . 2278) (punctuation 2276 . 2277) (punctuation 2275 . 2276) (symbol 2265 . 2275) (punctuation 2264 . 2265) (symbol 2252 . 2264) (TYPENAME 2243 . 2251) (TYPEDEF 2235 . 2242))
+      :lexical-table 
+        '(("PB_DS_BRANCH_POLICY_BASE_HPP")
+          )
+))
+  :file "!usr!include!c++!5!ext!pb_ds!detail!branch_policy!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

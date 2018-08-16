@@ -1,0 +1,26 @@
+cd ..
+cd ..
+hexo clean && hexo g
+hexo s
+clear
+
+hexo clean
+hexo generate
+hexo server
+htop
+vi
+clear
+
+vim
+:q
+clear
+
+top
+clear
+
+emacs
+emacs -nw
+clear
+
+emacs
+exit

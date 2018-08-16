@@ -1,0 +1,2370 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("PB_DS_STANDARD_POLICIES_HPP" variable (:constant-flag t) nil [1750 1777])
+            ("memory" include (:system-flag t) nil [1779 1796])
+            ("ext/pb_ds/hash_policy.hpp" include (:system-flag t) nil [1797 1833])
+            ("ext/pb_ds/list_update_policy.hpp" include (:system-flag t) nil [1834 1877])
+            ("ext/pb_ds/detail/branch_policy/null_node_metadata.hpp" include (:system-flag t) nil [1878 1942])
+            ("ext/pb_ds/tree_policy.hpp" include (:system-flag t) nil [1943 1979])
+            ("ext/pb_ds/trie_policy.hpp" include (:system-flag t) nil [1980 2016])
+            ("ext/pb_ds/tag_and_trait.hpp" include (:system-flag t) nil [2017 2055])
+            ("tr1/functional" include (:system-flag t) nil [2056 2081])
+            ("__gnu_pbds" type
+               (:members 
+                  ( ("detail" type
+                       (:members 
+                          ( ("default_hash_fn" type
+                               (:template 
+                                  ( ("Key" type (:type "class") nil nil))                                  
+                                :type "struct"
+                                :members 
+                                  ( ("type" type
+                                       (:typedef ("std::tr1::hash" type
+                                             (:template-specifier 
+                                                ( ("Key" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [2260 2297]))                                  )
+                                (reparse-symbol namespacesubparts) [2176 2304])
+                            ("default_eq_fn" type
+                               (:template 
+                                  ( ("Key" type (:type "class") nil nil))                                  
+                                :type "struct"
+                                :members 
+                                  ( ("type" type
+                                       (:typedef ("std::equal_to" type
+                                             (:template-specifier 
+                                                ( ("Key" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [2433 2469]))                                  )
+                                (reparse-symbol namespacesubparts) [2351 2476])
+                            ("" type
+                               (:members 
+                                  ( ("default_store_hash" variable
+                                       (:constant-flag t
+                                        :default-value (2579 2584)
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [2558 2584]))                                  
+                                :type "enum")
+                                (reparse-symbol namespacesubparts) [2544 2593])
+                            ("default_comb_hash_fn" type
+                               (:members 
+                                  ( ("type" type
+                                       (:typedef ("direct_mask_range_hashing" type (:type "class") nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [2709 2753]))                                  
+                                :type "struct")
+                                (reparse-symbol namespacesubparts) [2647 2760])
+                            ("default_resize_policy" type
+                               (:template 
+                                  ( ("Comb_Hash_Fn" type (:type "class") nil nil))                                  
+                                :type "struct"
+                                :members 
+                                  ( ("private" label nil (reparse-symbol classsubparts) [2890 2898])
+                                    ("size_type" type
+                                       (:typedef ("Comb_Hash_Fn::size_type" type (:type "class") nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [2905 2959])
+                                    ("default_fn" type
+                                       (:typedef ("direct_mask_range_hashing" type
+                                             (:template-specifier 
+                                                ( ("size_type" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [2967 3025])
+                                    ("same_type" type
+                                       (:typedef ("is_same" type
+                                             (:template-specifier 
+                                                ( ("default_fn" type nil nil nil)
+                                                  ("Comb_Hash_Fn" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [3032 3086])
+                                    ("iftrue" type
+                                       (:typedef ("hash_exponential_size_policy" type
+                                             (:template-specifier 
+                                                ( ("size_type" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [3093 3150])
+                                    ("iffalse" type
+                                       (:typedef ("hash_prime_size_policy" type (:type "class") nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [3157 3200])
+                                    ("cond_type" type
+                                       (:typedef ("__conditional_type" type
+                                             (:template-specifier 
+                                                ( ("same_type::value" type nil nil nil)
+                                                  ("iftrue" type nil nil nil)
+                                                  ("iffalse" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [3207 3279])
+                                    ("size_policy_type" type
+                                       (:typedef ("cond_type::__type" type (:type "class") nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [3286 3347])
+                                    ("trigger" type
+                                       (:typedef ("hash_load_check_resize_trigger" type
+                                             (:template-specifier 
+                                                ( ("false" type nil nil nil)
+                                                  ("size_type" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [3355 3421])
+                                    ("public" label nil (reparse-symbol classsubparts) [3427 3434])
+                                    ("type" type
+                                       (:typedef ("hash_standard_resize_policy" type
+                                             (:template-specifier 
+                                                ( ("size_policy_type" type nil nil nil)
+                                                  ("trigger" type nil nil nil)
+                                                  ("false" type nil nil nil)
+                                                  ("size_type" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [3463 3558]))                                  )
+                                (reparse-symbol namespacesubparts) [2815 3565])
+                            ("default_update_policy" type
+                               (:members 
+                                  ( ("type" type
+                                       (:typedef ("lu_move_to_front_policy" type (:type "class") nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [3665 3707]))                                  
+                                :type "struct")
+                                (reparse-symbol namespacesubparts) [3602 3714])
+                            ("default_probe_fn" type
+                               (:template 
+                                  ( ("Comb_Probe_Fn" type (:type "class") nil nil))                                  
+                                :type "struct"
+                                :members 
+                                  ( ("private" label nil (reparse-symbol classsubparts) [3835 3843])
+                                    ("size_type" type
+                                       (:typedef ("Comb_Probe_Fn::size_type" type (:type "class") nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [3850 3904])
+                                    ("default_fn" type
+                                       (:typedef ("direct_mask_range_hashing" type
+                                             (:template-specifier 
+                                                ( ("size_type" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [3911 3969])
+                                    ("same_type" type
+                                       (:typedef ("is_same" type
+                                             (:template-specifier 
+                                                ( ("default_fn" type nil nil nil)
+                                                  ("Comb_Probe_Fn" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [3976 4031])
+                                    ("iftrue" type
+                                       (:typedef ("linear_probe_fn" type
+                                             (:template-specifier 
+                                                ( ("size_type" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [4038 4083])
+                                    ("iffalse" type
+                                       (:typedef ("quadratic_probe_fn" type
+                                             (:template-specifier 
+                                                ( ("size_type" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [4090 4139])
+                                    ("cond_type" type
+                                       (:typedef ("__conditional_type" type
+                                             (:template-specifier 
+                                                ( ("same_type::value" type nil nil nil)
+                                                  ("iftrue" type nil nil nil)
+                                                  ("iffalse" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [4146 4218])
+                                    ("public" label nil (reparse-symbol classsubparts) [4224 4231])
+                                    ("type" type
+                                       (:typedef ("cond_type::__type" type (:type "class") nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [4260 4303]))                                  )
+                                (reparse-symbol namespacesubparts) [3764 4310])
+                            ("default_trie_access_traits" type
+                               (:template 
+                                  ( ("Key" type (:type "class") nil nil))                                  
+                                :type "struct"
+                                :prototype t)
+                                (reparse-symbol namespacesubparts) [4371 4434])
+                            ("__dtrie_alloc" variable (:constant-flag t) (reparse-symbol namespacesubparts) [4444 4457])
+                            ("__dtrie_string" variable (:constant-flag t) (reparse-symbol namespacesubparts) [4489 4503])
+                            ("default_trie_access_traits" type
+                               (:template 
+                                  ( ("Char" type (:type "class") nil nil)
+                                    ("Char_Traits" type (:type "class") nil nil))                                  
+                                :type "struct"
+                                :members 
+                                  ( ("private" label nil (reparse-symbol classsubparts) [4738 4746])
+                                    ("string_type" type
+                                       (:typedef ("__dtrie_string" type (:type "class") nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [4748 4787])
+                                    ("public" label nil (reparse-symbol classsubparts) [4795 4802])
+                                    ("type" type
+                                       (:typedef ("trie_string_access_traits" type
+                                             (:template-specifier 
+                                                ( ("string_type" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [4826 4880]))                                  
+                                :template-specifier 
+                                  ( ("std::basic_string" type (:template-specifier 
+                                      ( ("Char" type nil nil nil)
+                                        ("Char_Traits" type nil nil nil)
+                                        ("std::allocator" type (:template-specifier 
+                                          ( ("char" type nil nil nil))                                          ) nil nil))                                      ) nil nil))                                  )
+                                (reparse-symbol namespacesubparts) [4622 4889]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [2108 4938]))                  
+                :type "namespace")
+                nil [2083 4960]))          
+      :file "standard_policies.hpp"
+      :pointmax 5032
+      :fsize 5031
+      :lastmodtime '(23161 10765 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("PB_DS_STANDARD_POLICIES_HPP")
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("PB_DS_ASSOC_CNTNR_BASE_DS_DISPATCHER_HPP" variable (:constant-flag t) nil [1763 1803])
+            ("ext/typelist.h" include (:system-flag t) nil [1805 1830])
+            ("PB_DS_ASSERT_VALID" variable (:constant-flag t) nil [1840 1858])
+            ("PB_DS_DEBUG_VERIFY" variable (:constant-flag t) nil [1937 1955])
+            ("PB_DS_CHECK_KEY_EXISTS" variable (:constant-flag t) nil [2142 2164])
+            ("PB_DS_CHECK_KEY_DOES_NOT_EXIST" variable (:constant-flag t) nil [2265 2295])
+            ("PB_DS_DATA_TRUE_INDICATOR" variable (:constant-flag t) nil [2415 2440])
+            ("PB_DS_V2F" variable (:constant-flag t) nil [2449 2458])
+            ("PB_DS_V2S" variable (:constant-flag t) nil [2480 2489])
+            ("PB_DS_EP2VP" variable (:constant-flag t) nil [2512 2523])
+            ("ext/pb_ds/detail/list_update_map_/lu_map_.hpp" include (:system-flag t) nil [2543 2599])
+            ("ext/pb_ds/detail/bin_search_tree_/bin_search_tree_.hpp" include (:system-flag t) nil [2600 2665])
+            ("ext/pb_ds/detail/rb_tree_map_/rb_tree_.hpp" include (:system-flag t) nil [2666 2719])
+            ("ext/pb_ds/detail/splay_tree_/splay_tree_.hpp" include (:system-flag t) nil [2720 2775])
+            ("ext/pb_ds/detail/ov_tree_map_/ov_tree_map_.hpp" include (:system-flag t) nil [2776 2833])
+            ("ext/pb_ds/detail/cc_hash_table_map_/cc_ht_map_.hpp" include (:system-flag t) nil [2834 2895])
+            ("ext/pb_ds/detail/gp_hash_table_map_/gp_ht_map_.hpp" include (:system-flag t) nil [2896 2957])
+            ("ext/pb_ds/detail/pat_trie_/pat_trie_.hpp" include (:system-flag t) nil [2958 3009])
+            ("PB_DS_DATA_FALSE_INDICATOR" variable (:constant-flag t) nil [3105 3131])
+            ("PB_DS_V2F" variable (:constant-flag t) nil [3140 3149])
+            ("PB_DS_V2S" variable (:constant-flag t) nil [3165 3174])
+            ("PB_DS_EP2VP" variable (:constant-flag t) nil [3200 3211])
+            ("ext/pb_ds/detail/list_update_map_/lu_map_.hpp" include (:system-flag t) nil [3237 3293])
+            ("ext/pb_ds/detail/bin_search_tree_/bin_search_tree_.hpp" include (:system-flag t) nil [3294 3359])
+            ("ext/pb_ds/detail/rb_tree_map_/rb_tree_.hpp" include (:system-flag t) nil [3360 3413])
+            ("ext/pb_ds/detail/splay_tree_/splay_tree_.hpp" include (:system-flag t) nil [3414 3469])
+            ("ext/pb_ds/detail/ov_tree_map_/ov_tree_map_.hpp" include (:system-flag t) nil [3470 3527])
+            ("ext/pb_ds/detail/cc_hash_table_map_/cc_ht_map_.hpp" include (:system-flag t) nil [3528 3589])
+            ("ext/pb_ds/detail/gp_hash_table_map_/gp_ht_map_.hpp" include (:system-flag t) nil [3590 3651])
+            ("ext/pb_ds/detail/pat_trie_/pat_trie_.hpp" include (:system-flag t) nil [3652 3703])
+            ("__gnu_pbds" type
+               (:members 
+                  ( ("detail" type
+                       (:members 
+                          ( ("container_base_dispatch" type
+                               (:template 
+                                  ( ("Key" type (:type "class") nil nil)
+                                    ("Mapped" type (:type "class") nil nil)
+                                    ("_Alloc" type (:type "class") nil nil)
+                                    ("Policy_Tl" type (:type "class") nil nil))                                  
+                                :type "struct"
+                                :members 
+                                  ( ("private" label nil (reparse-symbol classsubparts) [4177 4185])
+                                    ("at0" type
+                                       (:typedef ("__gnu_cxx::typelist::at_index" type
+                                             (:template-specifier 
+                                                ( ("Policy_Tl" type nil nil nil)
+                                                  ("0"))                                                
+                                              :type "class")
+                                              nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [4192 4248])
+                                    ("at0t" type
+                                       (:typedef ("at0::type" type (:type "class") nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [4255 4294])
+                                    ("at1" type
+                                       (:typedef ("__gnu_cxx::typelist::at_index" type
+                                             (:template-specifier 
+                                                ( ("Policy_Tl" type nil nil nil)
+                                                  ("1"))                                                
+                                              :type "class")
+                                              nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [4301 4358])
+                                    ("at1t" type
+                                       (:typedef ("at1::type" type (:type "class") nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [4365 4404])
+                                    ("public" label nil (reparse-symbol classsubparts) [4410 4417])
+                                    ("type" type
+                                       (:typedef ("lu_map" type
+                                             (:template-specifier 
+                                                ( ("Key" type nil nil nil)
+                                                  ("Mapped" type nil nil nil)
+                                                  ("at0t" type nil nil nil)
+                                                  ("_Alloc" type nil nil nil)
+                                                  ("at1t" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [4451 4504]))                                  
+                                :template-specifier 
+                                  ( ("Key" type nil nil nil)
+                                    ("Mapped" type nil nil nil)
+                                    ("_Alloc" type nil nil nil)
+                                    ("list_update_tag" type nil nil nil)
+                                    ("Policy_Tl" type nil nil nil))                                  )
+                                (reparse-symbol namespacesubparts) [3999 4511])
+                            ("container_base_dispatch" type
+                               (:template 
+                                  ( ("Key" type (:type "class") nil nil)
+                                    ("_Alloc" type (:type "class") nil nil)
+                                    ("Policy_Tl" type (:type "class") nil nil))                                  
+                                :type "struct"
+                                :members 
+                                  ( ("private" label nil (reparse-symbol classsubparts) [4721 4729])
+                                    ("at0" type
+                                       (:typedef ("__gnu_cxx::typelist::at_index" type
+                                             (:template-specifier 
+                                                ( ("Policy_Tl" type nil nil nil)
+                                                  ("0"))                                                
+                                              :type "class")
+                                              nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [4736 4792])
+                                    ("at0t" type
+                                       (:typedef ("at0::type" type (:type "class") nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [4799 4838])
+                                    ("at1" type
+                                       (:typedef ("__gnu_cxx::typelist::at_index" type
+                                             (:template-specifier 
+                                                ( ("Policy_Tl" type nil nil nil)
+                                                  ("1"))                                                
+                                              :type "class")
+                                              nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [4845 4902])
+                                    ("at1t" type
+                                       (:typedef ("at1::type" type (:type "class") nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [4909 4948])
+                                    ("public" label nil (reparse-symbol classsubparts) [4954 4961])
+                                    ("type" type
+                                       (:typedef ("lu_set" type
+                                             (:template-specifier 
+                                                ( ("Key" type nil nil nil)
+                                                  ("null_type" type nil nil nil)
+                                                  ("at0t" type nil nil nil)
+                                                  ("_Alloc" type nil nil nil)
+                                                  ("at1t" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [4995 5051]))                                  
+                                :template-specifier 
+                                  ( ("Key" type nil nil nil)
+                                    ("null_type" type nil nil nil)
+                                    ("_Alloc" type nil nil nil)
+                                    ("list_update_tag" type nil nil nil)
+                                    ("Policy_Tl" type nil nil nil))                                  )
+                                (reparse-symbol namespacesubparts) [4557 5058])
+                            ("container_base_dispatch" type
+                               (:template 
+                                  ( ("Key" type (:type "class") nil nil)
+                                    ("Mapped" type (:type "class") nil nil)
+                                    ("_Alloc" type (:type "class") nil nil)
+                                    ("Policy_Tl" type (:type "class") nil nil))                                  
+                                :type "struct"
+                                :members 
+                                  ( ("private" label nil (reparse-symbol classsubparts) [5272 5280])
+                                    ("at1" type
+                                       (:typedef ("__gnu_cxx::typelist::at_index" type
+                                             (:template-specifier 
+                                                ( ("Policy_Tl" type nil nil nil)
+                                                  ("1"))                                                
+                                              :type "class")
+                                              nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [5287 5344])
+                                    ("at1t" type
+                                       (:typedef ("at1::type" type (:type "class") nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [5351 5390])
+                                    ("public" label nil (reparse-symbol classsubparts) [5396 5403])
+                                    ("type" type
+                                       (:typedef ("pat_trie_map" type
+                                             (:template-specifier 
+                                                ( ("Key" type nil nil nil)
+                                                  ("Mapped" type nil nil nil)
+                                                  ("at1t" type nil nil nil)
+                                                  ("_Alloc" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [5410 5465]))                                  
+                                :template-specifier 
+                                  ( ("Key" type nil nil nil)
+                                    ("Mapped" type nil nil nil)
+                                    ("_Alloc" type nil nil nil)
+                                    ("pat_trie_tag" type nil nil nil)
+                                    ("Policy_Tl" type nil nil nil))                                  )
+                                (reparse-symbol namespacesubparts) [5106 5472])
+                            ("container_base_dispatch" type
+                               (:template 
+                                  ( ("Key" type (:type "class") nil nil)
+                                    ("_Alloc" type (:type "class") nil nil)
+                                    ("Policy_Tl" type (:type "class") nil nil))                                  
+                                :type "struct"
+                                :members 
+                                  ( ("private" label nil (reparse-symbol classsubparts) [5681 5689])
+                                    ("at1" type
+                                       (:typedef ("__gnu_cxx::typelist::at_index" type
+                                             (:template-specifier 
+                                                ( ("Policy_Tl" type nil nil nil)
+                                                  ("1"))                                                
+                                              :type "class")
+                                              nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [5696 5753])
+                                    ("at1t" type
+                                       (:typedef ("at1::type" type (:type "class") nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [5760 5799])
+                                    ("public" label nil (reparse-symbol classsubparts) [5805 5812])
+                                    ("type" type
+                                       (:typedef ("pat_trie_set" type
+                                             (:template-specifier 
+                                                ( ("Key" type nil nil nil)
+                                                  ("null_type" type nil nil nil)
+                                                  ("at1t" type nil nil nil)
+                                                  ("_Alloc" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [5846 5902]))                                  
+                                :template-specifier 
+                                  ( ("Key" type nil nil nil)
+                                    ("null_type" type nil nil nil)
+                                    ("_Alloc" type nil nil nil)
+                                    ("pat_trie_tag" type nil nil nil)
+                                    ("Policy_Tl" type nil nil nil))                                  )
+                                (reparse-symbol namespacesubparts) [5520 5909])
+                            ("container_base_dispatch" type
+                               (:template 
+                                  ( ("Key" type (:type "class") nil nil)
+                                    ("Mapped" type (:type "class") nil nil)
+                                    ("_Alloc" type (:type "class") nil nil)
+                                    ("Policy_Tl" type (:type "class") nil nil))                                  
+                                :type "struct"
+                                :members 
+                                  ( ("private" label nil (reparse-symbol classsubparts) [6119 6127])
+                                    ("at0" type
+                                       (:typedef ("__gnu_cxx::typelist::at_index" type
+                                             (:template-specifier 
+                                                ( ("Policy_Tl" type nil nil nil)
+                                                  ("0"))                                                
+                                              :type "class")
+                                              nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [6134 6190])
+                                    ("at0t" type
+                                       (:typedef ("at0::type" type (:type "class") nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [6197 6236])
+                                    ("at1" type
+                                       (:typedef ("__gnu_cxx::typelist::at_index" type
+                                             (:template-specifier 
+                                                ( ("Policy_Tl" type nil nil nil)
+                                                  ("1"))                                                
+                                              :type "class")
+                                              nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [6243 6300])
+                                    ("at1t" type
+                                       (:typedef ("at1::type" type (:type "class") nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [6307 6346])
+                                    ("public" label nil (reparse-symbol classsubparts) [6352 6359])
+                                    ("type" type
+                                       (:typedef ("rb_tree_map" type
+                                             (:template-specifier 
+                                                ( ("Key" type nil nil nil)
+                                                  ("Mapped" type nil nil nil)
+                                                  ("at0t" type nil nil nil)
+                                                  ("at1t" type nil nil nil)
+                                                  ("_Alloc" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [6393 6452]))                                  
+                                :template-specifier 
+                                  ( ("Key" type nil nil nil)
+                                    ("Mapped" type nil nil nil)
+                                    ("_Alloc" type nil nil nil)
+                                    ("rb_tree_tag" type nil nil nil)
+                                    ("Policy_Tl" type nil nil nil))                                  )
+                                (reparse-symbol namespacesubparts) [5952 6459])
+                            ("container_base_dispatch" type
+                               (:template 
+                                  ( ("Key" type (:type "class") nil nil)
+                                    ("_Alloc" type (:type "class") nil nil)
+                                    ("Policy_Tl" type (:type "class") nil nil))                                  
+                                :type "struct"
+                                :members 
+                                  ( ("private" label nil (reparse-symbol classsubparts) [6662 6670])
+                                    ("at0" type
+                                       (:typedef ("__gnu_cxx::typelist::at_index" type
+                                             (:template-specifier 
+                                                ( ("Policy_Tl" type nil nil nil)
+                                                  ("0"))                                                
+                                              :type "class")
+                                              nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [6677 6733])
+                                    ("at0t" type
+                                       (:typedef ("at0::type" type (:type "class") nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [6740 6779])
+                                    ("at1" type
+                                       (:typedef ("__gnu_cxx::typelist::at_index" type
+                                             (:template-specifier 
+                                                ( ("Policy_Tl" type nil nil nil)
+                                                  ("1"))                                                
+                                              :type "class")
+                                              nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [6786 6843])
+                                    ("at1t" type
+                                       (:typedef ("at1::type" type (:type "class") nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [6850 6889])
+                                    ("public" label nil (reparse-symbol classsubparts) [6895 6902])
+                                    ("type" type
+                                       (:typedef ("rb_tree_set" type
+                                             (:template-specifier 
+                                                ( ("Key" type nil nil nil)
+                                                  ("null_type" type nil nil nil)
+                                                  ("at0t" type nil nil nil)
+                                                  ("at1t" type nil nil nil)
+                                                  ("_Alloc" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [6909 6970]))                                  
+                                :template-specifier 
+                                  ( ("Key" type nil nil nil)
+                                    ("null_type" type nil nil nil)
+                                    ("_Alloc" type nil nil nil)
+                                    ("rb_tree_tag" type nil nil nil)
+                                    ("Policy_Tl" type nil nil nil))                                  )
+                                (reparse-symbol namespacesubparts) [6502 6977])
+                            ("container_base_dispatch" type
+                               (:template 
+                                  ( ("Key" type (:type "class") nil nil)
+                                    ("Mapped" type (:type "class") nil nil)
+                                    ("_Alloc" type (:type "class") nil nil)
+                                    ("Policy_Tl" type (:type "class") nil nil))                                  
+                                :type "struct"
+                                :members 
+                                  ( ("private" label nil (reparse-symbol classsubparts) [7193 7201])
+                                    ("at0" type
+                                       (:typedef ("__gnu_cxx::typelist::at_index" type
+                                             (:template-specifier 
+                                                ( ("Policy_Tl" type nil nil nil)
+                                                  ("0"))                                                
+                                              :type "class")
+                                              nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [7208 7264])
+                                    ("at0t" type
+                                       (:typedef ("at0::type" type (:type "class") nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [7271 7310])
+                                    ("at1" type
+                                       (:typedef ("__gnu_cxx::typelist::at_index" type
+                                             (:template-specifier 
+                                                ( ("Policy_Tl" type nil nil nil)
+                                                  ("1"))                                                
+                                              :type "class")
+                                              nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [7317 7374])
+                                    ("at1t" type
+                                       (:typedef ("at1::type" type (:type "class") nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [7381 7420])
+                                    ("public" label nil (reparse-symbol classsubparts) [7426 7433])
+                                    ("type" type
+                                       (:typedef ("splay_tree_map" type
+                                             (:template-specifier 
+                                                ( ("Key" type nil nil nil)
+                                                  ("Mapped" type nil nil nil)
+                                                  ("at0t" type nil nil nil)
+                                                  ("at1t" type nil nil nil)
+                                                  ("_Alloc" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [7467 7529]))                                  
+                                :template-specifier 
+                                  ( ("Key" type nil nil nil)
+                                    ("Mapped" type nil nil nil)
+                                    ("_Alloc" type nil nil nil)
+                                    ("splay_tree_tag" type nil nil nil)
+                                    ("Policy_Tl" type nil nil nil))                                  )
+                                (reparse-symbol namespacesubparts) [7018 7536])
+                            ("container_base_dispatch" type
+                               (:template 
+                                  ( ("Key" type (:type "class") nil nil)
+                                    ("_Alloc" type (:type "class") nil nil)
+                                    ("Policy_Tl" type (:type "class") nil nil))                                  
+                                :type "struct"
+                                :members 
+                                  ( ("private" label nil (reparse-symbol classsubparts) [7740 7748])
+                                    ("at0" type
+                                       (:typedef ("__gnu_cxx::typelist::at_index" type
+                                             (:template-specifier 
+                                                ( ("Policy_Tl" type nil nil nil)
+                                                  ("0"))                                                
+                                              :type "class")
+                                              nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [7755 7811])
+                                    ("at0t" type
+                                       (:typedef ("at0::type" type (:type "class") nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [7818 7857])
+                                    ("at1" type
+                                       (:typedef ("__gnu_cxx::typelist::at_index" type
+                                             (:template-specifier 
+                                                ( ("Policy_Tl" type nil nil nil)
+                                                  ("1"))                                                
+                                              :type "class")
+                                              nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [7864 7921])
+                                    ("at1t" type
+                                       (:typedef ("at1::type" type (:type "class") nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [7928 7967])
+                                    ("public" label nil (reparse-symbol classsubparts) [7973 7980])
+                                    ("type" type
+                                       (:typedef ("splay_tree_set" type
+                                             (:template-specifier 
+                                                ( ("Key" type nil nil nil)
+                                                  ("null_type" type nil nil nil)
+                                                  ("at0t" type nil nil nil)
+                                                  ("at1t" type nil nil nil)
+                                                  ("_Alloc" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [8014 8078]))                                  
+                                :template-specifier 
+                                  ( ("Key" type nil nil nil)
+                                    ("null_type" type nil nil nil)
+                                    ("_Alloc" type nil nil nil)
+                                    ("splay_tree_tag" type nil nil nil)
+                                    ("Policy_Tl" type nil nil nil))                                  )
+                                (reparse-symbol namespacesubparts) [7577 8083])
+                            ("container_base_dispatch" type
+                               (:template 
+                                  ( ("Key" type (:type "class") nil nil)
+                                    ("Mapped" type (:type "class") nil nil)
+                                    ("_Alloc" type (:type "class") nil nil)
+                                    ("Policy_Tl" type (:type "class") nil nil))                                  
+                                :type "struct"
+                                :members 
+                                  ( ("private" label nil (reparse-symbol classsubparts) [8302 8310])
+                                    ("at0" type
+                                       (:typedef ("__gnu_cxx::typelist::at_index" type
+                                             (:template-specifier 
+                                                ( ("Policy_Tl" type nil nil nil)
+                                                  ("0"))                                                
+                                              :type "class")
+                                              nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [8317 8373])
+                                    ("at0t" type
+                                       (:typedef ("at0::type" type (:type "class") nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [8380 8419])
+                                    ("at1" type
+                                       (:typedef ("__gnu_cxx::typelist::at_index" type
+                                             (:template-specifier 
+                                                ( ("Policy_Tl" type nil nil nil)
+                                                  ("1"))                                                
+                                              :type "class")
+                                              nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [8426 8483])
+                                    ("at1t" type
+                                       (:typedef ("at1::type" type (:type "class") nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [8490 8529])
+                                    ("public" label nil (reparse-symbol classsubparts) [8535 8542])
+                                    ("type" type
+                                       (:typedef ("ov_tree_map" type
+                                             (:template-specifier 
+                                                ( ("Key" type nil nil nil)
+                                                  ("Mapped" type nil nil nil)
+                                                  ("at0t" type nil nil nil)
+                                                  ("at1t" type nil nil nil)
+                                                  ("_Alloc" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [8576 8635]))                                  
+                                :template-specifier 
+                                  ( ("Key" type nil nil nil)
+                                    ("Mapped" type nil nil nil)
+                                    ("_Alloc" type nil nil nil)
+                                    ("ov_tree_tag" type nil nil nil)
+                                    ("Policy_Tl" type nil nil nil))                                  )
+                                (reparse-symbol namespacesubparts) [8135 8640])
+                            ("container_base_dispatch" type
+                               (:template 
+                                  ( ("Key" type (:type "class") nil nil)
+                                    ("_Alloc" type (:type "class") nil nil)
+                                    ("Policy_Tl" type (:type "class") nil nil))                                  
+                                :type "struct"
+                                :members 
+                                  ( ("private" label nil (reparse-symbol classsubparts) [8852 8860])
+                                    ("at0" type
+                                       (:typedef ("__gnu_cxx::typelist::at_index" type
+                                             (:template-specifier 
+                                                ( ("Policy_Tl" type nil nil nil)
+                                                  ("0"))                                                
+                                              :type "class")
+                                              nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [8867 8923])
+                                    ("at0t" type
+                                       (:typedef ("at0::type" type (:type "class") nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [8930 8969])
+                                    ("at1" type
+                                       (:typedef ("__gnu_cxx::typelist::at_index" type
+                                             (:template-specifier 
+                                                ( ("Policy_Tl" type nil nil nil)
+                                                  ("1"))                                                
+                                              :type "class")
+                                              nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [8976 9033])
+                                    ("at1t" type
+                                       (:typedef ("at1::type" type (:type "class") nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [9040 9079])
+                                    ("public" label nil (reparse-symbol classsubparts) [9085 9092])
+                                    ("type" type
+                                       (:typedef ("ov_tree_set" type
+                                             (:template-specifier 
+                                                ( ("Key" type nil nil nil)
+                                                  ("null_type" type nil nil nil)
+                                                  ("at0t" type nil nil nil)
+                                                  ("at1t" type nil nil nil)
+                                                  ("_Alloc" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [9126 9187]))                                  
+                                :template-specifier 
+                                  ( ("Key" type nil nil nil)
+                                    ("null_type" type nil nil nil)
+                                    ("_Alloc" type nil nil nil)
+                                    ("ov_tree_tag" type nil nil nil)
+                                    ("Policy_Tl" type nil nil nil))                                  )
+                                (reparse-symbol namespacesubparts) [8692 9192])
+                            ("container_base_dispatch" type
+                               (:template 
+                                  ( ("Key" type (:type "class") nil nil)
+                                    ("Mapped" type (:type "class") nil nil)
+                                    ("_Alloc" type (:type "class") nil nil)
+                                    ("Policy_Tl" type (:type "class") nil nil))                                  
+                                :type "struct"
+                                :members 
+                                  ( ("private" label nil (reparse-symbol classsubparts) [9414 9422])
+                                    ("at0" type
+                                       (:typedef ("__gnu_cxx::typelist::at_index" type
+                                             (:template-specifier 
+                                                ( ("Policy_Tl" type nil nil nil)
+                                                  ("0"))                                                
+                                              :type "class")
+                                              nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [9429 9485])
+                                    ("at0t" type
+                                       (:typedef ("at0::type" type (:type "class") nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [9492 9531])
+                                    ("at1" type
+                                       (:typedef ("__gnu_cxx::typelist::at_index" type
+                                             (:template-specifier 
+                                                ( ("Policy_Tl" type nil nil nil)
+                                                  ("1"))                                                
+                                              :type "class")
+                                              nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [9538 9595])
+                                    ("at1t" type
+                                       (:typedef ("at1::type" type (:type "class") nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [9602 9641])
+                                    ("at2" type
+                                       (:typedef ("__gnu_cxx::typelist::at_index" type
+                                             (:template-specifier 
+                                                ( ("Policy_Tl" type nil nil nil)
+                                                  ("2"))                                                
+                                              :type "class")
+                                              nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [9648 9704])
+                                    ("at2t" type
+                                       (:typedef ("at2::type" type (:type "class") nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [9711 9750])
+                                    ("at3" type
+                                       (:typedef ("__gnu_cxx::typelist::at_index" type
+                                             (:template-specifier 
+                                                ( ("Policy_Tl" type nil nil nil)
+                                                  ("3"))                                                
+                                              :type "class")
+                                              nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [9757 9813])
+                                    ("at3t" type
+                                       (:typedef ("at3::type" type (:type "class") nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [9820 9855])
+                                    ("at4" type
+                                       (:typedef ("__gnu_cxx::typelist::at_index" type
+                                             (:template-specifier 
+                                                ( ("Policy_Tl" type nil nil nil)
+                                                  ("4"))                                                
+                                              :type "class")
+                                              nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [9862 9919])
+                                    ("at4t" type
+                                       (:typedef ("at4::type" type (:type "class") nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [9926 9965])
+                                    ("public" label nil (reparse-symbol classsubparts) [9971 9978])
+                                    ("type" type
+                                       (:typedef ("cc_ht_map" type
+                                             (:template-specifier 
+                                                ( ("Key" type nil nil nil)
+                                                  ("Mapped" type nil nil nil)
+                                                  ("at0t" type nil nil nil)
+                                                  ("at1t" type nil nil nil)
+                                                  ("_Alloc" type nil nil nil)
+                                                  ("at3t::value" type nil nil nil)
+                                                  ("at4t" type nil nil nil)
+                                                  ("at2t" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [10012 10106]))                                  
+                                :template-specifier 
+                                  ( ("Key" type nil nil nil)
+                                    ("Mapped" type nil nil nil)
+                                    ("_Alloc" type nil nil nil)
+                                    ("cc_hash_tag" type nil nil nil)
+                                    ("Policy_Tl" type nil nil nil))                                  )
+                                (reparse-symbol namespacesubparts) [9247 10111])
+                            ("container_base_dispatch" type
+                               (:template 
+                                  ( ("Key" type (:type "class") nil nil)
+                                    ("_Alloc" type (:type "class") nil nil)
+                                    ("Policy_Tl" type (:type "class") nil nil))                                  
+                                :type "struct"
+                                :members 
+                                  ( ("private" label nil (reparse-symbol classsubparts) [10326 10334])
+                                    ("at0" type
+                                       (:typedef ("__gnu_cxx::typelist::at_index" type
+                                             (:template-specifier 
+                                                ( ("Policy_Tl" type nil nil nil)
+                                                  ("0"))                                                
+                                              :type "class")
+                                              nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [10341 10397])
+                                    ("at0t" type
+                                       (:typedef ("at0::type" type (:type "class") nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [10404 10443])
+                                    ("at1" type
+                                       (:typedef ("__gnu_cxx::typelist::at_index" type
+                                             (:template-specifier 
+                                                ( ("Policy_Tl" type nil nil nil)
+                                                  ("1"))                                                
+                                              :type "class")
+                                              nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [10450 10507])
+                                    ("at1t" type
+                                       (:typedef ("at1::type" type (:type "class") nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [10514 10553])
+                                    ("at2" type
+                                       (:typedef ("__gnu_cxx::typelist::at_index" type
+                                             (:template-specifier 
+                                                ( ("Policy_Tl" type nil nil nil)
+                                                  ("2"))                                                
+                                              :type "class")
+                                              nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [10560 10616])
+                                    ("at2t" type
+                                       (:typedef ("at2::type" type (:type "class") nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [10623 10662])
+                                    ("at3" type
+                                       (:typedef ("__gnu_cxx::typelist::at_index" type
+                                             (:template-specifier 
+                                                ( ("Policy_Tl" type nil nil nil)
+                                                  ("3"))                                                
+                                              :type "class")
+                                              nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [10669 10725])
+                                    ("at3t" type
+                                       (:typedef ("at3::type" type (:type "class") nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [10732 10767])
+                                    ("at4" type
+                                       (:typedef ("__gnu_cxx::typelist::at_index" type
+                                             (:template-specifier 
+                                                ( ("Policy_Tl" type nil nil nil)
+                                                  ("4"))                                                
+                                              :type "class")
+                                              nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [10774 10831])
+                                    ("at4t" type
+                                       (:typedef ("at4::type" type (:type "class") nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [10838 10877])
+                                    ("public" label nil (reparse-symbol classsubparts) [10883 10890])
+                                    ("type" type
+                                       (:typedef ("cc_ht_set" type
+                                             (:template-specifier 
+                                                ( ("Key" type nil nil nil)
+                                                  ("null_type" type nil nil nil)
+                                                  ("at0t" type nil nil nil)
+                                                  ("at1t" type nil nil nil)
+                                                  ("_Alloc" type nil nil nil)
+                                                  ("at3t::value" type nil nil nil)
+                                                  ("at4t" type nil nil nil)
+                                                  ("at2t" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [10924 11017]))                                  
+                                :template-specifier 
+                                  ( ("Key" type nil nil nil)
+                                    ("null_type" type nil nil nil)
+                                    ("_Alloc" type nil nil nil)
+                                    ("cc_hash_tag" type nil nil nil)
+                                    ("Policy_Tl" type nil nil nil))                                  )
+                                (reparse-symbol namespacesubparts) [10166 11022])
+                            ("container_base_dispatch" type
+                               (:template 
+                                  ( ("Key" type (:type "class") nil nil)
+                                    ("Mapped" type (:type "class") nil nil)
+                                    ("_Alloc" type (:type "class") nil nil)
+                                    ("Policy_Tl" type (:type "class") nil nil))                                  
+                                :type "struct"
+                                :members 
+                                  ( ("private" label nil (reparse-symbol classsubparts) [11240 11248])
+                                    ("at0" type
+                                       (:typedef ("__gnu_cxx::typelist::at_index" type
+                                             (:template-specifier 
+                                                ( ("Policy_Tl" type nil nil nil)
+                                                  ("0"))                                                
+                                              :type "class")
+                                              nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [11255 11311])
+                                    ("at0t" type
+                                       (:typedef ("at0::type" type (:type "class") nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [11318 11357])
+                                    ("at1" type
+                                       (:typedef ("__gnu_cxx::typelist::at_index" type
+                                             (:template-specifier 
+                                                ( ("Policy_Tl" type nil nil nil)
+                                                  ("1"))                                                
+                                              :type "class")
+                                              nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [11364 11421])
+                                    ("at1t" type
+                                       (:typedef ("at1::type" type (:type "class") nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [11428 11467])
+                                    ("at2" type
+                                       (:typedef ("__gnu_cxx::typelist::at_index" type
+                                             (:template-specifier 
+                                                ( ("Policy_Tl" type nil nil nil)
+                                                  ("2"))                                                
+                                              :type "class")
+                                              nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [11474 11530])
+                                    ("at2t" type
+                                       (:typedef ("at2::type" type (:type "class") nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [11537 11576])
+                                    ("at3" type
+                                       (:typedef ("__gnu_cxx::typelist::at_index" type
+                                             (:template-specifier 
+                                                ( ("Policy_Tl" type nil nil nil)
+                                                  ("3"))                                                
+                                              :type "class")
+                                              nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [11583 11639])
+                                    ("at3t" type
+                                       (:typedef ("at3::type" type (:type "class") nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [11646 11681])
+                                    ("at4" type
+                                       (:typedef ("__gnu_cxx::typelist::at_index" type
+                                             (:template-specifier 
+                                                ( ("Policy_Tl" type nil nil nil)
+                                                  ("4"))                                                
+                                              :type "class")
+                                              nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [11688 11745])
+                                    ("at4t" type
+                                       (:typedef ("at4::type" type (:type "class") nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [11752 11791])
+                                    ("at5" type
+                                       (:typedef ("__gnu_cxx::typelist::at_index" type
+                                             (:template-specifier 
+                                                ( ("Policy_Tl" type nil nil nil)
+                                                  ("5"))                                                
+                                              :type "class")
+                                              nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [11798 11855])
+                                    ("at5t" type
+                                       (:typedef ("at5::type" type (:type "class") nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [11862 11901])
+                                    ("public" label nil (reparse-symbol classsubparts) [11907 11914])
+                                    ("type" type
+                                       (:typedef ("gp_ht_map" type
+                                             (:template-specifier 
+                                                ( ("Key" type nil nil nil)
+                                                  ("Mapped" type nil nil nil)
+                                                  ("at0t" type nil nil nil)
+                                                  ("at1t" type nil nil nil)
+                                                  ("_Alloc" type nil nil nil)
+                                                  ("at3t::value" type nil nil nil)
+                                                  ("at4t" type nil nil nil)
+                                                  ("at5t" type nil nil nil)
+                                                  ("at2t" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [11948 12041]))                                  
+                                :template-specifier 
+                                  ( ("Key" type nil nil nil)
+                                    ("Mapped" type nil nil nil)
+                                    ("_Alloc" type nil nil nil)
+                                    ("gp_hash_tag" type nil nil nil)
+                                    ("Policy_Tl" type nil nil nil))                                  )
+                                (reparse-symbol namespacesubparts) [11073 12046])
+                            ("container_base_dispatch" type
+                               (:template 
+                                  ( ("Key" type (:type "class") nil nil)
+                                    ("_Alloc" type (:type "class") nil nil)
+                                    ("Policy_Tl" type (:type "class") nil nil))                                  
+                                :type "struct"
+                                :members 
+                                  ( ("private" label nil (reparse-symbol classsubparts) [12257 12265])
+                                    ("at0" type
+                                       (:typedef ("__gnu_cxx::typelist::at_index" type
+                                             (:template-specifier 
+                                                ( ("Policy_Tl" type nil nil nil)
+                                                  ("0"))                                                
+                                              :type "class")
+                                              nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [12272 12328])
+                                    ("at0t" type
+                                       (:typedef ("at0::type" type (:type "class") nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [12335 12374])
+                                    ("at1" type
+                                       (:typedef ("__gnu_cxx::typelist::at_index" type
+                                             (:template-specifier 
+                                                ( ("Policy_Tl" type nil nil nil)
+                                                  ("1"))                                                
+                                              :type "class")
+                                              nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [12381 12438])
+                                    ("at1t" type
+                                       (:typedef ("at1::type" type (:type "class") nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [12445 12484])
+                                    ("at2" type
+                                       (:typedef ("__gnu_cxx::typelist::at_index" type
+                                             (:template-specifier 
+                                                ( ("Policy_Tl" type nil nil nil)
+                                                  ("2"))                                                
+                                              :type "class")
+                                              nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [12491 12547])
+                                    ("at2t" type
+                                       (:typedef ("at2::type" type (:type "class") nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [12554 12593])
+                                    ("at3" type
+                                       (:typedef ("__gnu_cxx::typelist::at_index" type
+                                             (:template-specifier 
+                                                ( ("Policy_Tl" type nil nil nil)
+                                                  ("3"))                                                
+                                              :type "class")
+                                              nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [12600 12656])
+                                    ("at3t" type
+                                       (:typedef ("at3::type" type (:type "class") nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [12663 12698])
+                                    ("at4" type
+                                       (:typedef ("__gnu_cxx::typelist::at_index" type
+                                             (:template-specifier 
+                                                ( ("Policy_Tl" type nil nil nil)
+                                                  ("4"))                                                
+                                              :type "class")
+                                              nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [12705 12762])
+                                    ("at4t" type
+                                       (:typedef ("at4::type" type (:type "class") nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [12769 12808])
+                                    ("at5" type
+                                       (:typedef ("__gnu_cxx::typelist::at_index" type
+                                             (:template-specifier 
+                                                ( ("Policy_Tl" type nil nil nil)
+                                                  ("5"))                                                
+                                              :type "class")
+                                              nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [12815 12872])
+                                    ("at5t" type
+                                       (:typedef ("at5::type" type (:type "class") nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [12879 12918])
+                                    ("public" label nil (reparse-symbol classsubparts) [12924 12931])
+                                    ("type" type
+                                       (:typedef ("gp_ht_set" type
+                                             (:template-specifier 
+                                                ( ("Key" type nil nil nil)
+                                                  ("null_type" type nil nil nil)
+                                                  ("at0t" type nil nil nil)
+                                                  ("at1t" type nil nil nil)
+                                                  ("_Alloc" type nil nil nil)
+                                                  ("at3t::value" type nil nil nil)
+                                                  ("at4t" type nil nil nil)
+                                                  ("at5t" type nil nil nil)
+                                                  ("at2t" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [12965 13059]))                                  
+                                :template-specifier 
+                                  ( ("Key" type nil nil nil)
+                                    ("null_type" type nil nil nil)
+                                    ("_Alloc" type nil nil nil)
+                                    ("gp_hash_tag" type nil nil nil)
+                                    ("Policy_Tl" type nil nil nil))                                  )
+                                (reparse-symbol namespacesubparts) [12097 13064]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [3936 13066]))                  
+                :type "namespace")
+                nil [3913 13088]))          
+      :file "container_base_dispatch.hpp"
+      :pointmax 13121
+      :fsize 13120
+      :lastmodtime '(23161 10764 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("PB_DS_ASSOC_CNTNR_BASE_DS_DISPATCHER_HPP")
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("PB_DS_TYPE_UTILS_HPP" variable (:constant-flag t) nil [1804 1824])
+            ("cstddef" include (:system-flag t) nil [1826 1844])
+            ("utility" include (:system-flag t) nil [1845 1863])
+            ("tr1/type_traits" include (:system-flag t) nil [1864 1890])
+            ("ext/type_traits.h" include (:system-flag t) nil [1891 1919])
+            ("ext/numeric_traits.h" include (:system-flag t) nil [1920 1951])
+            ("__gnu_pbds" type
+               (:members 
+                  ( ("detail" type
+                       (:members 
+                          ( ("std::tr1::is_same" using (:type ("std::tr1::is_same" type
+                                 (:prototype t
+                                  :type "class")
+                                  nil nil)) (reparse-symbol namespacesubparts) [2003 2027])
+                            ("std::tr1::is_const" using (:type ("std::tr1::is_const" type
+                                 (:prototype t
+                                  :type "class")
+                                  nil nil)) (reparse-symbol namespacesubparts) [2032 2057])
+                            ("std::tr1::is_pointer" using (:type ("std::tr1::is_pointer" type
+                                 (:prototype t
+                                  :type "class")
+                                  nil nil)) (reparse-symbol namespacesubparts) [2062 2089])
+                            ("std::tr1::is_reference" using (:type ("std::tr1::is_reference" type
+                                 (:prototype t
+                                  :type "class")
+                                  nil nil)) (reparse-symbol namespacesubparts) [2094 2123])
+                            ("std::tr1::is_fundamental" using (:type ("std::tr1::is_fundamental" type
+                                 (:prototype t
+                                  :type "class")
+                                  nil nil)) (reparse-symbol namespacesubparts) [2128 2159])
+                            ("std::tr1::is_member_object_pointer" using (:type ("std::tr1::is_member_object_pointer" type
+                                 (:prototype t
+                                  :type "class")
+                                  nil nil)) (reparse-symbol namespacesubparts) [2164 2205])
+                            ("std::tr1::is_member_pointer" using (:type ("std::tr1::is_member_pointer" type
+                                 (:prototype t
+                                  :type "class")
+                                  nil nil)) (reparse-symbol namespacesubparts) [2210 2244])
+                            ("std::tr1::is_base_of" using (:type ("std::tr1::is_base_of" type
+                                 (:prototype t
+                                  :type "class")
+                                  nil nil)) (reparse-symbol namespacesubparts) [2249 2276])
+                            ("std::tr1::remove_const" using (:type ("std::tr1::remove_const" type
+                                 (:prototype t
+                                  :type "class")
+                                  nil nil)) (reparse-symbol namespacesubparts) [2281 2310])
+                            ("std::tr1::remove_reference" using (:type ("std::tr1::remove_reference" type
+                                 (:prototype t
+                                  :type "class")
+                                  nil nil)) (reparse-symbol namespacesubparts) [2315 2348])
+                            ("std::tr1::integral_constant" using (:type ("std::tr1::integral_constant" type
+                                 (:prototype t
+                                  :type "class")
+                                  nil nil)) (reparse-symbol namespacesubparts) [2514 2548])
+                            ("true_type" type
+                               (:typedef ("std::tr1::integral_constant" type
+                                     (:template-specifier 
+                                        ( ("int" type nil nil nil)
+                                          ("1"))                                        
+                                      :type "class")
+                                      nil nil)
+                                :type "typedef")
+                                (reparse-symbol namespacesubparts) [2553 2607])
+                            ("false_type" type
+                               (:typedef ("std::tr1::integral_constant" type
+                                     (:template-specifier 
+                                        ( ("int" type nil nil nil)
+                                          ("0"))                                        
+                                      :type "class")
+                                      nil nil)
+                                :type "typedef")
+                                (reparse-symbol namespacesubparts) [2612 2667])
+                            ("__gnu_cxx::__conditional_type" using (:type ("__gnu_cxx::__conditional_type" type
+                                 (:prototype t
+                                  :type "class")
+                                  nil nil)) (reparse-symbol namespacesubparts) [2673 2709])
+                            ("__gnu_cxx::__numeric_traits" using (:type ("__gnu_cxx::__numeric_traits" type
+                                 (:prototype t
+                                  :type "class")
+                                  nil nil)) (reparse-symbol namespacesubparts) [2714 2748])
+                            ("is_const_pointer" type
+                               (:template 
+                                  ( ("T" type (:type "class") nil nil))                                  
+                                :type "struct"
+                                :members 
+                                  ( ("" type
+                                       (:members 
+                                          ( ("value" variable
+                                               (:constant-flag t
+                                                :default-value (2834 2842)
+                                                :type "int")
+                                                (reparse-symbol enumsubparts) [2826 2842])
+                                            ("T" variable
+                                               (:constant-flag t
+                                                :type "int")
+                                                (reparse-symbol enumsubparts) [2843 2845])
+                                            ("value" variable
+                                               (:constant-flag t
+                                                :type "int")
+                                                (reparse-symbol enumsubparts) [2847 2854])
+                                            ("is_pointer" variable
+                                               (:constant-flag t
+                                                :type "int")
+                                                (reparse-symbol enumsubparts) [2856 2867])
+                                            ("T" variable
+                                               (:constant-flag t
+                                                :type "int")
+                                                (reparse-symbol enumsubparts) [2867 2869])
+                                            ("value" variable
+                                               (:constant-flag t
+                                                :type "int")
+                                                (reparse-symbol enumsubparts) [2871 2879]))                                          
+                                        :type "enum")
+                                        (reparse-symbol classsubparts) [2815 2880]))                                  )
+                                (reparse-symbol namespacesubparts) [2754 2887])
+                            ("is_const_reference" type
+                               (:template 
+                                  ( ("T" type (:type "class") nil nil))                                  
+                                :type "struct"
+                                :members 
+                                  ( ("" type
+                                       (:members 
+                                          ( ("value" variable
+                                               (:constant-flag t
+                                                :default-value (2975 2983)
+                                                :type "int")
+                                                (reparse-symbol enumsubparts) [2967 2983])
+                                            ("T" variable
+                                               (:constant-flag t
+                                                :type "int")
+                                                (reparse-symbol enumsubparts) [2984 2986])
+                                            ("value" variable
+                                               (:constant-flag t
+                                                :type "int")
+                                                (reparse-symbol enumsubparts) [2988 2995])
+                                            ("is_reference" variable
+                                               (:constant-flag t
+                                                :type "int")
+                                                (reparse-symbol enumsubparts) [2997 3010])
+                                            ("T" variable
+                                               (:constant-flag t
+                                                :type "int")
+                                                (reparse-symbol enumsubparts) [3010 3012])
+                                            ("value" variable
+                                               (:constant-flag t
+                                                :type "int")
+                                                (reparse-symbol enumsubparts) [3014 3022]))                                          
+                                        :type "enum")
+                                        (reparse-symbol classsubparts) [2956 3023]))                                  )
+                                (reparse-symbol namespacesubparts) [2893 3030])
+                            ("is_simple" type
+                               (:template 
+                                  ( ("T" type (:type "class") nil nil))                                  
+                                :type "struct"
+                                :members 
+                                  ( ("" type
+                                       (:members 
+                                          ( ("value" variable
+                                               (:constant-flag t
+                                                :default-value (3109 3123)
+                                                :type "int")
+                                                (reparse-symbol enumsubparts) [3101 3123])
+                                            ("remove_const" variable
+                                               (:constant-flag t
+                                                :type "int")
+                                                (reparse-symbol enumsubparts) [3133 3146])
+                                            ("T" variable
+                                               (:constant-flag t
+                                                :type "int")
+                                                (reparse-symbol enumsubparts) [3146 3148])
+                                            ("type" variable
+                                               (:constant-flag t
+                                                :type "int")
+                                                (reparse-symbol enumsubparts) [3150 3155])
+                                            ("value" variable
+                                               (:constant-flag t
+                                                :type "int")
+                                                (reparse-symbol enumsubparts) [3157 3168])
+                                            ("is_pointer" variable
+                                               (:constant-flag t
+                                                :type "int")
+                                                (reparse-symbol enumsubparts) [3170 3181])
+                                            ("remove_const" variable
+                                               (:constant-flag t
+                                                :type "int")
+                                                (reparse-symbol enumsubparts) [3190 3203])
+                                            ("T" variable
+                                               (:constant-flag t
+                                                :type "int")
+                                                (reparse-symbol enumsubparts) [3203 3205])
+                                            ("type" variable
+                                               (:constant-flag t
+                                                :type "int")
+                                                (reparse-symbol enumsubparts) [3207 3212])
+                                            ("value" variable
+                                               (:constant-flag t
+                                                :type "int")
+                                                (reparse-symbol enumsubparts) [3214 3225])
+                                            ("is_member_pointer" variable
+                                               (:constant-flag t
+                                                :type "int")
+                                                (reparse-symbol enumsubparts) [3227 3245])
+                                            ("T" variable
+                                               (:constant-flag t
+                                                :type "int")
+                                                (reparse-symbol enumsubparts) [3245 3247])
+                                            ("value" variable
+                                               (:constant-flag t
+                                                :type "int")
+                                                (reparse-symbol enumsubparts) [3249 3258]))                                          
+                                        :type "enum")
+                                        (reparse-symbol classsubparts) [3090 3259]))                                  )
+                                (reparse-symbol namespacesubparts) [3036 3266])
+                            ("is_pair" type
+                               (:template 
+                                  ( ("T" type (:type "class") nil nil))                                  
+                                :type "class"
+                                :members 
+                                  ( ("private" label nil (reparse-symbol classsubparts) [3321 3329])
+                                    ("is_pair_imp" type
+                                       (:template 
+                                          ( ("U" type (:type "class") nil nil))                                          
+                                        :type "struct"
+                                        :members 
+                                          ( ("" type
+                                               (:members 
+                                                  ( ("value" variable
+                                                       (:constant-flag t
+                                                        :default-value (3414 3415)
+                                                        :type "int")
+                                                        (reparse-symbol enumsubparts) [3406 3415]))                                                  
+                                                :type "enum")
+                                                (reparse-symbol classsubparts) [3391 3421]))                                          )
+                                        (reparse-symbol classsubparts) [3336 3430])
+                                    ("is_pair_imp" type
+                                       (:template 
+                                          ( ("U" type (:type "class") nil nil)
+                                            ("V" type (:type "class") nil nil))                                          
+                                        :type "struct"
+                                        :members 
+                                          ( ("" type
+                                               (:members 
+                                                  ( ("value" variable
+                                                       (:constant-flag t
+                                                        :default-value (3545 3546)
+                                                        :type "int")
+                                                        (reparse-symbol enumsubparts) [3537 3546]))                                                  
+                                                :type "enum")
+                                                (reparse-symbol classsubparts) [3522 3552]))                                          
+                                        :template-specifier 
+                                          ( ("std::pair" type (:template-specifier 
+                                              ( ("U" type nil nil nil)
+                                                ("V" type nil nil nil))                                              ) nil nil))                                          )
+                                        (reparse-symbol classsubparts) [3438 3561])
+                                    ("public" label nil (reparse-symbol classsubparts) [3567 3574])
+                                    ("" type
+                                       (:members 
+                                          ( ("value" variable
+                                               (:constant-flag t
+                                                :default-value (3600 3611)
+                                                :type "int")
+                                                (reparse-symbol enumsubparts) [3592 3611])
+                                            ("T" variable
+                                               (:constant-flag t
+                                                :type "int")
+                                                (reparse-symbol enumsubparts) [3612 3614])
+                                            ("value" variable
+                                               (:constant-flag t
+                                                :type "int")
+                                                (reparse-symbol enumsubparts) [3616 3624]))                                          
+                                        :type "enum")
+                                        (reparse-symbol classsubparts) [3581 3625]))                                  )
+                                (reparse-symbol namespacesubparts) [3272 3632])
+                            ("__static_assert" type
+                               (:template 
+                                  ( ("bool" type nil nil nil))                                  
+                                :type "struct"
+                                :prototype t)
+                                (reparse-symbol namespacesubparts) [3783 3825])
+                            ("__static_assert" type
+                               (:type "struct"
+                                :template-specifier 
+                                  ( ("true" type nil nil nil))                                  )
+                                (reparse-symbol namespacesubparts) [3831 3883])
+                            ("__static_assert_dumclass" type
+                               (:template 
+                                  ( ("int" type nil nil nil))                                  
+                                :type "struct"
+                                :members 
+                                  ( ("" type
+                                       (:members 
+                                          ( ("v" variable
+                                               (:constant-flag t
+                                                :default-value (3966 3967)
+                                                :type "int")
+                                                (reparse-symbol enumsubparts) [3962 3967]))                                          
+                                        :type "enum")
+                                        (reparse-symbol classsubparts) [3951 3971]))                                  )
+                                (reparse-symbol namespacesubparts) [3889 3978])
+                            ("PB_DS_STATIC_ASSERT" variable (:constant-flag t) (reparse-symbol namespacesubparts) [3988 4007])
+                            ("type_to_type" type
+                               (:template 
+                                  ( ("Type" type (:type "class") nil nil))                                  
+                                :type "struct"
+                                :members 
+                                  ( ("type" type
+                                       (:typedef ("Type" type (:type "class") nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [4235 4253]))                                  )
+                                (reparse-symbol namespacesubparts) [4175 4260]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [1978 4264]))                  
+                :type "namespace")
+                nil [1953 4286]))          
+      :file "type_utils.hpp"
+      :pointmax 4320
+      :fsize 4319
+      :lastmodtime '(23161 10765 0 0)
+      :unmatched-syntax '((punctuation 3615 . 3616) (punctuation 3614 . 3615) (punctuation 3613 . 3614) (punctuation 3611 . 3612) (punctuation 3615 . 3616) (punctuation 3614 . 3615) (punctuation 3613 . 3614) (punctuation 3611 . 3612) (punctuation 3248 . 3249) (punctuation 3247 . 3248) (punctuation 3246 . 3247) (punctuation 3244 . 3245) (punctuation 3225 . 3226) (punctuation 3224 . 3225) (punctuation 3213 . 3214) (punctuation 3212 . 3213) (punctuation 3211 . 3212) (punctuation 3206 . 3207) (punctuation 3205 . 3206) (punctuation 3204 . 3205) (punctuation 3202 . 3203) (TYPENAME 3181 . 3189) (punctuation 3180 . 3181) (punctuation 3168 . 3169) (punctuation 3167 . 3168) (punctuation 3156 . 3157) (punctuation 3155 . 3156) (punctuation 3154 . 3155) (punctuation 3149 . 3150) (punctuation 3148 . 3149) (punctuation 3147 . 3148) (punctuation 3145 . 3146) (TYPENAME 3124 . 3132) (punctuation 3123 . 3124) (punctuation 3248 . 3249) (punctuation 3247 . 3248) (punctuation 3246 . 3247) (punctuation 3244 . 3245) (punctuation 3225 . 3226) (punctuation 3224 . 3225) (punctuation 3213 . 3214) (punctuation 3212 . 3213) (punctuation 3211 . 3212) (punctuation 3206 . 3207) (punctuation 3205 . 3206) (punctuation 3204 . 3205) (punctuation 3202 . 3203) (TYPENAME 3181 . 3189) (punctuation 3180 . 3181) (punctuation 3168 . 3169) (punctuation 3167 . 3168) (punctuation 3156 . 3157) (punctuation 3155 . 3156) (punctuation 3154 . 3155) (punctuation 3149 . 3150) (punctuation 3148 . 3149) (punctuation 3147 . 3148) (punctuation 3145 . 3146) (TYPENAME 3124 . 3132) (punctuation 3123 . 3124) (punctuation 3013 . 3014) (punctuation 3012 . 3013) (punctuation 3011 . 3012) (punctuation 3009 . 3010) (punctuation 2995 . 2996) (punctuation 2994 . 2995) (punctuation 2987 . 2988) (punctuation 2986 . 2987) (punctuation 2985 . 2986) (punctuation 2983 . 2984) (punctuation 3013 . 3014) (punctuation 3012 . 3013) (punctuation 3011 . 3012) (punctuation 3009 . 3010) (punctuation 2995 . 2996) (punctuation 2994 . 2995) (punctuation 2987 . 2988) (punctuation 2986 . 2987) (punctuation 2985 . 2986) (punctuation 2983 . 2984) (punctuation 2870 . 2871) (punctuation 2869 . 2870) (punctuation 2868 . 2869) (punctuation 2866 . 2867) (punctuation 2854 . 2855) (punctuation 2853 . 2854) (punctuation 2846 . 2847) (punctuation 2845 . 2846) (punctuation 2844 . 2845) (punctuation 2842 . 2843) (punctuation 2870 . 2871) (punctuation 2869 . 2870) (punctuation 2868 . 2869) (punctuation 2866 . 2867) (punctuation 2854 . 2855) (punctuation 2853 . 2854) (punctuation 2846 . 2847) (punctuation 2845 . 2846) (punctuation 2844 . 2845) (punctuation 2842 . 2843))
+      :lexical-table 
+        '(("PB_DS_TYPE_UTILS_HPP")
+          ("PB_DS_STATIC_ASSERT" (spp-arg-list ("UNIQUE" "E") 4007 . 4018) . 
+              ((TYPEDEF "typedef" 4026 . 4033) (symbol "__gnu_pbds" 4034 . 4044) (punctuation ":" 4044 . 4045) (punctuation ":" 4045 . 4046) (symbol "detail" 4046 . 4052) (punctuation ":" 4052 . 4053) (punctuation ":" 4053 . 4054) (symbol "__static_assert_dumclass" 4054 . 4078) (punctuation "<" 4078 . 4079) (SIZEOF "sizeof" 4079 . 4085) (semantic-list "(__gnu_pbds::detail::__static_assert<bool(E)>)" 4085 . 4131) (punctuation ">" 4131 . 4132) (spp-symbol-merge ((symbol "UNIQUE" 4133 . 4139) (symbol "__static_assert_type" 4141 . 4161)) 4133 . 4161)))
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("PB_DS_TYPES_TRAITS_HPP" variable (:constant-flag t) nil [1750 1772])
+            ("algorithm" include (:system-flag t) nil [1774 1794])
+            ("utility" include (:system-flag t) nil [1795 1813])
+            ("ext/pb_ds/tag_and_trait.hpp" include (:system-flag t) nil [1814 1852])
+            ("ext/pb_ds/detail/type_utils.hpp" include (:system-flag t) nil [1853 1895])
+            ("utility" include (:system-flag t) nil [1896 1914])
+            ("__gnu_pbds" type
+               (:members 
+                  ( ("detail" type
+                       (:members 
+                          ( ("no_throw_copies" type
+                               (:template 
+                                  ( ("Key" type (:type "class") nil nil)
+                                    ("Mapped" type (:type "class") nil nil))                                  
+                                :type "struct"
+                                :members 
+                                  ( ("is_simple::value" variable (:type ("value" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2177 2219])
+                                    ("indicator" type
+                                       (:typedef ("integral_constant" type
+                                             (:template-specifier 
+                                                ( ("int" type nil nil nil)
+                                                  ("__simple" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [2221 2281]))                                  )
+                                (reparse-symbol namespacesubparts) [2054 2290])
+                            ("no_throw_copies" type
+                               (:template 
+                                  ( ("Key" type (:type "class") nil nil))                                  
+                                :type "struct"
+                                :members 
+                                  ( ("indicator" variable (:type "int") (reparse-symbol classsubparts) [2452 2462]))                                  
+                                :template-specifier 
+                                  ( ("Key" type nil nil nil)
+                                    ("null_type" type nil nil nil))                                  )
+                                (reparse-symbol namespacesubparts) [2320 2471])
+                            ("stored_value" type
+                               (:template 
+                                  ( ("_Tv" type (:type "class") nil nil))                                  
+                                :type "struct"
+                                :members 
+                                  ( ("value_type" type
+                                       (:typedef ("_Tv" type (:type "class") nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [2558 2582])
+                                    ("m_value" variable (:type ("value_type" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2584 2604]))                                  )
+                                (reparse-symbol namespacesubparts) [2500 2613])
+                            ("stored_hash" type
+                               (:template 
+                                  ( ("_Th" type (:type "class") nil nil))                                  
+                                :type "struct"
+                                :members 
+                                  ( ("hash_type" type
+                                       (:typedef ("_Th" type (:type "class") nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [2697 2720])
+                                    ("m_hash" variable (:type ("hash_type" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2722 2740]))                                  )
+                                (reparse-symbol namespacesubparts) [2640 2749])
+                            ("stored_data" type
+                               (:template 
+                                  ( ("_Tv" type (:type "class") nil nil)
+                                    ("_Th" type (:type "class") nil nil))                                  
+                                :type "struct"
+                                :superclasses 
+                                  ( ("stored_value" type
+                                       (:protection "public"
+                                        :type "class")
+                                        nil nil)
+                                    ("stored_hash" type
+                                       (:protection "public"
+                                        :type "class")
+                                        nil nil))                                  )
+                                (reparse-symbol namespacesubparts) [2872 3002])
+                            ("stored_data" type
+                               (:template 
+                                  ( ("_Tv" type (:type "class") nil nil))                                  
+                                :type "struct"
+                                :superclasses 
+                                  ( ("stored_value" type
+                                       (:protection "public"
+                                        :type "class")
+                                        nil nil))                                  
+                                :template-specifier 
+                                  ( ("_Tv" type nil nil nil)
+                                    ("null_type" type nil nil nil))                                  )
+                                (reparse-symbol namespacesubparts) [3085 3192])
+                            ("type_base" type
+                               (:template 
+                                  ( ("Key" type (:type "class") nil nil)
+                                    ("Mapped" type (:type "class") nil nil)
+                                    ("_Alloc" type (:type "class") nil nil)
+                                    ("bool" type (:typevar "Store_Hash") nil nil))                                  
+                                :type "struct"
+                                :prototype t)
+                                (reparse-symbol namespacesubparts) [3224 3321])
+                            ("type_base" type
+                               (:template 
+                                  ( ("Key" type (:type "class") nil nil)
+                                    ("Mapped" type (:type "class") nil nil)
+                                    ("_Alloc" type (:type "class") nil nil))                                  
+                                :type "struct"
+                                :members 
+                                  ( ("public" label nil (reparse-symbol classsubparts) [3577 3584])
+                                    ("size_type" type
+                                       (:typedef ("_Alloc::size_type" type (:type "class") nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [3586 3633])
+                                    ("private" label nil (reparse-symbol classsubparts) [3641 3649])
+                                    ("__rebind_m" variable (:type ("rebind" type
+                                         (:template-specifier 
+                                            ( ("Mapped" type nil nil nil))                                            
+                                          :type "class")
+                                          nil nil)) (reparse-symbol classsubparts) [3685 3711])
+                                    ("__rebind_ma" type
+                                       (:typedef ("__rebind_m::other" type (:type "class") nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [3713 3762])
+                                    ("__value_type" type
+                                       (:typedef ("std::pair" type
+                                             (:template-specifier 
+                                                ( ("Key" type (:constant-flag t) nil nil)
+                                                  ("Mapped" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [3764 3816])
+                                    ("__rebind_v" variable (:type ("rebind" type
+                                         (:template-specifier 
+                                            ( ("__value_type" type nil nil nil))                                            
+                                          :type "class")
+                                          nil nil)) (reparse-symbol classsubparts) [3852 3884])
+                                    ("__rebind_va" type
+                                       (:typedef ("__rebind_v::other" type (:type "class") nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [3893 3942])
+                                    ("public" label nil (reparse-symbol classsubparts) [3950 3957])
+                                    ("mapped_type" type
+                                       (:typedef ("__rebind_ma::value_type" type (:type "class") nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [3959 4019])
+                                    ("mapped_pointer" type
+                                       (:typedef ("__rebind_ma::pointer" type (:type "class") nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [4021 4076])
+                                    ("mapped_const_pointer" type
+                                       (:typedef ("__rebind_ma::const_pointer" type (:type "class") nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [4078 4144])
+                                    ("mapped_reference" type
+                                       (:typedef ("__rebind_ma::reference" type (:type "class") nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [4146 4211])
+                                    ("mapped_const_reference" type
+                                       (:typedef ("__rebind_ma::const_reference" type (:type "class") nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [4213 4283])
+                                    ("value_type" type
+                                       (:typedef ("__rebind_va::value_type" type (:type "class") nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [4286 4339])
+                                    ("pointer" type
+                                       (:typedef ("__rebind_va::pointer" type (:type "class") nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [4341 4389])
+                                    ("const_pointer" type
+                                       (:typedef ("__rebind_va::const_pointer" type (:type "class") nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [4391 4450])
+                                    ("reference" type
+                                       (:typedef ("__rebind_va::reference" type (:type "class") nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [4452 4503])
+                                    ("const_reference" type
+                                       (:typedef ("__rebind_va::const_reference" type (:type "class") nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [4505 4568])
+                                    ("stored_data_type" type
+                                       (:typedef ("stored_data" type
+                                             (:template-specifier 
+                                                ( ("value_type" type nil nil nil)
+                                                  ("null_type" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [4571 4631]))                                  
+                                :template-specifier 
+                                  ( ("Key" type nil nil nil)
+                                    ("Mapped" type nil nil nil)
+                                    ("_Alloc" type nil nil nil)
+                                    ("false" type nil nil nil))                                  )
+                                (reparse-symbol namespacesubparts) [3455 4640])
+                            ("type_base" type
+                               (:template 
+                                  ( ("Key" type (:type "class") nil nil)
+                                    ("Mapped" type (:type "class") nil nil)
+                                    ("_Alloc" type (:type "class") nil nil))                                  
+                                :type "struct"
+                                :members 
+                                  ( ("public" label nil (reparse-symbol classsubparts) [4891 4898])
+                                    ("size_type" type
+                                       (:typedef ("_Alloc::size_type" type (:type "class") nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [4900 4947])
+                                    ("private" label nil (reparse-symbol classsubparts) [4955 4963])
+                                    ("__rebind_m" variable (:type ("rebind" type
+                                         (:template-specifier 
+                                            ( ("Mapped" type nil nil nil))                                            
+                                          :type "class")
+                                          nil nil)) (reparse-symbol classsubparts) [4999 5025])
+                                    ("__rebind_ma" type
+                                       (:typedef ("__rebind_m::other" type (:type "class") nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [5027 5076])
+                                    ("__value_type" type
+                                       (:typedef ("std::pair" type
+                                             (:template-specifier 
+                                                ( ("Key" type (:constant-flag t) nil nil)
+                                                  ("Mapped" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [5078 5130])
+                                    ("__rebind_v" variable (:type ("rebind" type
+                                         (:template-specifier 
+                                            ( ("__value_type" type nil nil nil))                                            
+                                          :type "class")
+                                          nil nil)) (reparse-symbol classsubparts) [5166 5198])
+                                    ("__rebind_va" type
+                                       (:typedef ("__rebind_v::other" type (:type "class") nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [5207 5256])
+                                    ("public" label nil (reparse-symbol classsubparts) [5264 5271])
+                                    ("mapped_type" type
+                                       (:typedef ("__rebind_ma::value_type" type (:type "class") nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [5273 5333])
+                                    ("mapped_pointer" type
+                                       (:typedef ("__rebind_ma::pointer" type (:type "class") nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [5335 5390])
+                                    ("mapped_const_pointer" type
+                                       (:typedef ("__rebind_ma::const_pointer" type (:type "class") nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [5392 5458])
+                                    ("mapped_reference" type
+                                       (:typedef ("__rebind_ma::reference" type (:type "class") nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [5460 5525])
+                                    ("mapped_const_reference" type
+                                       (:typedef ("__rebind_ma::const_reference" type (:type "class") nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [5527 5597])
+                                    ("value_type" type
+                                       (:typedef ("__rebind_va::value_type" type (:type "class") nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [5600 5653])
+                                    ("pointer" type
+                                       (:typedef ("__rebind_va::pointer" type (:type "class") nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [5655 5703])
+                                    ("const_pointer" type
+                                       (:typedef ("__rebind_va::const_pointer" type (:type "class") nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [5705 5764])
+                                    ("reference" type
+                                       (:typedef ("__rebind_va::reference" type (:type "class") nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [5766 5817])
+                                    ("const_reference" type
+                                       (:typedef ("__rebind_va::const_reference" type (:type "class") nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [5819 5882])
+                                    ("stored_data_type" type
+                                       (:typedef ("stored_data" type
+                                             (:template-specifier 
+                                                ( ("value_type" type nil nil nil)
+                                                  ("size_type" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [5885 5945]))                                  
+                                :template-specifier 
+                                  ( ("Key" type nil nil nil)
+                                    ("Mapped" type nil nil nil)
+                                    ("_Alloc" type nil nil nil)
+                                    ("true" type nil nil nil))                                  )
+                                (reparse-symbol namespacesubparts) [4770 5954])
+                            ("type_base" type
+                               (:template 
+                                  ( ("Key" type (:type "class") nil nil)
+                                    ("_Alloc" type (:type "class") nil nil))                                  
+                                :type "struct"
+                                :members 
+                                  ( ("public" label nil (reparse-symbol classsubparts) [6197 6204])
+                                    ("size_type" type
+                                       (:typedef ("_Alloc::size_type" type (:type "class") nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [6206 6253])
+                                    ("value_type" type
+                                       (:typedef ("Key" type (:type "class") nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [6255 6283])
+                                    ("private" label nil (reparse-symbol classsubparts) [6291 6299])
+                                    ("__rebind_m" variable (:type ("rebind" type
+                                         (:template-specifier 
+                                            ( ("null_type" type nil nil nil))                                            
+                                          :type "class")
+                                          nil nil)) (reparse-symbol classsubparts) [6335 6366])
+                                    ("__rebind_ma" type
+                                       (:typedef ("__rebind_m::other" type (:type "class") nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [6368 6417])
+                                    ("__rebind_v" variable (:type ("rebind" type
+                                         (:template-specifier 
+                                            ( ("value_type" type nil nil nil))                                            
+                                          :type "class")
+                                          nil nil)) (reparse-symbol classsubparts) [6453 6483])
+                                    ("__rebind_va" type
+                                       (:typedef ("__rebind_v::other" type (:type "class") nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [6492 6541])
+                                    ("public" label nil (reparse-symbol classsubparts) [6549 6556])
+                                    ("mapped_type" type
+                                       (:typedef ("__rebind_ma::value_type" type (:type "class") nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [6558 6618])
+                                    ("mapped_pointer" type
+                                       (:typedef ("__rebind_ma::pointer" type (:type "class") nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [6620 6675])
+                                    ("mapped_const_pointer" type
+                                       (:typedef ("__rebind_ma::const_pointer" type (:type "class") nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [6677 6743])
+                                    ("mapped_reference" type
+                                       (:typedef ("__rebind_ma::reference" type (:type "class") nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [6745 6810])
+                                    ("mapped_const_reference" type
+                                       (:typedef ("__rebind_ma::const_reference" type (:type "class") nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [6812 6882])
+                                    ("pointer" type
+                                       (:typedef ("__rebind_va::pointer" type (:type "class") nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [6885 6933])
+                                    ("const_pointer" type
+                                       (:typedef ("__rebind_va::const_pointer" type (:type "class") nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [6935 6994])
+                                    ("reference" type
+                                       (:typedef ("__rebind_va::reference" type (:type "class") nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [6996 7047])
+                                    ("const_reference" type
+                                       (:typedef ("__rebind_va::const_reference" type (:type "class") nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [7049 7112])
+                                    ("stored_data_type" type
+                                       (:typedef ("stored_data" type
+                                             (:template-specifier 
+                                                ( ("value_type" type nil nil nil)
+                                                  ("null_type" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [7115 7175])
+                                    ("s_null_type" variable
+                                       (:typemodifiers ("static")
+                                        :type ("null_type" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [7178 7210]))                                  
+                                :template-specifier 
+                                  ( ("Key" type nil nil nil)
+                                    ("null_type" type nil nil nil)
+                                    ("_Alloc" type nil nil nil)
+                                    ("false" type nil nil nil))                                  )
+                                (reparse-symbol namespacesubparts) [6089 7219])
+                            ("type_base::s_null_type" variable (:type ("null_type" type (:type "class") nil nil)) (reparse-symbol namespacesubparts) [7225 7341])
+                            ("type_base" type
+                               (:template 
+                                  ( ("Key" type (:type "class") nil nil)
+                                    ("_Alloc" type (:type "class") nil nil))                                  
+                                :type "struct"
+                                :members 
+                                  ( ("public" label nil (reparse-symbol classsubparts) [7579 7586])
+                                    ("size_type" type
+                                       (:typedef ("_Alloc::size_type" type (:type "class") nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [7588 7635])
+                                    ("value_type" type
+                                       (:typedef ("Key" type (:type "class") nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [7637 7665])
+                                    ("private" label nil (reparse-symbol classsubparts) [7673 7681])
+                                    ("__rebind_m" variable (:type ("rebind" type
+                                         (:template-specifier 
+                                            ( ("null_type" type nil nil nil))                                            
+                                          :type "class")
+                                          nil nil)) (reparse-symbol classsubparts) [7717 7748])
+                                    ("__rebind_ma" type
+                                       (:typedef ("__rebind_m::other" type (:type "class") nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [7750 7799])
+                                    ("__rebind_v" variable (:type ("rebind" type
+                                         (:template-specifier 
+                                            ( ("value_type" type nil nil nil))                                            
+                                          :type "class")
+                                          nil nil)) (reparse-symbol classsubparts) [7835 7865])
+                                    ("__rebind_va" type
+                                       (:typedef ("__rebind_v::other" type (:type "class") nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [7874 7923])
+                                    ("public" label nil (reparse-symbol classsubparts) [7931 7938])
+                                    ("mapped_type" type
+                                       (:typedef ("__rebind_ma::value_type" type (:type "class") nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [7940 8000])
+                                    ("mapped_pointer" type
+                                       (:typedef ("__rebind_ma::pointer" type (:type "class") nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [8002 8057])
+                                    ("mapped_const_pointer" type
+                                       (:typedef ("__rebind_ma::const_pointer" type (:type "class") nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [8059 8125])
+                                    ("mapped_reference" type
+                                       (:typedef ("__rebind_ma::reference" type (:type "class") nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [8127 8192])
+                                    ("mapped_const_reference" type
+                                       (:typedef ("__rebind_ma::const_reference" type (:type "class") nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [8194 8264])
+                                    ("pointer" type
+                                       (:typedef ("__rebind_va::pointer" type (:type "class") nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [8267 8315])
+                                    ("const_pointer" type
+                                       (:typedef ("__rebind_va::const_pointer" type (:type "class") nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [8317 8376])
+                                    ("reference" type
+                                       (:typedef ("__rebind_va::reference" type (:type "class") nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [8378 8429])
+                                    ("const_reference" type
+                                       (:typedef ("__rebind_va::const_reference" type (:type "class") nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [8431 8494])
+                                    ("stored_data_type" type
+                                       (:typedef ("stored_data" type
+                                             (:template-specifier 
+                                                ( ("value_type" type nil nil nil)
+                                                  ("size_type" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [8497 8557])
+                                    ("s_null_type" variable
+                                       (:typemodifiers ("static")
+                                        :type ("null_type" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [8560 8598]))                                  
+                                :template-specifier 
+                                  ( ("Key" type nil nil nil)
+                                    ("null_type" type nil nil nil)
+                                    ("_Alloc" type nil nil nil)
+                                    ("true" type nil nil nil))                                  )
+                                (reparse-symbol namespacesubparts) [7472 8607])
+                            ("type_base::s_null_type" variable (:type ("null_type" type (:type "class") nil nil)) (reparse-symbol namespacesubparts) [8613 8728])
+                            ("type_dispatch" type
+                               (:template 
+                                  ( ("Key" type (:type "class") nil nil)
+                                    ("Mapped" type (:type "class") nil nil)
+                                    ("_Alloc" type (:type "class") nil nil)
+                                    ("bool" type (:typevar "Store_Hash") nil nil))                                  
+                                :type "struct"
+                                :members 
+                                  ( ("type" type
+                                       (:typedef ("type_base" type
+                                             (:template-specifier 
+                                                ( ("Key" type nil nil nil)
+                                                  ("Mapped" type nil nil nil)
+                                                  ("_Alloc" type nil nil nil)
+                                                  ("Store_Hash" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [8873 8929]))                                  )
+                                (reparse-symbol namespacesubparts) [8763 8938])
+                            ("types_traits" type
+                               (:template 
+                                  ( ("Key" type (:type "class") nil nil)
+                                    ("Mapped" type (:type "class") nil nil)
+                                    ("_Alloc" type (:type "class") nil nil)
+                                    ("bool" type (:typevar "Store_Hash") nil nil))                                  
+                                :type "struct"
+                                :members 
+                                  ( ("private" label nil (reparse-symbol classsubparts) [9161 9169])
+                                    ("__nothrowcopy" type
+                                       (:typedef ("no_throw_copies" type
+                                             (:template-specifier 
+                                                ( ("Key" type nil nil nil)
+                                                  ("Mapped" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [9171 9223])
+                                    ("__rebind_a" variable (:type ("other" type (:type "class") nil nil)) (reparse-symbol classsubparts) [9272 9289])
+                                    ("public" label nil (reparse-symbol classsubparts) [9297 9304])
+                                    ("size_type" type
+                                       (:typedef ("_Alloc::size_type" type (:type "class") nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [9306 9353])
+                                    ("key_type" type
+                                       (:typedef ("__rebind_a::value_type" type (:type "class") nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [9355 9405])
+                                    ("key_pointer" type
+                                       (:typedef ("__rebind_a::pointer" type (:type "class") nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [9407 9458])
+                                    ("key_const_pointer" type
+                                       (:typedef ("__rebind_a::const_pointer" type (:type "class") nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [9460 9522])
+                                    ("key_reference" type
+                                       (:typedef ("__rebind_a::reference" type (:type "class") nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [9524 9579])
+                                    ("key_const_reference" type
+                                       (:typedef ("__rebind_a::const_reference" type (:type "class") nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [9581 9647])
+                                    ("comp_hash" type
+                                       (:typedef ("std::pair" type
+                                             (:template-specifier 
+                                                ( ("size_type" type nil nil nil)
+                                                  ("size_type" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [9649 9700])
+                                    ("store_extra" type
+                                       (:typedef ("integral_constant" type
+                                             (:template-specifier 
+                                                ( ("int" type nil nil nil)
+                                                  ("Store_Hash" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [9702 9758])
+                                    ("no_throw_indicator" type
+                                       (:typedef ("__nothrowcopy::indicator" type (:type "class") nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [9760 9822])
+                                    ("m_store_extra_indicator" variable (:type ("store_extra" type (:type "class") nil nil)) (reparse-symbol classsubparts) [9825 9871])
+                                    ("m_no_throw_copies_indicator" variable (:type ("no_throw_indicator" type (:type "class") nil nil)) (reparse-symbol classsubparts) [9873 9924]))                                  
+                                :superclasses 
+                                  ( ("type_dispatch::type" type
+                                       (:protection "public"
+                                        :type "class")
+                                        nil nil))                                  )
+                                (reparse-symbol namespacesubparts) [8979 9931]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [1941 9944]))                  
+                :type "namespace")
+                nil [1916 9966]))          
+      :file "types_traits.hpp"
+      :pointmax 9999
+      :fsize 9998
+      :lastmodtime '(23161 10765 0 0)
+      :unmatched-syntax '((punctuation 9271 . 9272) (punctuation 9270 . 9271) (punctuation 9269 . 9270) (symbol 9266 . 9269) (punctuation 9265 . 9266) (symbol 9259 . 9265) (TEMPLATE 9250 . 9258) (punctuation 9249 . 9250) (punctuation 9248 . 9249) (symbol 9242 . 9248) (TYPENAME 9233 . 9241) (TYPEDEF 9225 . 9232) (TEMPLATE 7826 . 7834) (punctuation 7825 . 7826) (punctuation 7824 . 7825) (symbol 7818 . 7824) (TYPENAME 7809 . 7817) (TYPEDEF 7801 . 7808) (TEMPLATE 7708 . 7716) (punctuation 7707 . 7708) (punctuation 7706 . 7707) (symbol 7700 . 7706) (TYPENAME 7691 . 7699) (TYPEDEF 7683 . 7690) (TEMPLATE 6444 . 6452) (punctuation 6443 . 6444) (punctuation 6442 . 6443) (symbol 6436 . 6442) (TYPENAME 6427 . 6435) (TYPEDEF 6419 . 6426) (TEMPLATE 6326 . 6334) (punctuation 6325 . 6326) (punctuation 6324 . 6325) (symbol 6318 . 6324) (TYPENAME 6309 . 6317) (TYPEDEF 6301 . 6308) (TEMPLATE 5157 . 5165) (punctuation 5156 . 5157) (punctuation 5155 . 5156) (symbol 5149 . 5155) (TYPENAME 5140 . 5148) (TYPEDEF 5132 . 5139) (TEMPLATE 4990 . 4998) (punctuation 4989 . 4990) (punctuation 4988 . 4989) (symbol 4982 . 4988) (TYPENAME 4973 . 4981) (TYPEDEF 4965 . 4972) (TEMPLATE 3843 . 3851) (punctuation 3842 . 3843) (punctuation 3841 . 3842) (symbol 3835 . 3841) (TYPENAME 3826 . 3834) (TYPEDEF 3818 . 3825) (TEMPLATE 3676 . 3684) (punctuation 3675 . 3676) (punctuation 3674 . 3675) (symbol 3668 . 3674) (TYPENAME 3659 . 3667) (TYPEDEF 3651 . 3658) (punctuation 2449 . 2450) (symbol 2444 . 2449) (punctuation 2443 . 2444) (punctuation 2442 . 2443) (punctuation 2441 . 2442) (symbol 2438 . 2441) (punctuation 2437 . 2438) (symbol 2428 . 2437) (punctuation 2426 . 2427) (INT 2423 . 2426) (punctuation 2422 . 2423) (symbol 2405 . 2422) (TYPEDEF 2397 . 2404) (punctuation 2176 . 2177) (punctuation 2175 . 2176) (punctuation 2174 . 2175) (symbol 2171 . 2174) (punctuation 2170 . 2171) (symbol 2161 . 2170) (punctuation 2159 . 2160) (symbol 2150 . 2158) (BOOL 2145 . 2149) (CONST 2139 . 2144) (STATIC 2132 . 2138))
+      :lexical-table 
+        '(("PB_DS_TYPES_TRAITS_HPP")
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("PB_DS_COND_DEALTOR_HPP" variable (:constant-flag t) nil [1733 1755])
+            ("__gnu_pbds" type
+               (:members 
+                  ( ("detail" type
+                       (:members 
+                          ( ("cond_dealtor" type
+                               (:template 
+                                  ( ("Entry" type (:type "class") nil nil)
+                                    ("_Alloc" type (:type "class") nil nil))                                  
+                                :type "class"
+                                :members 
+                                  ( ("__rebind_e" variable (:type ("rebind" type
+                                         (:template-specifier 
+                                            ( ("Entry" type nil nil nil))                                            
+                                          :type "class")
+                                          nil nil)) (reparse-symbol classsubparts) [1970 1995])
+                                    ("public" label nil (reparse-symbol classsubparts) [2003 2010])
+                                    ("entry_allocator" type
+                                       (:typedef ("__rebind_e::other" type (:type "class") nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [2012 2065])
+                                    ("entry_pointer" type
+                                       (:typedef ("entry_allocator::pointer" type (:type "class") nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [2067 2124])
+                                    ("cond_dealtor" function
+                                       (:constructor-flag t
+                                        :arguments 
+                                          ( ("p_e" variable (:type ("entry_pointer" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2140 2158]))                                          
+                                        :type ("cond_dealtor" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [2127 2207])
+                                    ("cond_dealtor" function
+                                       (:destructor-flag t
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [2210 2308])
+                                    ("set_no_action" function (:type "void") (reparse-symbol classsubparts) [2311 2368])
+                                    ("private" label nil (reparse-symbol classsubparts) [2376 2384])
+                                    ("m_p_e" variable (:type ("entry_pointer" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2386 2408])
+                                    ("m_no_action_destructor" variable (:type "bool") (reparse-symbol classsubparts) [2410 2441])
+                                    ("s_alloc" variable
+                                       (:typemodifiers ("static")
+                                        :type ("entry_allocator" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [2443 2475]))                                  )
+                                (reparse-symbol namespacesubparts) [1860 2484])
+                            ("cond_dealtor::s_alloc" variable (:type ("entry_allocator" type (:type "class") nil nil)) (reparse-symbol namespacesubparts) [2573 2632]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [1782 2636]))                  
+                :type "namespace")
+                nil [1757 2658]))          
+      :file "cond_dealtor.hpp"
+      :pointmax 2725
+      :fsize 2724
+      :lastmodtime '(23161 10764 0 0)
+      :unmatched-syntax '((punctuation 2572 . 2573) (punctuation 2571 . 2572) (punctuation 2570 . 2571) (symbol 2564 . 2570) (punctuation 2562 . 2563) (symbol 2557 . 2562) (punctuation 2556 . 2557) (symbol 2544 . 2556) (TYPENAME 2535 . 2543) (punctuation 2527 . 2528) (symbol 2521 . 2527) (CLASS 2515 . 2520) (punctuation 2513 . 2514) (symbol 2508 . 2513) (TYPENAME 2499 . 2507) (punctuation 2498 . 2499) (TEMPLATE 2490 . 2498) (TEMPLATE 1961 . 1969) (punctuation 1960 . 1961) (punctuation 1959 . 1960) (symbol 1953 . 1959) (TYPENAME 1944 . 1952) (TYPEDEF 1936 . 1943))
+      :lexical-table 
+        '(("PB_DS_COND_DEALTOR_HPP")
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("PB_DS_TREE_TRACE_BASE_HPP" variable (:constant-flag t) nil [1735 1760]))          
+      :file "tree_trace_base.hpp"
+      :pointmax 5135
+      :fsize 5134
+      :lastmodtime '(23161 10765 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("PB_DS_TREE_TRACE_BASE_HPP")
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("PB_DS_PRIORITY_QUEUE_BASE_DS_DISPATCHER_HPP" variable (:constant-flag t) nil [1783 1826])
+            ("PB_DS_ASSERT_VALID" variable (:constant-flag t) nil [1836 1854])
+            ("PB_DS_DEBUG_VERIFY" variable (:constant-flag t) nil [1933 1951])
+            ("ext/pb_ds/detail/pairing_heap_/pairing_heap_.hpp" include (:system-flag t) nil [2130 2189])
+            ("ext/pb_ds/detail/binomial_heap_/binomial_heap_.hpp" include (:system-flag t) nil [2190 2251])
+            ("ext/pb_ds/detail/rc_binomial_heap_/rc_binomial_heap_.hpp" include (:system-flag t) nil [2252 2319])
+            ("ext/pb_ds/detail/binary_heap_/binary_heap_.hpp" include (:system-flag t) nil [2320 2377])
+            ("ext/pb_ds/detail/thin_heap_/thin_heap_.hpp" include (:system-flag t) nil [2378 2431])
+            ("__gnu_pbds" type
+               (:members 
+                  ( ("detail" type
+                       (:members 
+                          ( ("container_base_dispatch" type
+                               (:template 
+                                  ( ("_VTp" type (:type "class") nil nil)
+                                    ("Cmp_Fn" type (:type "class") nil nil)
+                                    ("_Alloc" type (:type "class") nil nil))                                  
+                                :type "struct"
+                                :members 
+                                  ( ("type" type
+                                       (:typedef ("pairing_heap" type
+                                             (:template-specifier 
+                                                ( ("_VTp" type nil nil nil)
+                                                  ("Cmp_Fn" type nil nil nil)
+                                                  ("_Alloc" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [2763 2813]))                                  
+                                :template-specifier 
+                                  ( ("_VTp" type nil nil nil)
+                                    ("Cmp_Fn" type nil nil nil)
+                                    ("_Alloc" type nil nil nil)
+                                    ("pairing_heap_tag" type nil nil nil)
+                                    ("null_type" type nil nil nil))                                  )
+                                (reparse-symbol namespacesubparts) [2577 2822])
+                            ("container_base_dispatch" type
+                               (:template 
+                                  ( ("_VTp" type (:type "class") nil nil)
+                                    ("Cmp_Fn" type (:type "class") nil nil)
+                                    ("_Alloc" type (:type "class") nil nil))                                  
+                                :type "struct"
+                                :members 
+                                  ( ("type" type
+                                       (:typedef ("binomial_heap" type
+                                             (:template-specifier 
+                                                ( ("_VTp" type nil nil nil)
+                                                  ("Cmp_Fn" type nil nil nil)
+                                                  ("_Alloc" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [3057 3108]))                                  
+                                :template-specifier 
+                                  ( ("_VTp" type nil nil nil)
+                                    ("Cmp_Fn" type nil nil nil)
+                                    ("_Alloc" type nil nil nil)
+                                    ("binomial_heap_tag" type nil nil nil)
+                                    ("null_type" type nil nil nil))                                  )
+                                (reparse-symbol namespacesubparts) [2870 3117])
+                            ("container_base_dispatch" type
+                               (:template 
+                                  ( ("_VTp" type (:type "class") nil nil)
+                                    ("Cmp_Fn" type (:type "class") nil nil)
+                                    ("_Alloc" type (:type "class") nil nil))                                  
+                                :type "struct"
+                                :members 
+                                  ( ("type" type
+                                       (:typedef ("rc_binomial_heap" type
+                                             (:template-specifier 
+                                                ( ("_VTp" type nil nil nil)
+                                                  ("Cmp_Fn" type nil nil nil)
+                                                  ("_Alloc" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [3358 3418]))                                  
+                                :template-specifier 
+                                  ( ("_VTp" type nil nil nil)
+                                    ("Cmp_Fn" type nil nil nil)
+                                    ("_Alloc" type nil nil nil)
+                                    ("rc_binomial_heap_tag" type nil nil nil)
+                                    ("null_type" type nil nil nil))                                  )
+                                (reparse-symbol namespacesubparts) [3166 3427])
+                            ("container_base_dispatch" type
+                               (:template 
+                                  ( ("_VTp" type (:type "class") nil nil)
+                                    ("Cmp_Fn" type (:type "class") nil nil)
+                                    ("_Alloc" type (:type "class") nil nil))                                  
+                                :type "struct"
+                                :members 
+                                  ( ("type" type
+                                       (:typedef ("binary_heap" type
+                                             (:template-specifier 
+                                                ( ("_VTp" type nil nil nil)
+                                                  ("Cmp_Fn" type nil nil nil)
+                                                  ("_Alloc" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [3660 3709]))                                  
+                                :template-specifier 
+                                  ( ("_VTp" type nil nil nil)
+                                    ("Cmp_Fn" type nil nil nil)
+                                    ("_Alloc" type nil nil nil)
+                                    ("binary_heap_tag" type nil nil nil)
+                                    ("null_type" type nil nil nil))                                  )
+                                (reparse-symbol namespacesubparts) [3473 3718])
+                            ("container_base_dispatch" type
+                               (:template 
+                                  ( ("_VTp" type (:type "class") nil nil)
+                                    ("Cmp_Fn" type (:type "class") nil nil)
+                                    ("_Alloc" type (:type "class") nil nil))                                  
+                                :type "struct"
+                                :members 
+                                  ( ("type" type
+                                       (:typedef ("thin_heap" type
+                                             (:template-specifier 
+                                                ( ("_VTp" type nil nil nil)
+                                                  ("Cmp_Fn" type nil nil nil)
+                                                  ("_Alloc" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [3951 3998]))                                  
+                                :template-specifier 
+                                  ( ("_VTp" type nil nil nil)
+                                    ("Cmp_Fn" type nil nil nil)
+                                    ("_Alloc" type nil nil nil)
+                                    ("thin_heap_tag" type nil nil nil)
+                                    ("null_type" type nil nil nil))                                  )
+                                (reparse-symbol namespacesubparts) [3762 4007]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [2511 4031]))                  
+                :type "namespace")
+                nil [2486 4053]))          
+      :file "priority_queue_base_dispatch.hpp"
+      :pointmax 4141
+      :fsize 4140
+      :lastmodtime '(23161 10764 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("PB_DS_PRIORITY_QUEUE_BASE_DS_DISPATCHER_HPP")
+          )
+))
+  :file "!usr!include!c++!5!ext!pb_ds!detail!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

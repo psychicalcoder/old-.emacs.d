@@ -1,0 +1,65 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode python-mode
+      :tags 
+        '( ("tensorflow" include nil nil [19 42])
+            ("numpy" include nil nil [43 61])
+            ("os" include nil nil [62 71])
+            ("conv2d" function (:arguments 
+              ( ("x" variable nil (reparse-symbol function_parameters) [85 86])
+                ("W" variable nil (reparse-symbol function_parameters) [88 89]))              ) nil [74 160])
+            ("weight_variable" function (:arguments 
+              ( ("shape" variable nil (reparse-symbol function_parameters) [182 187])
+                ("name" variable nil (reparse-symbol function_parameters) [189 193]))              ) nil [162 271])
+            ("bias_variable" function (:arguments 
+              ( ("shape" variable nil (reparse-symbol function_parameters) [291 296])
+                ("name" variable nil (reparse-symbol function_parameters) [298 302]))              ) nil [273 370])
+            ("LEN" variable nil nil [372 380])
+            ("x_image" variable nil nil [382 445])
+            ("x_label" variable nil nil [446 499])
+            ("w1" variable nil nil [501 542])
+            ("w2" variable nil nil [543 585])
+            ("w3" variable nil nil [586 627])
+            ("b1" variable nil nil [629 659])
+            ("b2" variable nil nil [660 690])
+            ("b3" variable nil nil [691 720])
+            ("conv1" code nil nil [722 764])
+            ("conv2" code nil nil [765 805])
+            ("conv3" code nil nil [806 834])
+            ("conv3_flat" variable nil nil [836 899])
+            ("w_fc1" variable nil nil [901 952])
+            ("b_fc1" variable nil nil [953 991])
+            ("fc1" code nil nil [992 1032])
+            ("w_fc2" variable nil nil [1034 1077])
+            ("b_fc2" variable nil nil [1078 1115])
+            ("pred" code nil nil [1116 1150])
+            ("loss" variable nil nil [1152 1197])
+            ("train" variable nil nil [1199 1251])
+            ("try" code nil nil [1253 1350])
+            ("saver" variable nil nil [1350 1374])
+            ("with" code nil nil [1376 1852])
+            ("print" code nil nil [1853 1876]))          
+      :file "main.py"
+      :pointmax 1877
+      :fsize 1876
+      :lastmodtime '(23265 32850 895051 781000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode python-mode
+      :tags 
+        '( ("PIL" include nil nil [18 39])
+            ("os" include nil nil [40 51])
+            ("glob" include nil nil [40 51])
+            ("for" code nil nil [63 234]))          
+      :file "imgzip.py"
+      :pointmax 234
+      :fsize 233
+      :lastmodtime '(23256 19339 939161 564000)
+      :unmatched-syntax nil))
+  :file "!home!marvin!Documents!Python_projects!ML!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

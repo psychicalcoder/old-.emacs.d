@@ -1,0 +1,38 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("PB_DS_BINOMIAL_HEAP_BASE_HPP" variable (:constant-flag t) nil [1786 1814])
+            ("debug/debug.h" include (:system-flag t) nil [1900 1924])
+            ("ext/pb_ds/detail/cond_dealtor.hpp" include (:system-flag t) nil [1925 1969])
+            ("ext/pb_ds/detail/type_utils.hpp" include (:system-flag t) nil [1970 2012])
+            ("ext/pb_ds/detail/left_child_next_sibling_heap_/left_child_next_sibling_heap_.hpp" include (:system-flag t) nil [2013 2104])
+            ("__gnu_pbds" type
+               (:members 
+                  ( ("detail" type
+                       (:members 
+                          ( ("PB_DS_CLASS_T_DEC" variable (:constant-flag t) (reparse-symbol namespacesubparts) [2160 2177])
+                            ("PB_DS_CLASS_C_DEC" variable (:constant-flag t) (reparse-symbol namespacesubparts) [2257 2274])
+                            ("PB_DS_B_HEAP_BASE" variable (:constant-flag t) (reparse-symbol namespacesubparts) [2494 2511])
+                            ("PB_DS_ASSERT_VALID_COND" variable (:constant-flag t) (reparse-symbol namespacesubparts) [5288 5311])
+                            ("PB_DS_ASSERT_BASE_NODE_CONSISTENT" variable (:constant-flag t) (reparse-symbol namespacesubparts) [5424 5457]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [2131 6148]))                  
+                :type "namespace")
+                nil [2106 6170]))          
+      :file "binomial_heap_base_.hpp"
+      :pointmax 6203
+      :fsize 6202
+      :lastmodtime '(23161 10764 0 0)
+      :unmatched-syntax '((spp-system-include "ext/pb_ds/detail/binomial_heap_base_/split_join_fn_imps.hpp" 5926 . 5996) (spp-system-include "ext/pb_ds/detail/binomial_heap_base_/erase_fn_imps.hpp" 5860 . 5925) (spp-system-include "ext/pb_ds/detail/binomial_heap_base_/insert_fn_imps.hpp" 5793 . 5859) (spp-system-include "ext/pb_ds/detail/binomial_heap_base_/find_fn_imps.hpp" 5728 . 5792) (spp-system-include "ext/pb_ds/detail/binomial_heap_base_/debug_fn_imps.hpp" 5662 . 5727) (spp-system-include "ext/pb_ds/detail/binomial_heap_base_/constructors_destructor_fn_imps.hpp" 5578 . 5661) (punctuation 5277 . 5278) (semantic-list 2785 . 5277) (punctuation ">" 2763 . 2780) (symbol "_Alloc" 2763 . 2780) (punctuation "," 2763 . 2780) (symbol "size_type" 2763 . 2780) (punctuation ":" 2763 . 2780) (punctuation ":" 2763 . 2780) (symbol "_Alloc" 2763 . 2780) (TYPENAME "typename" 2763 . 2780) (punctuation "," 2763 . 2780) (symbol "Cmp_Fn" 2763 . 2780) (punctuation "," 2763 . 2780) (symbol "Value_Type" 2763 . 2780) (punctuation "<" 2763 . 2780) (symbol "left_child_next_sibling_heap" 2763 . 2780) (PUBLIC 2756 . 2762) (punctuation 2754 . 2755) (symbol 2731 . 2749) (CLASS 2725 . 2730) (punctuation 2719 . 2720) (symbol 2713 . 2719) (TYPENAME 2704 . 2712) (punctuation 2702 . 2703) (symbol 2696 . 2702) (TYPENAME 2687 . 2695) (punctuation 2685 . 2686) (symbol 2675 . 2685) (TYPENAME 2666 . 2674) (punctuation 2665 . 2666) (TEMPLATE 2657 . 2665))
+      :lexical-table 
+        '(("PB_DS_BINOMIAL_HEAP_BASE_HPP")
+          )
+))
+  :file "!usr!include!c++!5!ext!pb_ds!detail!binomial_heap_base_!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

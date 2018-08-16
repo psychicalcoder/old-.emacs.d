@@ -1,0 +1,83 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("__gnu_pbds" type
+               (:members 
+                  ( ("detail" type
+                       (:members 
+                          ( ("lu_counter_policy_base" type
+                               (:template 
+                                  ( ("Size_Type" type (:type "class") nil nil))                                  
+                                :type "class"
+                                :prototype t)
+                                (reparse-symbol namespacesubparts) [1767 1831])
+                            ("lu_counter_metadata" type
+                               (:members 
+                                  ( ("public" label nil (reparse-symbol classsubparts) [2047 2054])
+                                    ("size_type" type
+                                       (:typedef ("Size_Type" type (:type "class") nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [2056 2085])
+                                    ("private" label nil (reparse-symbol classsubparts) [2093 2101])
+                                    ("lu_counter_metadata" function
+                                       (:constructor-flag t
+                                        :arguments 
+                                          ( ("init_count" variable (:type ("size_type" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2123 2144]))                                          
+                                        :type ("lu_counter_metadata" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [2103 2171])
+                                    ("lu_counter_policy_base" friend nil (reparse-symbol classsubparts) [2174 2209])
+                                    ("m_count" variable
+                                       (:typemodifiers ("mutable")
+                                        :type ("size_type" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [2224 2251]))                                  
+                                :type "class")
+                                (reparse-symbol namespacesubparts) [2007 2258])
+                            ("lu_counter_policy_base" type
+                               (:template 
+                                  ( ("Size_Type" type (:type "class") nil nil))                                  
+                                :type "class"
+                                :members 
+                                  ( ("protected" label nil (reparse-symbol classsubparts) [2393 2403])
+                                    ("size_type" type
+                                       (:typedef ("Size_Type" type (:type "class") nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [2405 2434])
+                                    ("()" function
+                                       (:methodconst-flag t
+                                        :operator-flag t
+                                        :arguments 
+                                          ( ("max_size" variable (:type ("size_type" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2480 2499]))                                          
+                                        :type ("lu_counter_metadata" type
+                                             (:template-specifier 
+                                                ( ("size_type" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol classsubparts) [2437 2573])
+                                    ("()" function
+                                       (:template 
+                                          ( ("Metadata_Reference" type (:type "class") nil nil))                                          
+                                        :type "bool"
+                                        :arguments 
+                                          ( ("r_data" variable (:type ("Metadata_Reference" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2632 2658])
+                                            ("m_max_count" variable (:type ("size_type" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2659 2681]))                                          
+                                        :operator-flag t
+                                        :methodconst-flag t)
+                                        (reparse-symbol classsubparts) [2576 2791]))                                  )
+                                (reparse-symbol namespacesubparts) [2315 2800]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [1742 2804]))                  
+                :type "namespace")
+                nil [1717 2826]))          
+      :file "lu_counter_metadata.hpp"
+      :pointmax 2851
+      :fsize 2850
+      :lastmodtime '(23161 10764 0 0)
+      :unmatched-syntax '((punctuation 2220 . 2221) (punctuation 2219 . 2220) (symbol 2210 . 2219) (punctuation 2209 . 2210) (punctuation 1999 . 2000) (symbol 1993 . 1999) (punctuation 1992 . 1993) (punctuation 1991 . 1992) (symbol 1988 . 1991) (punctuation 1986 . 1987) (symbol 1976 . 1985) (TYPENAME 1967 . 1975) (punctuation 1966 . 1967) (TEMPLATE 1958 . 1966))))
+  :file "!usr!include!c++!5!ext!pb_ds!detail!list_update_policy!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

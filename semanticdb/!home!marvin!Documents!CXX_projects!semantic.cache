@@ -1,0 +1,112 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("bits/stdc++.h" include (:system-flag t) nil [1 25])
+            ("random" include (:system-flag t) nil [26 43])
+            ("std" using (:type ("std" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [44 64])
+            ("LL" type
+               (:typedef ("long long")
+                :type "typedef")
+                nil [65 86])
+            ("P" type
+               (:typedef ("pair" type
+                     (:template-specifier 
+                        ( ("int" type nil nil nil)
+                          ("int" type nil nil nil))                        
+                      :type "class")
+                      nil nil)
+                :type "typedef")
+                nil [87 112])
+            ("vec" type
+               (:typedef ("vector" type
+                     (:template-specifier 
+                        ( ("int" type nil nil nil))                        
+                      :type "class")
+                      nil nil)
+                :type "typedef")
+                nil [113 137])
+            ("pq" type
+               (:typedef ("priority_queue" type
+                     (:template-specifier 
+                        ( ("int" type nil nil nil))                        
+                      :type "class")
+                      nil nil)
+                :type "typedef")
+                nil [138 169])
+            ("main" function (:type "int") nil [174 237]))          
+      :file "0001.cpp"
+      :pointmax 239
+      :fsize 260
+      :lastmodtime '(23254 58475 381031 377000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("bits/stdc++.h" include (:system-flag t) nil [674 698])
+            ("std" using (:type ("std" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [699 719])
+            ("LL" type
+               (:typedef ("long long")
+                :type "typedef")
+                nil [720 741])
+            ("P" type
+               (:typedef ("pair" type
+                     (:template-specifier 
+                        ( ("int" type nil nil nil)
+                          ("int" type nil nil nil))                        
+                      :type "class")
+                      nil nil)
+                :type "typedef")
+                nil [742 766])
+            ("cnt" variable
+               (:dereference 1
+                :type "int")
+                nil [768 780])
+            ("s" variable
+               (:dereference 1
+                :type "char")
+                nil [781 792])
+            ("len" variable (:type "int") nil [793 807])
+            ("n" variable (:type "int") nil [793 807])
+            ("k" variable (:type "int") nil [793 807])
+            ("S" variable (:type ("set" type
+                 (:template-specifier 
+                    ( ("LL" type nil nil nil))                    
+                  :type "class")
+                  nil nil)) nil [809 819])
+            ("arr" variable
+               (:dereference 1
+                :type "int")
+                nil [821 833])
+            ("dfs" function
+               (:arguments 
+                  ( ("cur" variable (:type "int") (reparse-symbol arg-sub-list) [844 852]))                  
+                :type "void")
+                nil [835 904])
+            ("main" function (:type "int") nil [906 1056]))          
+      :file "p1.cpp"
+      :pointmax 1057
+      :fsize 1056
+      :lastmodtime '(23385 40258 214803 95000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode js-mode
+      :tags nil
+      :file "cminitest.json"
+      :pointmax 87
+      :fsize 86
+      :lastmodtime '(23385 38261 439679 115000)
+      :unmatched-syntax nil))
+  :file "!home!marvin!Documents!CXX_projects!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")
